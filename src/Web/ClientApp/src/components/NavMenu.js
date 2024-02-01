@@ -26,29 +26,29 @@ export class NavMenu extends Component {
     return (
       <header>
         <Navbar className="navbar-expand-sm navbar-toggleable-sm ng-white border-bottom box-shadow" container light>
-          <NavbarBrand tag={Link} to="/">
+          <NavbarBrand href="#carousel">
             <img src={logoblackred} alt="Zaragoza Barbell" style={{ maxHeight: '50px', marginRight: '10px' }} />
           </NavbarBrand>
           <NavbarToggler onClick={this.toggleNavbar} className="mr-2" />
           <Collapse className="d-sm-inline-flex flex-sm-row-reverse" isOpen={!this.state.collapsed} navbar>
             <ul className="navbar-nav flex-grow">
               <NavItem>
-                <NavLink tag={Link} className="text-dark" to="/">Inicio</NavLink>
+                <NavLink className="text-dark" href="#carousel">Inicio</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink tag={Link} className="text-dark" to="/gym">Gimnasio 24H</NavLink>
+                <NavLink className="text-dark" href="#team">Equipo</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink tag={Link} className="text-dark" to="/club">Club AEP</NavLink>
+                <NavLink className="text-dark" href="#gym">Gimnasio 24H</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink tag={Link} className="text-dark" to="/team">Equipo</NavLink>
+                <NavLink className="text-dark" href="#club">Club AEP</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink tag={Link} className="text-dark" to="/services">Servicios</NavLink>
+                <NavLink className="text-dark" href="#services">Servicios</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink tag={Link} className="text-dark" to="/contact">Contacto</NavLink>
+                <NavLink tag={Link} className="text-dark" href="#contact">Contacto</NavLink>
               </NavItem>
             </ul>
           </Collapse>

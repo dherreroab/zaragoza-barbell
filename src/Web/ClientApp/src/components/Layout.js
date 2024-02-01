@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Container } from 'reactstrap';
 import { NavMenu } from './NavMenu';
+import ContactFooter from './ContactFooter';
 import './styles/Layout.css';
 
 export class Layout extends Component {
@@ -10,9 +11,10 @@ export class Layout extends Component {
     return (
       <>
         <NavMenu />
-        <Container tag="main">
+        <Container tag="main" className='principal-container'>
           {this.props.children}
         </Container>
+        <ContactFooter />
       </>
     );
   }

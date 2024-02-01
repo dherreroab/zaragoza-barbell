@@ -1,4 +1,8 @@
-﻿.principal-div {
+﻿.principal-container {
+  margin-bottom: 5vh;
+}
+
+.principal-div {
   position: relative;
 }
 

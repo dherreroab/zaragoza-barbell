@@ -12,6 +12,16 @@
     --clr-stack: 25 79% 78%;
 }
 
+.ReactModal__Overlay {
+    z-index: 9999;
+
+    .ReactModal__Content {
+        background-color: hsl(var(--clr-zgz-barbell-black));
+        color: hsl(var(--clr-zgz-barbell-red));
+        opacity: 0.9;
+    }
+}
+
 .carousel {
     position: relative;
 
@@ -29,6 +39,7 @@
     .carousel-control-prev,
     .carousel-control-next {
         color: hsl(var(--clr-zgz-barbell-red));
+        width: 30%;
     }
 
     .carousel-indicators [data-bs-target] {
