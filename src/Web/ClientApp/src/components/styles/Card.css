@@ -1,0 +1,126 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+.main {
+    background: hsl(var(--clr-outer-dark) / 1);
+    max-width: 34.375rem;
+    margin-inline: auto;
+    padding: 3.3125em 4.0625em
+}
+
+.card {
+    background: hsl(var(--clr-zgz-barbell-black) / 1);
+    max-width: 19.8125rem;
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+.section-info {
+    padding: 1em 2.1875em;
+    text-align: center;
+    margin-inline: auto
+}
+
+.name {
+    font-size: var(--fs-700);
+    font-weight: 700;
+}
+
+.stack {
+    color: hsl(var(--clr-zgz-barbell-red));
+    font-size: 0.8rem;
+    margin-bottom: 0.55em
+}
+
+.section-info a {
+    color: hsla(0, 0%, 96%, 1);
+}
+
+.section-info small a {
+    font-size: 0.64rem;
+}
+
+.icon {
+    vertical-align: middle;
+    margin-right: 9.6px;
+    flex-shrink: 0;
+    width: 16px;
+    height: 16px;
+    color: hsla(232, 12%, 13%, 1);
+}
+
+.section_about,
+.section_interest {
+    margin-inline: auto;
+}
+
+.about,
+.interest {
+    font-weight: 700;
+    margin-bottom: 0.3125em;
+    color: hsla(0, 0%, 96%, 1);
+    font-size: 1rem;
+}
+
+.about__text,
+.interest__text {
+    color: hsla(0, 0%, 86%, 1);
+    font-size: var(--fs-400);
+    max-width: 247px;
+    width: 100%;
+}
+
+.interest {
+    margin-top: 0;
+}
+
+.interest__text {
+    margin-bottom: 2em;
+}
+
+.section_footer {
+    background: hsl(var(--clr-footer-dark) / 1);
+    border-radius: 0 0 10px 10px;
+    padding: 1.1875em 0;
+
+}
+
+.card-img {
+    border-radius: 10px 10px 0 0;
+}
+
+.footer_social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+.footer_social li {
+    background: hsl(var(--clr-footer-icons) / 1);
+    padding: 0.35em;
+    border-radius: 5px
+}
+
+li+li {
+    margin-left: 1.5em
+}
