@@ -1,9 +1,9 @@
 {
-  "short_name": "zaragoza_barbell.Web",
-  "name": "zaragoza_barbell.Web",
+  "short_name": "Zaragoza Barbell Club",
+  "name": "Zaragoza Barbell Club",
   "icons": [
     {
-      "src": "favicon.ico",
+      "src": "Zaragoza-Barbell.ico",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
     }

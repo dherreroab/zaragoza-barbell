@@ -1,0 +1,43 @@
+.footer {
+    background-color: #f8f9fa;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-container {
+    width: 80%;
+    margin: 0 auto;
+    display: inline-flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    .email {
+        margin-right: 1vh;
+
+        svg {
+            margin-right: 0.5vh;
+        }
+    }
+
+    .address {
+        color: hsl(var(--clr-zgz-barbell-black));
+    }
+}
+
+.links {
+    margin-bottom: 20px;
+}
+
+.links a {
+    margin: 0 15px;
+}
+
+.copyright {
+    color: #6c757d;
+}
+
+.logo {
+    width: 25%;
+}
