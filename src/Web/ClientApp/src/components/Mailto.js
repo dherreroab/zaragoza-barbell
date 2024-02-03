@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function CardMailto({ email, subject = '', body = '', children }) {
+export default function Mailto({ email, subject = '', body = '', children }) {
     let params = subject || body ? '?' : '';
     if (subject) params += `subject=${encodeURIComponent(subject)}`;
     if (body) params += `${subject ? '&' : ''}body=${encodeURIComponent(body)}`;

@@ -11,7 +11,7 @@ class Card extends Component {
                 <section className="card">
                     <CardInfo header={this.props.member.header} />
                     <CardSection sectionName="about" sectionTitle="About" sectionText={this.props.member.aboutText} />
-                    <CardSection sectionName="interest" sectionTitle="Interests" sectionText={this.props.member.interestText} />
+                    {this.props.member.interestText && <CardSection sectionName="interest" sectionTitle="Interests" sectionText={this.props.member.interestText} />}
                     <CardFooter footer={this.props.member.footer} />
                 </section>
             </>

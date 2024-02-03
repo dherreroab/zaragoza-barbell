@@ -1,18 +1,45 @@
 import React, { Component } from "react";
+import Mailto from "./Mailto";
 import "./styles/ContactFooter.css";
+import logo from './../assets/img/logo-black-red.png';
 
 class ContactFooter extends Component {
     render() {
+
+        const email = {
+            emailDestination: "zaragozabarbell@gmail.com",
+            emailSubject: "Hablemos sobre el club",
+            emailBody: "Hola! ¿Podemos hablar sobre el club?"
+        };
         return (
             <footer className="footer">
                 <div className="footer-container">
-                    <div className="links">
-                        <a href="/about">About</a>
-                        <a href="/contact">Contact</a>
-                        <a href="/privacy">Privacy Policy</a>
-                        <a href="/terms">Terms of Service</a>
+                    <div className="text">
+                        <div className="email">
+                            <Mailto
+                                email={email.emailDestination}
+                                subject={email.emailSubject}
+                                body={email.emailBody}
+                                className="mailto"
+                            >
+                                <i class="bi bi-envelope-arrow-up"></i>
+                                {email.emailDestination}
+                            </Mailto>
+                        </div>
+                        <div className="address">
+                            <p>Calle Brazal Almontilla 3 50410, Cuarte De Huerva (Zaragoza). España</p>
+                        </div>
+                        <div className="links">
+                            <a href="/legal-notice">Aviso legal</a>
+                            <a href="/privacy">Política de privacidad</a>
+                            <a href="/cookies-policy">Política de cookies</a>
+                            <a href="/accessibility-statement">Declaración de accesibilidad</a>
+                        </div>
+                        <p className="copyright">© {new Date().getFullYear()} Zaragoza Barbell, S.L Todos los derechos reservados</p>
                     </div>
-                    <p className="copyright">© {new Date().getFullYear()} Zaragoza Barbell Club</p>
+                    <div className="logo">
+                        <img src={logo} alt="Logo" />
+                    </div>
                 </div>
             </footer>
         );

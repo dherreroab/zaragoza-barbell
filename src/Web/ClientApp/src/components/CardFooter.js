@@ -1,5 +1,6 @@
 import React, { Component } from "react";
-import CardMailto from "./CardMailto";
+import Mailto from "./Mailto";
+import 'bootstrap-icons/font/bootstrap-icons.css';
 
 class CardFooter extends Component {
     render() {
@@ -8,23 +9,14 @@ class CardFooter extends Component {
                 <footer className="section_footer">
                     <ul className="footer_social">
                         <li>
-                            <CardMailto
+                            <Mailto
                                 email={this.props.footer.email}
                                 subject={this.props.footer.emailSubject}
                                 body={this.props.footer.emailBody}
                                 className="mailto"
                             >
-                                <svg
-                                    width="24"
-                                    height="24"
-                                    viewBox="0 0 24 24"
-                                    fill="none"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                >
-                                    <path d="M2 6C2 4.89543 2.89543 4 4 4H20C21.1046 4 22 4.89543 22 6V18C22 19.1046 21.1046 20 20 20H4C2.89543 20 2 19.1046 2 18V6Z" stroke="#000000" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                                    <path d="M2 8L9.50122 14.001C10.9621 15.1697 13.0379 15.1697 14.4988 14.001L22 8" stroke="#000000" strokeWidth="2" strokeLinejoin="round" />
-                                </svg>
-                            </CardMailto>
+                                <i class="bi bi-envelope-arrow-up"></i>
+                            </Mailto>
                         </li>
                         <li>
                             <a

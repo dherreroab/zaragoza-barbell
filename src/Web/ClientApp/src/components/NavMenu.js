@@ -27,7 +27,7 @@ export class NavMenu extends Component {
       <header>
         <Navbar className="navbar-expand-sm navbar-toggleable-sm ng-white border-bottom box-shadow" container light>
           <NavbarBrand href="#carousel">
-            <img src={logoblackred} alt="Zaragoza Barbell" style={{ maxHeight: '50px', marginRight: '10px' }} />
+            <img src={logoblackred} alt="Zaragoza Barbell" style={{ maxHeight: '75px', marginRight: '10px' }} />
           </NavbarBrand>
           <NavbarToggler onClick={this.toggleNavbar} className="mr-2" />
           <Collapse className="d-sm-inline-flex flex-sm-row-reverse" isOpen={!this.state.collapsed} navbar>

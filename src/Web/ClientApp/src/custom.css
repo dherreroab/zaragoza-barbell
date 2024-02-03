@@ -1,5 +1,6 @@
 a {
-  color: #0366d6;
+  text-decoration: none;
+  color: hsl(var(--clr-zgz-barbell-red));
 }
 
 .btn:focus,

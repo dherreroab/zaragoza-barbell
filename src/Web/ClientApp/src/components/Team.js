@@ -15,12 +15,11 @@ class Team extends Component {
             header: {
                 name: 'Rosana',
                 image: <img src={Rosi} alt="Rosana" className="card-img" lazy="true" />,
-                teamRole: 'CEO Zaragoza Barbell Club'
+                teamRole: 'Responsable Zaragoza Barbell Club AEP'
             },
-            aboutText: "PENDING",
-            interestText: "PENDING",
+            aboutText: "Encargada de la gestión del Club AEP, entre sus funciones está todo lo relacionado con la AEP asi como: inscripciones, afiliaciones, campeonatos.\nSiempre dispuesta a ayudar y resolver cualquier duda que tengas sobre el club.",
             footer: {
-                email: "rosana@zgzbarbell.com",
+                email: "zaragozabarbell@gmail.com",
                 emailSubject: "Hablemos sobre el club",
                 emailBody: "Hola Rosana! ¿Podemos hablar sobre el club?",
                 instaUser: "sweeetrosie"
@@ -35,7 +34,7 @@ class Team extends Component {
             aboutText: "PENDING",
             interestText: "PENDING",
             footer: {
-                email: "david@zgzbarbell.com",
+                email: "zaragozabarbell@gmail.com",
                 emailSubject: "Hablemos sobre entrenamiento",
                 emailBody: "Hola David! Me podrías ayudar con mi entrenamiento?",
                 instaUser: "davidgale_"
@@ -45,12 +44,12 @@ class Team extends Component {
             header: {
                 name: 'Christian',
                 image: <img src={Christian} alt="Christian" className="card-img" lazy="true" />,
-                teamRole: 'Coach/Fundador/CEO Zaragoza Barbell Club'
+                teamRole: 'Coach/CEO Zaragoza Barbell Club'
             },
             aboutText: "PENDING",
             interestText: "PENDING",
             footer: {
-                email: "christian@zgzbarbell.com",
+                email: "zaragozabarbell@gmail.com",
                 emailSubject: "Hablemos sobre entrenamiento/el club",
                 emailBody: "Hola Christian! ¿Podemos hablar sobre el club?/¿Me podrías ayudar con mi entrenamiento?",
                 instaUser: "christianpwr"
@@ -65,7 +64,7 @@ class Team extends Component {
             aboutText: "PENDING",
             interestText: "PENDING",
             footer: {
-                email: "pablo@zgzbarbell.com",
+                email: "zaragozabarbell@gmail.com",
                 emailSubject: "Hablemos sobre el Gimnasio",
                 emailBody: "Hola Rosana! ¿Podemos hablar sobre el Gimnasio?",
                 instaUser: "pablo.martinez40"
@@ -80,7 +79,7 @@ class Team extends Component {
             aboutText: "PENDING",
             interestText: "PENDING",
             footer: {
-                email: "ruben@zgzbarbell.com",
+                email: "zaragozabarbell@gmail.com",
                 emailSubject: "Hablemos sobre el gimnasio",
                 emailBody: "Hola Rosana! ¿Podemos hablar sobre el gimnasio?",
                 instaUser: "ruben_barea"
