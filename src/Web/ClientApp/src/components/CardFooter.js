@@ -12,11 +12,20 @@ class CardFooter extends Component {
                             <Mailto
                                 email={this.props.footer.email}
                                 subject={this.props.footer.emailSubject}
-                                body={this.props.footer.emailBody}
+                                body={this.props.footer.messageBody}
                                 className="mailto"
                             >
                                 <i className="fs-5 bi bi-envelope-arrow-up"></i>
                             </Mailto>
+                        </li>
+                        <li>
+                            <a
+                                href={`https://api.whatsapp.com/send?phone=${this.props.footer.whatsappNumber}&text=${this.props.footer.messageBody}`}
+                                target="_"
+                                rel="noopener noreferrer"
+                            >
+                                <i className="fs-5 bi bi-whatsapp"></i>
+                            </a>
                         </li>
                         <li>
                             <a

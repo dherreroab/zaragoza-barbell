@@ -21,8 +21,9 @@ class Team extends Component {
             footer: {
                 email: "zaragozabarbell@gmail.com",
                 emailSubject: "Hablemos sobre el club",
-                emailBody: "Hola Rosana! ¿Podemos hablar sobre el club?",
-                instaUser: "sweeetrosie"
+                messageBody: "Hola Rosana! ¿Podemos hablar sobre el club?",
+                instaUser: "sweeetrosie",
+                whatsappNumber: "34600000000"
             }
         };
         const david = {
@@ -36,8 +37,9 @@ class Team extends Component {
             footer: {
                 email: "zaragozabarbell@gmail.com",
                 emailSubject: "Hablemos sobre entrenamiento",
-                emailBody: "Hola David! Me podrías ayudar con mi entrenamiento?",
-                instaUser: "davidgale_"
+                messageBody: "Hola David! Me podrías ayudar con mi entrenamiento?",
+                instaUser: "davidgale_",
+                whatsappNumber: "678242482"
             }
         };
         const christian = {
@@ -51,8 +53,9 @@ class Team extends Component {
             footer: {
                 email: "zaragozabarbell@gmail.com",
                 emailSubject: "Hablemos sobre entrenamiento/el club",
-                emailBody: "Hola Christian! ¿Podemos hablar sobre el club?/¿Me podrías ayudar con mi entrenamiento?",
-                instaUser: "christianpwr"
+                messageBody: "Hola Christian! ¿Podemos hablar sobre el club?/¿Me podrías ayudar con mi entrenamiento?",
+                instaUser: "christianpwr",
+                whatsappNumber: "648210627"
             }
         };
         const pablo = {
@@ -66,8 +69,9 @@ class Team extends Component {
             footer: {
                 email: "zaragozabarbell@gmail.com",
                 emailSubject: "Hablemos sobre el Gimnasio",
-                emailBody: "Hola Rosana! ¿Podemos hablar sobre el Gimnasio?",
-                instaUser: "pablo.martinez40"
+                messageBody: "Hola Rosana! ¿Podemos hablar sobre el Gimnasio?",
+                instaUser: "pablo.martinez40",
+                whatsappNumber: "34600000000"
             }
         };
         const ruben = {
@@ -81,8 +85,9 @@ class Team extends Component {
             footer: {
                 email: "zaragozabarbell@gmail.com",
                 emailSubject: "Hablemos sobre el gimnasio",
-                emailBody: "Hola Rosana! ¿Podemos hablar sobre el gimnasio?",
-                instaUser: "ruben_barea"
+                messageBody: "Hola Rosana! ¿Podemos hablar sobre el gimnasio?",
+                instaUser: "ruben_barea",
+                whatsappNumber: "34600000000"
             }
         };
 
@@ -92,7 +97,7 @@ class Team extends Component {
 
                 <h3 className="title-h3">Club AEP y gimnasio 24 horas</h3>
 
-                <Row xs={1} sm={1} md={2} lg={3} xl={4} xxl={5} className="g-4">
+                <Row xs={1} sm={1} md={2} lg={3} xl={4} xxl={5} className="g-4 justify-content-md-center">
                     <Col>
                         <Card member={rosi} />
                     </Col>

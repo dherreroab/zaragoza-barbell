@@ -28,6 +28,7 @@
 
     .address {
         color: hsl(var(--clr-zgz-barbell-black));
+        cursor: pointer;
     }
 }
 

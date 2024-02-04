@@ -51,7 +51,12 @@ export class NavMenu extends Component {
             <NavbarBrand href="#carousel">
               <img src={logoblackred} alt="Zaragoza Barbell" style={{ maxHeight: '75px', marginRight: '10px' }} />
             </NavbarBrand>
-            <NavbarToggler onClick={this.toggleNavbar} className="mr-2" />
+            <NavbarToggler onClick={this.toggleNavbar}>
+              {!this.state.collapsed ?
+                <i className="bi bi-x"></i> :
+                <i className="bi bi-list"></i>
+              }
+            </NavbarToggler>
             <Collapse className="d-sm-inline-flex flex-sm-row-reverse" isOpen={!this.state.collapsed} navbar>
               <ul className="navbar-nav flex-grow">
                 <NavItem>

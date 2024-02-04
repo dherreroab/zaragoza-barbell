@@ -9,7 +9,7 @@ class ContactFooter extends Component {
         const email = {
             emailDestination: "zaragozabarbell@gmail.com",
             emailSubject: "Hablemos sobre el club",
-            emailBody: "Hola! ¿Podemos hablar sobre el club?"
+            messageBody: "Hola! ¿Podemos hablar sobre el club?"
         };
         return (
             <footer className="footer">
@@ -19,14 +19,14 @@ class ContactFooter extends Component {
                             <Mailto
                                 email={email.emailDestination}
                                 subject={email.emailSubject}
-                                body={email.emailBody}
+                                body={email.messageBody}
                                 className="mailto"
                             >
                                 <i className="bi bi-envelope-arrow-up"></i>
                                 {email.emailDestination}
                             </Mailto>
                         </div>
-                        <div className="address">
+                        <div className="address" onClick={() => window.open('https://maps.app.goo.gl/4eCsKRbXwHhSRqKr7', '_blank')}>
                             <p><i className="bi bi-geo-alt"></i>Calle Brazal Almontilla 3 50410, Cuarte De Huerva (Zaragoza). España</p>
                         </div>
                         <div className="links">
