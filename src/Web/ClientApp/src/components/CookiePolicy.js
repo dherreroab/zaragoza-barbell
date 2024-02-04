@@ -24,12 +24,6 @@ function CookiePolicy() {
         closeModal();
     }
 
-    function rejectCookies() {
-        setButtonClicked(true);
-        setCookie('cookiesAccepted', 'false', { path: '/', maxAge: 86400 });
-        window.location.href = 'https://www.google.com';
-    }
-
     function closeModal() {
         setModalIsOpen(false);
     }
@@ -51,11 +45,11 @@ function CookiePolicy() {
             }}
         >
             <div className="cookiePolicyContent">
-                <h2>Política de Cookies</h2>
-                <p>Aquí va tu política de cookies...</p>
-
+                <h2><a href="#" >Política de Cookies</a></h2>
+                <p>
+                    Este sitio web utiliza cookies para mejorar la experiencia del usuario. Al utilizar nuestro sitio web, aceptas todas las cookies de acuerdo con nuestra política de cookies.
+                </p>
                 <Button className='cookie-button' variant="outline-light" onClick={acceptCookies} disabled={buttonClicked}>Aceptar</Button>
-                <Button className='cookie-button' variant="outline-danger" onClick={rejectCookies} disabled={buttonClicked}>Rechazar</Button>
             </div>
         </Modal>
     );
