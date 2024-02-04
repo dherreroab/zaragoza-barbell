@@ -24,7 +24,7 @@ class CardFooter extends Component {
                                 target="_"
                                 rel="noopener noreferrer"
                             >
-                                <i class="fs-5 bi bi-instagram"></i>
+                                <i className="fs-5 bi bi-instagram"></i>
                             </a>
                         </li>
                     </ul>

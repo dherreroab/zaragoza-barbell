@@ -27,7 +27,7 @@ class ContactFooter extends Component {
                             </Mailto>
                         </div>
                         <div className="address">
-                            <p><i class="bi bi-geo-alt"></i>Calle Brazal Almontilla 3 50410, Cuarte De Huerva (Zaragoza). España</p>
+                            <p><i className="bi bi-geo-alt"></i>Calle Brazal Almontilla 3 50410, Cuarte De Huerva (Zaragoza). España</p>
                         </div>
                         <div className="links">
                             <a href="/legal-notice">Aviso legal</a>

@@ -40,7 +40,8 @@
 
 .name {
     font-size: var(--fs-700);
-    font-weight: 700;
+    font-weight: 0;
+    color: hsla(0, 0%, 86%, 1);
 }
 
 .stack {
@@ -73,7 +74,7 @@
 
 .about,
 .interest {
-    font-weight: 700;
+    font-weight: 0;
     margin-bottom: 0.3125em;
     color: hsla(0, 0%, 96%, 1);
     font-size: 1rem;
