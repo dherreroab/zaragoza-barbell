@@ -26,9 +26,17 @@
         }
     }
 
+    .email ,
     .address {
-        color: hsl(var(--clr-zgz-barbell-black));
-        cursor: pointer;
+        a{
+            color: hsl(var(--clr-zgz-barbell-black));
+            cursor: pointer;
+            text-decoration: underline;
+        }
+    }
+
+    .email+.address{
+        margin-bottom: 1.3vh;
     }
 }
 

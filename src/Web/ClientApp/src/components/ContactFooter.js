@@ -27,7 +27,16 @@ class ContactFooter extends Component {
                             </Mailto>
                         </div>
                         <div className="address" onClick={() => window.open('https://maps.app.goo.gl/4eCsKRbXwHhSRqKr7', '_blank')}>
-                            <p><i className="bi bi-geo-alt"></i>Calle Brazal Almontilla 3 50410, Cuarte De Huerva (Zaragoza). España</p>
+
+                            <a
+                                href={`https://maps.app.goo.gl/4eCsKRbXwHhSRqKr7`}
+                                target="_"
+                                rel="noopener noreferrer"
+                            >
+                                <i class="bi bi-geo-alt"></i>
+                                Calle Brazal Almontilla 3 50410, Cuarte De Huerva (Zaragoza). España
+                            </a>
+                            {/* <p><i className="bi bi-geo-alt"></i>Calle Brazal Almontilla 3 50410, Cuarte De Huerva (Zaragoza). España</p> */}
                         </div>
                         <div className="links">
                             <a href="/legal-notice">Aviso legal</a>
