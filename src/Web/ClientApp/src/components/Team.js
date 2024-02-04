@@ -15,79 +15,74 @@ class Team extends Component {
             header: {
                 name: 'Rosana',
                 image: <img src={Rosi} alt="Rosana" className="card-img" lazy="true" />,
-                teamRole: 'Responsable Zaragoza Barbell Club AEP'
+                teamRole: 'Responsable Zaragoza Barbell Club AEP',
+                instaUser: "sweeetrosie"
             },
             aboutText: "Encargada de la gestión del Club AEP, entre sus funciones está todo lo relacionado con la AEP asi como: inscripciones, afiliaciones, campeonatos.\nSiempre dispuesta a ayudar y resolver cualquier duda que tengas sobre el club.",
             footer: {
                 email: "zaragozabarbell@gmail.com",
                 emailSubject: "Hablemos sobre el club",
-                messageBody: "Hola Rosana! ¿Podemos hablar sobre el club?",
-                instaUser: "sweeetrosie",
-                whatsappNumber: "34600000000"
+                messageBody: "Hola Rosana! ¿Podemos hablar sobre el club?"
             }
         };
         const david = {
             header: {
                 name: 'David',
                 image: <img src={David} alt="David" className="card-img" lazy="true" />,
-                teamRole: 'Coach/Fundador Gimnasio Zaragoza Barbell Club'
+                teamRole: 'Coach/Fundador Gimnasio Zaragoza Barbell Club',
+                instaUser: "davidgale_"
             },
             aboutText: "PENDING",
             interestText: "PENDING",
             footer: {
                 email: "zaragozabarbell@gmail.com",
                 emailSubject: "Hablemos sobre entrenamiento",
-                messageBody: "Hola David! Me podrías ayudar con mi entrenamiento?",
-                instaUser: "davidgale_",
-                whatsappNumber: "678242482"
+                messageBody: "Hola David! Me podrías ayudar con mi entrenamiento?"
             }
         };
         const christian = {
             header: {
                 name: 'Christian',
                 image: <img src={Christian} alt="Christian" className="card-img" lazy="true" />,
-                teamRole: 'Coach/CEO Zaragoza Barbell Club'
+                teamRole: 'Coach/CEO Zaragoza Barbell Club',
+                instaUser: "christianpwr"
             },
             aboutText: "PENDING",
             interestText: "PENDING",
             footer: {
                 email: "zaragozabarbell@gmail.com",
                 emailSubject: "Hablemos sobre entrenamiento/el club",
-                messageBody: "Hola Christian! ¿Podemos hablar sobre el club?/¿Me podrías ayudar con mi entrenamiento?",
-                instaUser: "christianpwr",
-                whatsappNumber: "648210627"
+                messageBody: "Hola Christian! ¿Podemos hablar sobre el club?/¿Me podrías ayudar con mi entrenamiento?"
             }
         };
         const pablo = {
             header: {
                 name: 'Pablo',
                 image: <img src={Pablo} alt="Pablo" className="card-img" lazy="true" />,
-                teamRole: 'Fundador Gimnasio Zaragoza Barbell'
+                teamRole: 'Fundador Gimnasio Zaragoza Barbell',
+                instaUser: "pablo.martinez40"
             },
             aboutText: "PENDING",
             interestText: "PENDING",
             footer: {
                 email: "zaragozabarbell@gmail.com",
                 emailSubject: "Hablemos sobre el Gimnasio",
-                messageBody: "Hola Rosana! ¿Podemos hablar sobre el Gimnasio?",
-                instaUser: "pablo.martinez40",
-                whatsappNumber: "34600000000"
+                messageBody: "Hola Rosana! ¿Podemos hablar sobre el Gimnasio?"
             }
         };
         const ruben = {
             header: {
                 name: 'Ruben',
                 image: <img src={Ruben} alt="Ruben" className="card-img" lazy="true" />,
-                teamRole: 'Fundador Gimnasio Zaragoza Barbell'
+                teamRole: 'Fundador Gimnasio Zaragoza Barbell',
+                instaUser: "ruben_barea"
             },
             aboutText: "PENDING",
             interestText: "PENDING",
             footer: {
                 email: "zaragozabarbell@gmail.com",
                 emailSubject: "Hablemos sobre el gimnasio",
-                messageBody: "Hola Rosana! ¿Podemos hablar sobre el gimnasio?",
-                instaUser: "ruben_barea",
-                whatsappNumber: "34600000000"
+                messageBody: "Hola Ruben! ¿Podemos hablar sobre el gimnasio?"
             }
         };
 

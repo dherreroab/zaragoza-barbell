@@ -62,7 +62,7 @@ export class Home extends Component {
             </Carousel.Item>
           </Carousel>
           {this.state.showScroll && 
-          <button className="scroll-to-top" onClick={() => window.scrollTo({top: 0, behavior: 'smooth'})}>
+          <button className="btn btn-arrow-up scroll-to-top" onClick={() => window.scrollTo({top: 0, behavior: 'smooth'})}>
             <i className="bi bi-arrow-up"></i>
           </button>
         }

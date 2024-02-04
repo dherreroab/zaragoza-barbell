@@ -125,3 +125,13 @@
 li+li {
     margin-left: 0.7em
 }
+
+.insta-header {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+
+    i {
+        color: hsl(var(--clr-zgz-barbell-white));
+    }
+}

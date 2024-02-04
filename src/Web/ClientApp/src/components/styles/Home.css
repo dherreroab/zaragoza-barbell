@@ -4,6 +4,7 @@
     --clr-off-white: 0 0% 86%;
     --clr-zgz-barbell-white: 0 0% 100%;
     --clr-zgz-barbell-red: 2 79% 42%;
+    --clr-zgz-barbell-red-hover: 2 79% 52%;
     --clr-zgz-barbell-black: 0 0% 0%;
     --clr-outer-dark: 227 11% 15%;
     --clr-outer-dark: 227 11% 15%;
@@ -85,12 +86,22 @@
     position: fixed;
     bottom: 30px;
     right: 20px;
-    background-color: hsl(var(--clr-zgz-barbell-red));
-    color: hsl(var(--clr-zgz-barbell-white));
     border-radius: 10%;
-    border: none;
     padding: 10px;
-    cursor: pointer;
     z-index: 9999;
     font-size: 20px;
 }
+
+.btn-arrow-up,
+.btn-instagram {
+    color: hsl(var(--clr-zgz-barbell-white));
+    background-color: hsl(var(--clr-zgz-barbell-red));
+    border: none;
+    cursor: pointer;
+  }
+  
+  .btn-arrow-up:hover,
+  .btn-instagram:hover {
+    color: hsl(var(--clr-zgz-barbell-white));
+    background-color: hsl(var(--clr-zgz-barbell-red-hover));
+  }
