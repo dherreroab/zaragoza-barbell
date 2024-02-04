@@ -63,16 +63,19 @@ export class NavMenu extends Component {
                   <NavLink className="text-dark" href="#carousel" onClick={this.toggleNavbar}>Inicio</NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink className="text-dark" href="#team" onClick={this.toggleNavbar}>Equipo</NavLink>
-                </NavItem>
-                <NavItem>
                   <NavLink className="text-dark" href="#gym" onClick={this.toggleNavbar}>Gimnasio 24H</NavLink>
                 </NavItem>
                 <NavItem>
                   <NavLink className="text-dark" href="#club" onClick={this.toggleNavbar}>Club AEP</NavLink>
                 </NavItem>
                 <NavItem>
+                  <NavLink className="text-dark" href="#team" onClick={this.toggleNavbar}>Equipo</NavLink>
+                </NavItem>
+                <NavItem>
                   <NavLink className="text-dark" href="#services" onClick={this.toggleNavbar}>Servicios</NavLink>
+                </NavItem>
+                <NavItem>
+                  <NavLink className="text-dark" href="#faqs" onClick={this.toggleNavbar}>FAQs</NavLink>
                 </NavItem>
                 <NavItem>
                   <NavLink tag={Link} className="text-dark" href="#contact" onClick={this.toggleNavbar}>Contacto</NavLink>
