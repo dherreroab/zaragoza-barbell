@@ -45,7 +45,7 @@ function CookiePolicy() {
             }}
         >
             <div className="cookiePolicyContent">
-                <h2><a href="#" >Política de Cookies</a></h2>
+                <h2>Política de Cookies</h2>
                 <p>
                     Este sitio web utiliza cookies para mejorar la experiencia del usuario. Al utilizar nuestro sitio web, aceptas todas las cookies de acuerdo con nuestra política de cookies.
                 </p>
