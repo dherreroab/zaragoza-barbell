@@ -57,7 +57,7 @@ export class Home extends Component {
             <Carousel.Item>
               <img className="d-block w-100" src={img3} alt="Third slide" />
               <Carousel.Caption>
-                <h3>II Copa Caalana</h3>
+                <h3>II Copa Catalana</h3>
               </Carousel.Caption>
             </Carousel.Item>
           </Carousel>

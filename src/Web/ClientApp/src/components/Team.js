@@ -88,9 +88,9 @@ class Team extends Component {
 
         return (
             <div className='team' id="team" >
-                <h2 className="title-h2">Equipo Zaragoza Barbell Club</h2>
+                <h2 className="title-h2">EQUIPO ZARAGOZA BARBELL CLUB</h2>
 
-                <h3 className="title-h3">Club AEP y gimnasio 24 horas</h3>
+                <h3 className="title-h3">CLUB AEP Y GIMNASIO 24 HORAS</h3>
 
                 <Row xs={1} sm={1} md={2} lg={3} xl={4} xxl={5} className="g-4 justify-content-md-center">
                     <Col>

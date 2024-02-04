@@ -16,7 +16,7 @@ class CardInfo extends Component {
                 </a>
                 <section className="section-info">
                     <h2 className="name">{this.props.header.name}</h2>
-                    <p className="stack">{this.props.header.teamRole}</p>
+                    <h3 className="stack">{this.props.header.teamRole}</h3>
                 </section>
             </>
         );

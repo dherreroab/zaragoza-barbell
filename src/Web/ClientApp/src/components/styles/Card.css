@@ -39,14 +39,14 @@
 }
 
 .name {
-    font-size: var(--fs-700);
+    font-size: 18px;
     font-weight: 0;
     color: hsla(0, 0%, 86%, 1);
 }
 
 .stack {
     color: hsl(var(--clr-zgz-barbell-red));
-    font-size: 0.8rem;
+    font-size: 15px;
     margin-bottom: 0.55em
 }
 
