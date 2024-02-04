@@ -22,12 +22,12 @@ class ContactFooter extends Component {
                                 body={email.emailBody}
                                 className="mailto"
                             >
-                                <i class="bi bi-envelope-arrow-up"></i>
+                                <i className="bi bi-envelope-arrow-up"></i>
                                 {email.emailDestination}
                             </Mailto>
                         </div>
                         <div className="address">
-                            <p>Calle Brazal Almontilla 3 50410, Cuarte De Huerva (Zaragoza). España</p>
+                            <p><i class="bi bi-geo-alt"></i>Calle Brazal Almontilla 3 50410, Cuarte De Huerva (Zaragoza). España</p>
                         </div>
                         <div className="links">
                             <a href="/legal-notice">Aviso legal</a>

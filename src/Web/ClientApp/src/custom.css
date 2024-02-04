@@ -1,6 +1,15 @@
+@font-face {
+  font-family: 'Basketball';
+  src: url('./assets/fonts/Basketball.otf') format('truetype');
+}
+
 a {
   text-decoration: none;
   color: hsl(var(--clr-zgz-barbell-red));
+  
+  i{
+    color: hsl(var(--clr-zgz-barbell-black));  
+  }
 }
 
 .btn:focus,
@@ -32,6 +41,7 @@ body {
   background-color: hsl(var(--clr-body) / 1);
   line-height: 1.5;
   min-height: 100vh;
+    font-family: 'Basketball';
 }
 
 img,
