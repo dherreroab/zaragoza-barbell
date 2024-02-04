@@ -30,7 +30,9 @@ export class NavMenu extends Component {
   }
 
   handleClickOutside = (event) => {
-    if (this.navbarRef.current && !this.navbarRef.current.contains(event.target)) {
+    console.log('click');
+    if (!this.state.collapsed && this.navbarRef.current && !this.navbarRef.current.contains(event.target)) {
+      console.log('click outside');
       this.toggleNavbar();
     }
   }
