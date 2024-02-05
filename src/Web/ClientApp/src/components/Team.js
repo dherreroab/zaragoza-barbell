@@ -1,7 +1,8 @@
 import React, { Component } from "react";
-import Card from './Card';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
+import { withTranslation } from 'react-i18next';
+import Card from './Card';
 import { default as David } from '../assets/img/David.jpg';
 import { default as Christian } from '../assets/img/Christian.jpg';
 import { default as Rosi } from '../assets/img/Rosi.jpg';
@@ -11,107 +12,72 @@ import './styles/Team.css';
 
 class Team extends Component {
     render() {
-        const rosi = {
-            header: {
-                name: 'Rosana',
-                image: <img src={Rosi} alt="Rosana" className="card-img" lazy="true" />,
-                teamRole: 'Responsable Zaragoza Barbell Club AEP',
-                instaUser: "sweeetrosie"
+        const { t } = this.props;
+
+        const team = [
+            {
+                header: {
+                    name: "Rosana",
+                    image: <img src={Rosi} alt="Rosana" className="card-img" lazy="true" />,
+                    teamRole: t('team.rosi.header.teamRole'),
+                    instaUser: "sweeetrosie"
+                },
+                aboutText: t('team.rosi.aboutText')
             },
-            aboutText: "Encargada de la gestión del Club AEP, entre sus funciones está todo lo relacionado con la AEP asi como: inscripciones, afiliaciones, campeonatos.\nSiempre dispuesta a ayudar y resolver cualquier duda que tengas sobre el club.",
-            footer: {
-                email: "zaragozabarbell@gmail.com",
-                emailSubject: "Hablemos sobre el club",
-                messageBody: "Hola Rosana! ¿Podemos hablar sobre el club?"
-            }
-        };
-        const david = {
-            header: {
-                name: 'David',
-                image: <img src={David} alt="David" className="card-img" lazy="true" />,
-                teamRole: 'Coach/Fundador Gimnasio Zaragoza Barbell Club',
-                instaUser: "davidgale_"
+            {
+                header: {
+                    name: "David",
+                    image: <img src={David} alt="David" className="card-img" lazy="true" />,
+                    teamRole: t('team.david.header.teamRole'),
+                    instaUser: "davidgale_"
+                },
+                aboutText: t('team.david.aboutText')
             },
-            aboutText: "PENDING",
-            interestText: "PENDING",
-            footer: {
-                email: "zaragozabarbell@gmail.com",
-                emailSubject: "Hablemos sobre entrenamiento",
-                messageBody: "Hola David! Me podrías ayudar con mi entrenamiento?"
-            }
-        };
-        const christian = {
-            header: {
-                name: 'Christian',
-                image: <img src={Christian} alt="Christian" className="card-img" lazy="true" />,
-                teamRole: 'Coach/CEO Zaragoza Barbell Club',
-                instaUser: "christianpwr"
+            {
+                header: {
+                    name: "Christian",
+                    image: <img src={Christian} alt="Christian" className="card-img" lazy="true" />,
+                    teamRole: t('team.christian.header.teamRole'),
+                    instaUser: "christianpwr"
+                },
+                aboutText: t('team.christian.aboutText')
             },
-            aboutText: "PENDING",
-            interestText: "PENDING",
-            footer: {
-                email: "zaragozabarbell@gmail.com",
-                emailSubject: "Hablemos sobre entrenamiento/el club",
-                messageBody: "Hola Christian! ¿Podemos hablar sobre el club?/¿Me podrías ayudar con mi entrenamiento?"
-            }
-        };
-        const pablo = {
-            header: {
-                name: 'Pablo',
-                image: <img src={Pablo} alt="Pablo" className="card-img" lazy="true" />,
-                teamRole: 'Fundador Gimnasio Zaragoza Barbell',
-                instaUser: "pablo.martinez40"
+            {
+                header: {
+                    name: "Pablo",
+                    image: <img src={Pablo} alt="Pablo" className="card-img" lazy="true" />,
+                    teamRole: t('team.pablo.header.teamRole'),
+                    instaUser: "pablo.martinez40"
+                },
+                aboutText: t('team.pablo.aboutText')
             },
-            aboutText: "PENDING",
-            interestText: "PENDING",
-            footer: {
-                email: "zaragozabarbell@gmail.com",
-                emailSubject: "Hablemos sobre el Gimnasio",
-                messageBody: "Hola Rosana! ¿Podemos hablar sobre el Gimnasio?"
+            {
+                header: {
+                    name: "Ruben",
+                    image: <img src={Ruben} alt="Ruben" className="card-img" lazy="true" />,
+                    teamRole: t('team.ruben.header.teamRole'),
+                    instaUser: "ruben_barea"
+                },
+                aboutText: t('team.ruben.aboutText')
             }
-        };
-        const ruben = {
-            header: {
-                name: 'Ruben',
-                image: <img src={Ruben} alt="Ruben" className="card-img" lazy="true" />,
-                teamRole: 'Fundador Gimnasio Zaragoza Barbell',
-                instaUser: "ruben_barea"
-            },
-            aboutText: "PENDING",
-            interestText: "PENDING",
-            footer: {
-                email: "zaragozabarbell@gmail.com",
-                emailSubject: "Hablemos sobre el gimnasio",
-                messageBody: "Hola Ruben! ¿Podemos hablar sobre el gimnasio?"
-            }
-        };
+        ];
 
         return (
             <div className='team' id="team" >
-                <h2 className="title-h2">EQUIPO ZARAGOZA BARBELL CLUB</h2>
+                <h2 className="title-h2">{t('team.title')}</h2>
 
-                <h3 className="title-h3">CLUB AEP Y GIMNASIO 24 HORAS</h3>
+                <h3 className="title-h3">{t('team.subtitle')}</h3>
 
                 <Row xs={1} sm={1} md={2} lg={3} xl={4} xxl={5} className="g-4 justify-content-md-center">
-                    <Col>
-                        <Card member={rosi} />
-                    </Col>
-                    <Col>
-                        <Card member={christian} />
-                    </Col>
-                    <Col>
-                        <Card member={david} />
-                    </Col>
-                    <Col>
-                        <Card member={pablo} />
-                    </Col>
-                    <Col>
-                        <Card member={ruben} />
-                    </Col>
+                    {team.map((member, index) => (
+                        <Col key={index}>
+                            <Card member={member} />
+                        </Col>
+                    ))}
                 </Row>
             </div>
         );
     }
 }
 
-export default Team;
+export default withTranslation()(Team);

@@ -33,10 +33,9 @@ class ContactFooter extends Component {
                                 target="_"
                                 rel="noopener noreferrer"
                             >
-                                <i class="bi bi-geo-alt"></i>
+                                <i className="bi bi-geo-alt"></i>
                                 Calle Brazal Almontilla 3 50410, Cuarte De Huerva (Zaragoza). España
                             </a>
-                            {/* <p><i className="bi bi-geo-alt"></i>Calle Brazal Almontilla 3 50410, Cuarte De Huerva (Zaragoza). España</p> */}
                         </div>
                         <div className="links">
                             <a href="/legal-notice">Aviso legal</a>

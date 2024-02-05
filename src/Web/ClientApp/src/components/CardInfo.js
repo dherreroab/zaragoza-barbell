@@ -12,7 +12,7 @@ class CardInfo extends Component {
                     rel="noopener noreferrer"
                     className="btn btn-instagram insta-header"
                 >
-                    <i class="bi bi-instagram"></i>
+                    <i className="bi bi-instagram"></i>
                 </a>
                 <section className="section-info">
                     <h2 className="name">{this.props.header.name}</h2>

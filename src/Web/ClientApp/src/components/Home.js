@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Carousel from 'react-bootstrap/Carousel';
+import { withTranslation } from 'react-i18next';
 import CookiePolicy from './CookiePolicy';
 import Team from './Team';
 import img1 from '../assets/img/zgzb1.jpg';
@@ -8,7 +9,7 @@ import img3 from '../assets/img/zgzb3.jpg';
 import './styles/Home.css';
 
 
-export class Home extends Component {
+class Home extends Component {
   static displayName = Home.name;
   constructor(props) {
     super(props);
@@ -34,6 +35,7 @@ export class Home extends Component {
   };
 
   render() {
+    const { t } = this.props;
     return (
       <>
         <CookiePolicy />
@@ -42,22 +44,22 @@ export class Home extends Component {
             <Carousel.Item>
               <img className="d-block w-100" src={img1} alt="First slide" />
               <Carousel.Caption>
-                <h3>Zaragoza Barbell Club Movera</h3>
-                <p>El frio curte a las verdaderas personas.</p>
+                <h3>{t('carousel.slide1.title')}</h3>
+                <p>{t('carousel.slide1.text')}</p>
               </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
               <img className="d-block w-100" src={img2} alt="Second slide" />
               <Carousel.Caption>
-                <h3>Zaragoza Barbell Club Movera</h3>
-                <h4>Un día cualquiera en el club</h4>
-                <p>Nadie por eparado es imprescindible, junto si lo somos.</p>
+                <h3>{t('carousel.slide2.title')}</h3>
+                <h4>{t('carousel.slide2.subtitle')}</h4>
+                <p>{t('carousel.slide2.text')}</p>
               </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
               <img className="d-block w-100" src={img3} alt="Third slide" />
               <Carousel.Caption>
-                <h3>II Copa Catalana</h3>
+                <h3>{t('carousel.slide3.title')}</h3>
               </Carousel.Caption>
             </Carousel.Item>
           </Carousel>
@@ -72,3 +74,5 @@ export class Home extends Component {
     );
   }
 }
+
+export default withTranslation()(Home);

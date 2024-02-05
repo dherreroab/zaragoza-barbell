@@ -1,0 +1,25 @@
+.dropdown-language.dropdown button,
+.dropdown-language.dropdown.show button {
+    background-color: transparent;
+    border: none;
+    color: black;
+    padding: 0;
+    --bs-text-opacity: 1;
+    color: rgba(var(--bs-dark-rgb), var(--bs-text-opacity)) !important;
+    display: block;
+    padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
+    font-size: var(--bs-nav-link-font-size);
+    font-weight: var(--bs-nav-link-font-weight);
+    text-decoration: none;
+    background: none;
+    border: 0;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+}
+
+.dropdown-menu {
+    margin-top: 5px;
+}
+
+.dropdown-item {
+    margin-left: 5px;
+}
