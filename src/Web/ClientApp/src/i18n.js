@@ -34,6 +34,11 @@ i18n
               "text": "",
             }
           },
+          "gym": {
+            "title": "ZARAGOZA BARBELL GYM",
+            "subtitle": "Get to know our facilities",
+            "text": "Our gym has a large training room whatever your goal may be, whether it is improved health or performance. We have the best machinery and equipment so you can train as you deserve."
+          },
           "team": {
             "title": "ZARAGOZA BARBELL TEAM",
             "subtitle": "Meet our Club Staff",
@@ -98,6 +103,11 @@ i18n
               "subtitle": "",
               "text": "",
             }
+          },
+          "gym": {
+            "title": "SARAGOSSE BARBELL GYM",
+            "subtitle": "Découvrez nos installations",
+            "text": "Notre salle de sport dispose d'une grande salle d'entraînement, quel que soit votre objectif, qu'il s'agisse d'améliorer votre santé ou vos performances. Nous disposons des meilleures machines et équipements pour que vous puissiez vous entraîner comme vous le méritez."
           },
           "team": {
             "title": "ÉQUIPE ZARAGOZA BARBELL",
@@ -198,6 +208,11 @@ i18n
               "aboutText": "Parte del equipo de fundadores del gimnasio y con un largo recorrido en los deportes tanto de equipo como powerlifting, su objetivo es ayudarte con todo lo que tenga relación con la gestión del gimnasio."
             }
           },
+          "gym": {
+            "title": "GIMNASIO ZARAGOZA BARBELL",
+            "subtitle": "Conoce nuestras instalaciones",
+            "text": "Nuestro gimnasio cuenta con una amplia sala de entrenamiento sea cual sea tu objetivo ya sea mejora de salud o rendimiento. Nos acompaña la mejor maquinaria y equipamiento para que puedas entrenar como te mereces."
+          },
           "footer": {
           }
         }
@@ -230,6 +245,11 @@ i18n
               "subtitle": "",
               "text": "",
             }
+          },
+          "gym": {
+            "title": "GIMNASIO ZARAGOZA BARBELL",
+            "subtitle": "Conoxe as nuestras instalazions",
+            "text": "O nuestro gimnasio conta con una amplia sala d'entrenamiento siga como siga o tuyo obchetivo ya siga millora de salut u rendimiento. Nos acompaña a millor maquinaria y equipamiento ta que puedas entrenar como te merexes."
           },
           "team": {
             "title": "EQUIPO ZARAGOZA BARBELL",
