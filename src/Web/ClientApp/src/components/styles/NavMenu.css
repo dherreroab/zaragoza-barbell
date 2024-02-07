@@ -2,6 +2,7 @@
   white-space: normal;
   text-align: center;
   word-break: break-all;
+  cursor: pointer;
 }
 
 html {
@@ -48,6 +49,6 @@ header {
   box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
 }
 
-.nav-link{
+.nav-link {
   cursor: pointer;
 }

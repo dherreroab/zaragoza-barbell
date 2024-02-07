@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Collapse, Navbar, NavbarBrand, NavbarToggler, NavItem, NavLink } from 'reactstrap';
 import { withTranslation } from 'react-i18next';
+import { useLocation, useNavigate } from 'react-router-dom';
 import './styles/NavMenu.css';
 import LanguageDropdown from './LanguageDropdown';
 import LogoBlackRed from '../assets/img/logo-black-red.png';
@@ -49,17 +50,9 @@ class NavMenu extends Component {
     });
   }
 
-  handleClick = (id) => {
-    const position = document.getElementById(id).offsetTop;
-    window.scrollTo({
-      top: position,
-      behavior: "smooth"
-    });
-    this.checkNavbarCollapsed();
-  };
-
   render() {
     const { t } = this.props;
+    const { location } = this.props;
     const headerStyle = !this.state.collapsed ? { opacity: 1 } : {};
     var img = LogoBlackRed;
 
@@ -69,11 +62,25 @@ class NavMenu extends Component {
       img = LogoBlackRed;
     }
 
+    const handleClick = (section) => {
+      if (document.getElementById(section)) {
+        const position = document.getElementById(section).offsetTop;
+        window.scrollTo({
+          top: position,
+          behavior: "smooth"
+        });
+        this.checkNavbarCollapsed();
+      } else {
+        this.props.navigate('/');
+        this.checkNavbarCollapsed();
+      }
+    }
+
     return (
       <header style={headerStyle}>
         <div ref={this.navbarRef}>
           <Navbar className="navbar-expand-sm navbar-toggleable-sm ng-white border-bottom box-shadow" container light>
-            <NavbarBrand onClick={() => this.handleClick('carousel')}>
+            <NavbarBrand onClick={() => handleClick('carousel')}>
               <img src={img} alt="Zaragoza Barbell" style={{ maxHeight: '75px', marginRight: '10px' }} />
             </NavbarBrand>
             <NavbarToggler onClick={this.toggleNavbar}>
@@ -85,26 +92,27 @@ class NavMenu extends Component {
             <Collapse className="d-sm-inline-flex flex-sm-row-reverse navbar-list" isOpen={!this.state.collapsed} navbar>
               <ul className="navbar-nav flex-grow">
                 <NavItem>
-                  <NavLink className="text-dark" onClick={() => { this.handleClick('carousel'); this.checkNavbarCollapsed(); }}>{t('menu.index')}</NavLink>
+                  <NavLink className="text-dark" onClick={() => { handleClick('carousel'); this.checkNavbarCollapsed(); }}>{t('menu.index')}</NavLink>
                 </NavItem>
-                <NavItem>
-                  <NavLink className="text-dark" onClick={() => { this.handleClick('team'); this.checkNavbarCollapsed(); }}>{t('menu.team')}</NavLink>
+                {location.pathname === '/' && <NavItem>
+                  <NavLink className="text-dark" onClick={() => { handleClick('team'); this.checkNavbarCollapsed(); }}>{t('menu.team')}</NavLink>
+                </NavItem>}
+                {location.pathname === '/' && <NavItem>
+                  <NavLink className="text-dark" onClick={() => { handleClick('gym'); this.checkNavbarCollapsed(); }}>{t('menu.gym')}</NavLink>
+                </NavItem>}
+                {location.pathname === '/' && <NavItem>
+                  <NavLink className="text-dark" onClick={() => { handleClick('club'); this.checkNavbarCollapsed(); }}>{t('menu.aep-club')}</NavLink>
+                </NavItem>}
+                {location.pathname === '/' && <NavItem>
+                  <NavLink className="text-dark" onClick={() => { handleClick('services'); this.checkNavbarCollapsed(); }}>{t('menu.services')}</NavLink>
+                </NavItem>}
+                {location.pathname === '/' && <NavItem>
+                  <NavLink className="text-dark" onClick={() => { handleClick('faqs'); this.checkNavbarCollapsed(); }}>{t('menu.faqs')}</NavLink>
+                </NavItem>}
+                {location.pathname === '/' && <NavItem>
+                  <NavLink className="text-dark" onClick={() => { handleClick('contact'); this.checkNavbarCollapsed(); }}>{t('menu.contact')}</NavLink>
                 </NavItem>
-                <NavItem>
-                  <NavLink className="text-dark" onClick={() => { this.handleClick('gym'); this.checkNavbarCollapsed(); }}>{t('menu.gym')}</NavLink>
-                </NavItem>
-                <NavItem>
-                  <NavLink className="text-dark" onClick={() => { this.handleClick('club'); this.checkNavbarCollapsed(); }}>{t('menu.aep-club')}</NavLink>
-                </NavItem>
-                <NavItem>
-                  <NavLink className="text-dark" onClick={() => { this.handleClick('services'); this.checkNavbarCollapsed(); }}>{t('menu.services')}</NavLink>
-                </NavItem>
-                <NavItem>
-                  <NavLink className="text-dark" onClick={() => { this.handleClick('faqs'); this.checkNavbarCollapsed(); }}>{t('menu.faqs')}</NavLink>
-                </NavItem>
-                <NavItem>
-                  <NavLink className="text-dark" onClick={() => { this.handleClick('contact'); this.checkNavbarCollapsed(); }}>{t('menu.contact')}</NavLink>
-                </NavItem>
+                }
                 <NavItem>
                   <LanguageDropdown language={t('menu.language')} />
                 </NavItem>
@@ -117,4 +125,10 @@ class NavMenu extends Component {
   }
 }
 
-export default withTranslation()(NavMenu);
+const NavMenuWithRouter = (props) => {
+  const location = useLocation();
+  const navigate = useNavigate();
+  return <NavMenu {...props} navigate={navigate} location={location} />;
+};
+
+export default withTranslation()(NavMenuWithRouter);
