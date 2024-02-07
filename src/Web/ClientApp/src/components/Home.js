@@ -4,6 +4,7 @@ import { withTranslation } from 'react-i18next';
 import CookiePolicyBanner from './CookiePolicyBanner';
 import Team from './Team';
 import Gym from './Gym';
+import Contact from './Contact';
 import img2 from '../assets/img/zgzb2.jpg';
 import img3 from '../assets/img/zgzb3.jpg';
 import './styles/Home.css';
@@ -64,6 +65,7 @@ class Home extends Component {
         </div>
         <Team />
         <Gym />
+        <Contact />
       </>
     );
   }

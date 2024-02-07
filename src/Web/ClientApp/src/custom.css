@@ -25,9 +25,17 @@ code {
 }
 
 .btn-primary {
-  color: #fff;
-  background-color: #1b6ec2;
-  border-color: #1861ac;
+  color: hsl(var(--clr-off-white));
+  background-color: hsl(var(--clr-zgz-barbell-red));
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: hsl(var(--clr-zgz-barbell-red-hover)) !important;
+}
+
+.btn-primary:active {
+  background-color: hsl(var(--clr-zgz-barbell-red-active)) !important;
 }
 
 body,
