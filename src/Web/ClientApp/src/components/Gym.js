@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import img1 from '../assets/img/zgzb1.jpg';
-import './styles/GymDescription.css';
+import './styles/Gym.css';
 import { withTranslation } from 'react-i18next';
 
 class Gym extends Component {
@@ -15,7 +15,10 @@ class Gym extends Component {
                     <img src={img1} alt="Gym" />
                     <div className="description-overlay">
                         <h3>{t('gym.subtitle')}</h3>
-                        <h3>{t('gym.text')}</h3>
+                        <p>{t('gym.text1')}</p>
+                        <p>{t('gym.text2')}</p>
+                        <p>{t('gym.text3')}</p>
+                        <p>{t('gym.text4')}</p>
                     </div>
                 </div>
             </div>

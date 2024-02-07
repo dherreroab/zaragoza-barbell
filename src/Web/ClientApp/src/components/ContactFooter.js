@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from 'react-router-dom';
 import Mailto from "./Mailto";
 import "./styles/ContactFooter.css";
 import logo from './../assets/img/logo-black-red.png';
@@ -40,7 +41,7 @@ class ContactFooter extends Component {
                         <div className="links">
                             <a href="/legal-notice">Aviso legal</a>
                             <a href="/privacy">Política de privacidad</a>
-                            <a href="/cookies-policy">Política de cookies</a>
+                            <Link to="/cookies-policy">Política de cookies</Link>
                             <a href="/accessibility-statement">Declaración de accesibilidad</a>
                         </div>
                         <p className="copyright">© {new Date().getFullYear()} Zaragoza Barbell, S.L Todos los derechos reservados</p>

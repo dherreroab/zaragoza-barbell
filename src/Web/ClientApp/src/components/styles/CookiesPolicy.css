@@ -1,0 +1,9 @@
+.cookies-policy {
+    padding-top: 10vh;
+    position: absolute;
+    left: 5vh;
+
+    li:first-child {
+        margin-left: 0.7em;
+    }
+}

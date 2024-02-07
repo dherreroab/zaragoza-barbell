@@ -37,6 +37,9 @@
     .carousel-control-prev-icon,
     .carousel-control-next-icon {
         background-color: hsl(var(--clr-zgz-barbell-red));
+        border-radius: 15%;
+        width: 2.5rem;
+        height: 2.5rem;
     }
 
     .carousel-control-prev,
@@ -50,7 +53,7 @@
         box-sizing: content-box;
         flex: 0 1 auto;
         width: 30px;
-        height: 3px;
+        height: 5px;
         padding: 0;
         margin-right: 3px;
         margin-left: 3px;

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Carousel from 'react-bootstrap/Carousel';
 import { withTranslation } from 'react-i18next';
-import CookiePolicy from './CookiePolicy';
+import CookiePolicyBanner from './CookiePolicyBanner';
 import Team from './Team';
 import Gym from './Gym';
 import img2 from '../assets/img/zgzb2.jpg';
@@ -38,7 +38,7 @@ class Home extends Component {
     const { t } = this.props;
     return (
       <>
-        <CookiePolicy />
+        <CookiePolicyBanner />
         <div className="carousel" id="carousel">
           <Carousel>
             <Carousel.Item>
@@ -56,11 +56,11 @@ class Home extends Component {
               </Carousel.Caption>
             </Carousel.Item>
           </Carousel>
-          {this.state.showScroll && 
-          <button className="btn btn-arrow-up scroll-to-top" onClick={() => window.scrollTo({top: 0, behavior: 'smooth'})}>
-            <i className="bi bi-arrow-up"></i>
-          </button>
-        }
+          {this.state.showScroll &&
+            <button className="btn btn-arrow-up scroll-to-top" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
+              <i className="bi bi-arrow-up"></i>
+            </button>
+          }
         </div>
         <Team />
         <Gym />
