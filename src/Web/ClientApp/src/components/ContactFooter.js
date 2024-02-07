@@ -12,7 +12,7 @@ class ContactFooter extends Component {
             messageBody: "Hola! ¿Podemos hablar sobre el club?"
         };
         return (
-            <footer className="footer">
+            <footer className="section-separation footer">
                 <div className="footer-container">
                     <div className="text">
                         <div className="email">

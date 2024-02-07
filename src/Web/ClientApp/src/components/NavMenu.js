@@ -20,6 +20,12 @@ class NavMenu extends Component {
     this.componentDidMount();
   }
 
+  checkNavbarCollapsed() {
+    if (!this.state.collapsed) {
+      this.toggleNavbar();
+    }
+  }
+
   toggleNavbar() {
     this.setState({
       collapsed: !this.state.collapsed
@@ -43,12 +49,21 @@ class NavMenu extends Component {
     });
   }
 
+  handleClick = (id) => {
+    const position = document.getElementById(id).offsetTop;
+    window.scrollTo({
+      top: position,
+      behavior: "smooth"
+    });
+    this.checkNavbarCollapsed();
+  };
+
   render() {
     const { t } = this.props;
     const headerStyle = !this.state.collapsed ? { opacity: 1 } : {};
     var img = LogoBlackRed;
 
-    if (this.props.i18n.language === 'an') { // 'an' es el código de idioma ISO 639-1 para Aragonés
+    if (this.props.i18n.language === 'an') {
       img = LogoAragon;
     } else {
       img = LogoBlackRed;
@@ -58,7 +73,7 @@ class NavMenu extends Component {
       <header style={headerStyle}>
         <div ref={this.navbarRef}>
           <Navbar className="navbar-expand-sm navbar-toggleable-sm ng-white border-bottom box-shadow" container light>
-            <NavbarBrand href="#carousel">
+            <NavbarBrand onClick={() => this.handleClick('carousel')}>
               <img src={img} alt="Zaragoza Barbell" style={{ maxHeight: '75px', marginRight: '10px' }} />
             </NavbarBrand>
             <NavbarToggler onClick={this.toggleNavbar}>
@@ -67,28 +82,28 @@ class NavMenu extends Component {
                 <i className="bi bi-list"></i>
               }
             </NavbarToggler>
-            <Collapse className="d-sm-inline-flex flex-sm-row-reverse" isOpen={!this.state.collapsed} navbar>
+            <Collapse className="d-sm-inline-flex flex-sm-row-reverse navbar-list" isOpen={!this.state.collapsed} navbar>
               <ul className="navbar-nav flex-grow">
                 <NavItem>
-                  <NavLink className="text-dark" href="#carousel" onClick={this.toggleNavbar}>{t('menu.index')}</NavLink>
+                  <NavLink className="text-dark" onClick={() => { this.handleClick('carousel'); this.checkNavbarCollapsed(); }}>{t('menu.index')}</NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink className="text-dark" href="#gym" onClick={this.toggleNavbar}>{t('menu.gym')}</NavLink>
+                  <NavLink className="text-dark" onClick={() => { this.handleClick('team'); this.checkNavbarCollapsed(); }}>{t('menu.team')}</NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink className="text-dark" href="#club" onClick={this.toggleNavbar}>{t('menu.aep-club')}</NavLink>
+                  <NavLink className="text-dark" onClick={() => { this.handleClick('gym'); this.checkNavbarCollapsed(); }}>{t('menu.gym')}</NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink className="text-dark" href="#team" onClick={this.toggleNavbar}>{t('menu.team')}</NavLink>
+                  <NavLink className="text-dark" onClick={() => { this.handleClick('club'); this.checkNavbarCollapsed(); }}>{t('menu.aep-club')}</NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink className="text-dark" href="#services" onClick={this.toggleNavbar}>{t('menu.services')}</NavLink>
+                  <NavLink className="text-dark" onClick={() => { this.handleClick('services'); this.checkNavbarCollapsed(); }}>{t('menu.services')}</NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink className="text-dark" href="#faqs" onClick={this.toggleNavbar}>{t('menu.faqs')}</NavLink>
+                  <NavLink className="text-dark" onClick={() => { this.handleClick('faqs'); this.checkNavbarCollapsed(); }}>{t('menu.faqs')}</NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink className="text-dark" href="#traduction" onClick={this.toggleNavbar}>{t('menu.contact')}</NavLink>
+                  <NavLink className="text-dark" onClick={() => { this.handleClick('contact'); this.checkNavbarCollapsed(); }}>{t('menu.contact')}</NavLink>
                 </NavItem>
                 <NavItem>
                   <LanguageDropdown language={t('menu.language')} />

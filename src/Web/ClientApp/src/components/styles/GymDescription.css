@@ -1,0 +1,29 @@
+.gym-description {
+  position: relative;
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gym-description img {
+  width: 97%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.description-overlay {
+  position: absolute;
+  text-align: center;
+  bottom: 50%;
+  transform: translateY(50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  width: 97%;
+  padding: 20px;
+}
+
+.gym-title {
+  margin-bottom: 3vh;
+}

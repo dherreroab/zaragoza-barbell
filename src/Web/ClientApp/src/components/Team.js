@@ -8,7 +8,6 @@ import { default as Christian } from '../assets/img/Christian.jpg';
 import { default as Rosi } from '../assets/img/Rosi.jpg';
 import { default as Pablo } from '../assets/img/Pablo.jpg';
 import { default as Ruben } from '../assets/img/Ruben.jpg';
-import './styles/Team.css';
 
 class Team extends Component {
     render() {
@@ -63,10 +62,10 @@ class Team extends Component {
         ];
 
         return (
-            <div className='team' id="team" >
-                <h2 className="title-h2">{t('team.title')}</h2>
+            <div className="section-separation team" id="team" >
+                <h2>{t('team.title')}</h2>
 
-                <h3 className="title-h3">{t('team.subtitle')}</h3>
+                <h3>{t('team.subtitle')}</h3>
 
                 <Row xs={1} sm={1} md={2} lg={3} xl={4} xxl={5} className="g-4 justify-content-md-center">
                     {team.map((member, index) => (

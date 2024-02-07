@@ -70,15 +70,16 @@
         min-height: 100%;
         width: 100vh;
         height: 100vh;
-      }
+    }
 }
 
 #carousel::before,
-#team::before {
+#team::before,
+#gym::before {
     content: "";
     display: block;
-    height: 10vh;
-    margin-top: -10vh;
+    height: 14vh;
+    margin-top: -14vh;
     visibility: hidden;
 }
 
@@ -98,10 +99,16 @@
     background-color: hsl(var(--clr-zgz-barbell-red));
     border: none;
     cursor: pointer;
-  }
-  
-  .btn-arrow-up:hover,
-  .btn-instagram:hover {
+}
+
+.btn-arrow-up:hover,
+.btn-instagram:hover {
     color: hsl(var(--clr-zgz-barbell-white));
     background-color: hsl(var(--clr-zgz-barbell-red-hover));
-  }
+}
+
+
+
+.section-separation {
+    margin: 2rem 0 3rem 0;
+}

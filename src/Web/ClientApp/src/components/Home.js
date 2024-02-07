@@ -3,7 +3,7 @@ import Carousel from 'react-bootstrap/Carousel';
 import { withTranslation } from 'react-i18next';
 import CookiePolicy from './CookiePolicy';
 import Team from './Team';
-import img1 from '../assets/img/zgzb1.jpg';
+import Gym from './Gym';
 import img2 from '../assets/img/zgzb2.jpg';
 import img3 from '../assets/img/zgzb3.jpg';
 import './styles/Home.css';
@@ -42,13 +42,6 @@ class Home extends Component {
         <div className="carousel" id="carousel">
           <Carousel>
             <Carousel.Item>
-              <img className="d-block w-100" src={img1} alt="First slide" />
-              <Carousel.Caption>
-                <h3>{t('carousel.slide1.title')}</h3>
-                <p>{t('carousel.slide1.text')}</p>
-              </Carousel.Caption>
-            </Carousel.Item>
-            <Carousel.Item>
               <img className="d-block w-100" src={img2} alt="Second slide" />
               <Carousel.Caption>
                 <h3>{t('carousel.slide2.title')}</h3>
@@ -70,6 +63,7 @@ class Home extends Component {
         }
         </div>
         <Team />
+        <Gym />
       </>
     );
   }

@@ -48,5 +48,6 @@ header {
   box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
 }
 
-.d-sm-inline-flex.flex-sm-row-reverse.collapse.show.navbar-collapse {
+.nav-link{
+  cursor: pointer;
 }

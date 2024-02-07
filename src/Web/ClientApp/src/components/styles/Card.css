@@ -30,6 +30,7 @@
     display: flex;
     flex-direction: column;
     border-radius: 10px;
+    margin-top: 1vh;
 }
 
 .section-info {
@@ -80,8 +81,7 @@
     font-size: 1rem;
 }
 
-.about__text,
-.interest__text {
+.card-section-text{
     color: hsla(0, 0%, 86%, 1);
     font-size: var(--fs-400);
     max-width: 247px;
