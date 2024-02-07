@@ -37,7 +37,15 @@ i18n
           "gym": {
             "title": "ZARAGOZA BARBELL GYM",
             "subtitle": "Get to know our facilities",
-            "text": "Our gym has a large training room whatever your goal may be, whether it is improved health or performance. We have the best machinery and equipment so you can train as you deserve."
+            "text1": "A sanctuary dedicated to the cultivation of strength, health and optimal physical conditioning. We are proud to offer a space where both beginners and experienced athletes can find the tools necessary to achieve their goals.",
+            "text2": "At our center, we prioritize excellence in equipment. We have the best brands on the market to guarantee an incomparable training experience,",
+            "text3": "Maniak, Strength Shop, Power Gear, Rogue, Barbell Wizard and All Free Weight are some of the brands that trust us to offer quality and long-lasting products.",
+            "text4": "In our gym you will not only find a space to develop your strength, but also an environment conducive to improving your health and physical conditioning at any time of the day or night. Join us and discover your maximum potential!",
+            "list1": "We trust FitLand for weight training machines, a brand recognized for its quality and durability.",
+            "list2": "When it comes to conventional bars, we trust Maniak, providing high quality bars, including IPF Approved ones, along with calibrated plates specifically designed for powerlifting.",
+            "list3": "For a variety of specialty bars, we have selected the best from Strength Shop, such as the SPIDER, BOW and CAMBERED. We also offer BASTARD and ORIGINAL 2029 Power Bars.",
+            "list4": "Our competition racks and calibrated plate parts come from Barbell Wizard, a brand recognized for its dedication to quality and precision in each piece of equipment hand in hand with FitLand.",
+            "list5": "For those who prefer the use of cast discs, we have the All Free Weight line of products, guaranteeing resistance and safety in each lift."
           },
           "team": {
             "title": "ZARAGOZA BARBELL TEAM",
@@ -107,7 +115,15 @@ i18n
           "gym": {
             "title": "SARAGOSSE BARBELL GYM",
             "subtitle": "Découvrez nos installations",
-            "text": "Notre salle de sport dispose d'une grande salle d'entraînement, quel que soit votre objectif, qu'il s'agisse d'améliorer votre santé ou vos performances. Nous disposons des meilleures machines et équipements pour que vous puissiez vous entraîner comme vous le méritez."
+            "text1": "Un sanctuaire dédié à la culture de la force, de la santé et d'une condition physique optimale. Nous sommes fiers d'offrir un espace où les athlètes débutants et expérimentés peuvent trouver les outils nécessaires pour atteindre leurs objectifs.",
+            "text2": "Dans notre centre, nous priorisons l'excellence des équipements. Nous disposons des meilleures marques du marché pour garantir une expérience de formation incomparable",
+            "text3": "Maniak, Strength Shop, Power Gear, Rogue, Barbell Wizard et All Free Weight sont quelques-unes des marques qui nous font confiance pour proposer des produits de qualité et durables.",
+            "text4": "Dans notre salle de sport, vous trouverez non seulement un espace pour développer votre force, mais également un environnement propice à l'amélioration de votre santé et de votre condition physique à toute heure du jour ou de la nuit. Rejoignez-nous et découvrez votre potentiel maximum!",
+            "list1": "Nous faisons confiance à FitLand pour les appareils de musculation, marque reconnue pour sa qualité et sa durabilité.",
+            "list2": "En ce qui concerne les barres conventionnelles, nous faisons confiance à Maniak, qui fournit des barres de haute qualité, y compris celles approuvées IPF, ainsi que des plaques calibrées spécialement conçues pour la dynamophilie.",
+            "list3": "Pour une variété de barres spécialisées, nous avons sélectionné le meilleur de Strength Shop, comme les SPIDER, BOW et CAMBERED. Nous proposons également les barres de puissance BASTARD et ORIGINAL 2029.",
+            "list4": "Nos supports de compétition et pièces de plaques calibrées proviennent de Barbell Wizard, une marque reconnue pour son dévouement à la qualité et à la précision de chaque pièce d'équipement, main dans la main avec FitLand.",
+            "list5": "Pour ceux qui préfèrent l'utilisation de disques moulés, nous proposons la gamme de produits All Free Weight, garantissant résistance et sécurité à chaque levage."
           },
           "team": {
             "title": "ÉQUIPE ZARAGOZA BARBELL",
@@ -211,7 +227,15 @@ i18n
           "gym": {
             "title": "GIMNASIO ZARAGOZA BARBELL",
             "subtitle": "Conoce nuestras instalaciones",
-            "text": "Nuestro gimnasio cuenta con una amplia sala de entrenamiento sea cual sea tu objetivo ya sea mejora de salud o rendimiento. Nos acompaña la mejor maquinaria y equipamiento para que puedas entrenar como te mereces."
+            "text1": "Un santuario dedicado al cultivo de la fuerza, la salud y el condicionamiento físico óptimo. Nos enorgullece ofrecer un espacio donde tanto los principiantes como los atletas experimentados pueden encontrar las herramientas necesarias para alcanzar sus metas.",
+            "text2": "En nuestro centro, priorizamos la excelencia en el equipamiento.Contamos con las mejores marcas del mercado para garantizar una experiencia de entrenamiento incomparable",
+            "text3": "Maniak, Strenght Shop, Power Gear, Rogue, Barbell Wizard y All Free Weight son algunas de las marcas que confían en nosotros para ofrecer productos de calidad y duraderos.",
+            "text4": "En nuestro gimnasio no solo encontrarás un espacio para desarrollar tu fuerza, sino también un ambiente propicio para mejorar tu salud y condicionamiento físico en cualquier momento del día o de la noche. ¡Únete a nosotros y descubre tu máximo potencial!",
+            "list1": "Confiamos en FitLand para las máquinas de musculación, una marca reconocida por su calidad y durabilidad.",
+            "list2": "En cuanto a barras convencionales, confiamos en Maniak, proporcionando barras de alta calidad, incluyendo las IPF Approved, junto con discos calibrados específicamente diseñados para powerlifting.",
+            "list3": "Para una variedad de barras especializadas, hemos seleccionado lo mejor de Strenght Shop, como la SPIDER, BOW y CAMBERED.También ofrecemos barras BASTARD y ORIGINAL 2029 Power Bars.",
+            "list4": "Nuestros racks de competición y parte de discos calibrados, provienen de Barbell Wizard, una marca reconocida por su dedicaci ón a la calidad y la precisión en cada pieza de equipamiento mano a mano con FitLand.",
+            "list5": "Para aquellos que prefieren el uso de discos de fundición, contamos con la lí nea de productos All Free Weight, garantizando resistencia y seguridad en cada levantamiento."
           },
           "footer": {
           }
@@ -249,7 +273,15 @@ i18n
           "gym": {
             "title": "GIMNASIO ZARAGOZA BARBELL",
             "subtitle": "Conoxe as nuestras instalazions",
-            "text": "O nuestro gimnasio conta con una amplia sala d'entrenamiento siga como siga o tuyo obchetivo ya siga millora de salut u rendimiento. Nos acompaña a millor maquinaria y equipamiento ta que puedas entrenar como te merexes."
+            "text1": "Un santuario dedicau a lo cautibo d'a fuerza, a salut y o condizionamiento fisico optimo. Nos enorgullexe ofrexer un espazio do tanto os prinzipians como os atletas esperimentaus pueden trobar as ferramientas nezesarias ta alcanzar as suyas metas.",
+            "text2": "En o nuestro zentro, priorizamos a eszelenzia en l'equipamiento.Contamos con as millors marcas d'o mercau ta guarenziar una esperenzia d'entrenamiento incomparable",
+            "text3": "Maniak, Strenght Shop, Power Gear, Rogue, Barbell Wizard y All Free Weight son belunas d'as marcas que confían en nusatros ta ofrexer productos de calidat y duraders.",
+            "text4": "En o nuestro gimnasio no nomás trobarás un espazio ta desarrollar a tuya fuerza, sino tamién un ambién propizio ta millorar a tuya salut y condizionamiento fisico en cualsequier momento d'o día u d'a nuei. Unir a nusatros y descubre o tuyo masimo potencial!",
+            "list1": "Confiamos en FitLand ta las maquinas de musculación, una marca reconoxida por a suya calidat y durabilidat.",
+            "list2": "Por lo que fa a barras convenzionals, confiamos en Maniak, proporzionando barras d'alta calidat, incluyindo as IPF Approved, de conchunta con discos calibraus espezificamén diseñaus ta powerlifting.",
+            "list3": "Ta una variedat de barras espezializadas, emos estriau lo millor de Strenght Shop, como a SPIDER, BOW y CAMBERED.Tamién ofrexemos barras BASTARD y ORICHINAL 2029 Power Bars.",
+            "list4": "Os nuestros racks de competizión y parte de discos calibraus, provienen de Barbell Wizard, una marca reconoxida por a suya dedicaci ón a la calidat y a prezisión en cada pieza d'equipamiento mano a mano con FitLand.",
+            "list5": "Ta aquels que prefieren l'uso de discos de fundizión, contamos con a lí nea de productos All Free Weight, guarenziando resistenzia y seguranza en cada levantamiento."
           },
           "team": {
             "title": "EQUIPO ZARAGOZA BARBELL",

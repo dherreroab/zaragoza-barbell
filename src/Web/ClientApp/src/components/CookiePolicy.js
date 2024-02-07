@@ -1,58 +1,39 @@
-import React, { useState, useEffect } from 'react';
-import Modal from 'react-modal';
-import { useCookies } from 'react-cookie';
-import Button from 'react-bootstrap/Button';
-import './styles/CookiePolicy.css';
+import React from 'react';
+import { Link } from 'react-router-dom';
+import './styles/CookiesPolicy.css';
+import withBreadcrumbs from 'react-router-breadcrumbs-hoc';
 
-Modal.setAppElement('#root') // Reemplaza '#root' con el id de tu elemento raíz
+const routes = [
+    { path: '/', breadcrumb: 'Home' },
+    { path: '/cookie-policy', breadcrumb: 'Política de Cookies' },
+];
 
-function CookiePolicy() {
-    const [cookies, setCookie] = useCookies(['cookiesAccepted']);
-    const [modalIsOpen, setModalIsOpen] = useState(false);
-    const [buttonClicked, setButtonClicked] = useState(false);
+// npm install react-router-breadcrumbs-hoc
 
+class CookiePolicy extends React.Component {
+    render() {
+        const { breadcrumbs } = this.props;
 
-    useEffect(() => {
-        if (cookies.cookiesAccepted !== true) {
-            setModalIsOpen(true);
-        }
-    }, [cookies]);
-
-    function acceptCookies() {
-        setButtonClicked(true);
-        setCookie('cookiesAccepted', 'true', { path: '/', maxAge: 86400 });
-        closeModal();
-    }
-
-    function closeModal() {
-        setModalIsOpen(false);
-    }
-
-    return (
-        <Modal className="cookie-policy"
-            isOpen={modalIsOpen}
-            onRequestClose={closeModal}
-            style={{
-                content: {
-                    position: 'absolute',
-                    top: 'auto',
-                    left: '20px',
-                    right: '20px',
-                    bottom: '20px',
-                    padding: '20px',
-                    zIndex: '9999'
-                }
-            }}
-        >
-            <div className="cookiePolicyContent">
-                <h2>Política de Cookies</h2>
+        return (
+            <div>
+                <div>
+                    {breadcrumbs.map((breadcrumb, index) => (
+                        <span key={breadcrumb.key}>
+                            <Link to={breadcrumb.props.match.url}>
+                                {breadcrumb}
+                            </Link>
+                            {(index < breadcrumbs.length - 1) && <i> / </i>}
+                        </span>
+                    ))}
+                </div>
+                <h1>Política de Cookies</h1>
                 <p>
-                    Este sitio web utiliza cookies para mejorar la experiencia del usuario. Al utilizar nuestro sitio web, aceptas todas las cookies de acuerdo con nuestra política de cookies.
+                    Aquí va el texto de tu política de cookies...
                 </p>
-                <Button className='cookie-button' variant="outline-light" onClick={acceptCookies} disabled={buttonClicked}>Aceptar</Button>
+                <Link to="/">Volver a la Home</Link>
             </div>
-        </Modal>
-    );
+        );
+    }
 }
 
 export default CookiePolicy;
