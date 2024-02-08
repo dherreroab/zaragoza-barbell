@@ -1,5 +1,4 @@
 import React from 'react';
-import { FaFacebook, FaTwitter, FaInstagram } from 'react-icons/fa';
 import { GoogleMap, LoadScript, Marker } from '@react-google-maps/api';
 import { Row, Col } from 'react-bootstrap';
 import ContactForm from './ContactForm';
