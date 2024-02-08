@@ -5,12 +5,6 @@ import ContactForm from './ContactForm';
 import "./styles/Contact.css";
 import zgzb2 from '../assets/img/zgzb2.jpg';
 
-const SocialLink = ({ icon, url }) => (
-    <a href={url} target="_blank" rel="noopener noreferrer">
-        {icon}
-    </a>
-);
-
 const mapStyles = {
     height: "50vh",
     width: "40vh"
