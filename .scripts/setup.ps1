@@ -6,7 +6,6 @@ Param(
   [String]$AzureTenantId,
   [ValidateLength(4, 17)]
   [String]$ProjectName,
-  [String]$AzureSqlLogin = "SqlAdmin"
 )
 
 $scriptRoot = Split-Path -Parent $MyInvocation.MyCommand.Path
@@ -72,7 +71,6 @@ $ParametersTableData = @{
   "GitHubOrganisationName" = $GitHubOrganisationName
   "GitHubRepositoryName"   = $GitHubRepositoryName
   "ProjectName"            = $ProjectName
-  "AzureSqlLogin"          = $AzureSqlLogin
 }
 
 Write-Host
@@ -192,8 +190,6 @@ function SetEnvironmentVariablesAndSecrets {
   
   gh variable set AZURE_CLIENT_ID --body "$appId" --env $environmentName --repo $repoUrl
   gh variable set AZURE_RESOURCE_GROUP_NAME --body "$ProjectName$environmentAbbr" --env $environmentName --repo $repoUrl
-  gh variable set AZURE_SQL_ADMINISTRATOR_USERNAME --body "$AzureSqlLogin" --env $environmentName --repo $repoUrl
-  gh secret set AZURE_SQL_ADMINISTRATOR_PASSWORD --body (GenerateRandomPassword) --env $environmentName --repo $repoUrl
 }
 
 SetVariables
