@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Container } from 'reactstrap';
 import { useLocation } from 'react-router-dom';
 import NavMenu from './NavMenu';
-import ContactFooter from './ContactFooter';
+import Footer from './Footer';
 import './styles/Layout.css';
 
 class Layout extends Component {
@@ -16,7 +16,7 @@ class Layout extends Component {
         <Container tag="main" className='principal-container'>
           {this.props.children}
         </Container>
-        {location.pathname === '/' && <ContactFooter />}
+        {location.pathname === '/' && <Footer />}
       </>
     );
   }

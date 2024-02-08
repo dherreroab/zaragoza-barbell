@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Form, Button } from 'react-bootstrap';
+import axios from 'axios';
 
 function ContactForm() {
     const [name, setName] = useState('');
@@ -8,6 +9,9 @@ function ContactForm() {
 
     const handleSubmit = (event) => {
         event.preventDefault();
+        axios.post('http://localhost:5000/send-email', name, email, message)
+            .then(response => console.log(response.data))
+            .catch(error => console.error('Error:', error));
         // Aquí puedes manejar el envío del formulario, por ejemplo, enviando los datos a una API
         console.log(name, email, message);
     };

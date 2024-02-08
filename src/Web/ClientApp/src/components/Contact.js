@@ -45,11 +45,6 @@ const Contact = () => (
             <h2>Contacto</h2>
             <p className="text-center">¿Te quieres poner en contacto con nosotros? Aquí tienes varias opciones, o jugartela a que te cojamos el teléfono o rellenar el formulario de contacto y te responde con la mayor brevedad posible.</p>
         </div>
-        {/* <div className='justify-content-center'>
-            <SocialLink icon={<FaFacebook />} url="https://www.facebook.com/tuPerfil" />
-            <SocialLink icon={<FaTwitter />} url="https://www.twitter.com/tuPerfil" />
-            <SocialLink icon={<FaInstagram />} url="https://www.instagram.com/tuPerfil" />
-        </div> */}
         <Row xs={1} md={2}>
             <Col className="d-flex justify-content-center form-section">
                 <ContactForm />

@@ -1,10 +1,10 @@
 import React, { Component } from "react";
 import { Link } from 'react-router-dom';
 import Mailto from "./Mailto";
-import "./styles/ContactFooter.css";
+import "./styles/Footer.css";
 import logo from './../assets/img/logo-black-red.png';
 
-class ContactFooter extends Component {
+class Footer extends Component {
     render() {
 
         const email = {
@@ -55,4 +55,4 @@ class ContactFooter extends Component {
     }
 }
 
-export default ContactFooter;
+export default Footer;
