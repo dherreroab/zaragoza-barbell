@@ -14,11 +14,12 @@ $checksScript = Join-Path $scriptRoot "checks.ps1"
 $environmentsFile = Join-Path $scriptRoot "environments.json"
 
 try {
-    . $checksScript
-} catch {
-    Write-Host $_.Exception.Message -ForegroundColor Red
-    Write-Host "Setup script terminated due to the checks failure." -ForegroundColor Red
-    exit 1
+  . $checksScript
+}
+catch {
+  Write-Host $_.Exception.Message -ForegroundColor Red
+  Write-Host "Setup script terminated due to the checks failure." -ForegroundColor Red
+  exit 1
 }
 
 $MissingParameterValues = $false
@@ -39,7 +40,7 @@ if (-not $GitHubRepositoryName) {
 }
 
 if (-not $AzureLocation) {
-  $AzureLocation = "australiaeast"
+  $AzureLocation = "westeurope"
 }
 
 if (-not $AzureSubscriptionId) {
@@ -117,23 +118,23 @@ function CreateWorkloadIdentity {
   )
 
   # Create Azure AD Application Registration
-  $applicationRegistrationDetails=$(az ad app create --display-name "$ProjectName$environmentAbbr") | ConvertFrom-Json
+  $applicationRegistrationDetails = $(az ad app create --display-name "$ProjectName$environmentAbbr") | ConvertFrom-Json
 
   # Create federated credentials 
   $credential = @{
-    name="$ProjectName$environmentName";
-    issuer="https://token.actions.githubusercontent.com";
-    subject="repo:${GitHubOrganisationName}/${GitHubRepositoryName}:environment:$environmentName";
-    audiences=@("api://AzureADTokenExchange")
+    name      = "$ProjectName$environmentName";
+    issuer    = "https://token.actions.githubusercontent.com";
+    subject   = "repo:${GitHubOrganisationName}/${GitHubRepositoryName}:environment:$environmentName";
+    audiences = @("api://AzureADTokenExchange")
   } | ConvertTo-Json
   
   $credential | az ad app federated-credential create --id $applicationRegistrationDetails.id --parameters "@-" | Out-Null
   
   $credential = @{
-    name="$ProjectName";
-    issuer="https://token.actions.githubusercontent.com";
-    subject="repo:${GitHubOrganisationName}/${GitHubRepositoryName}:ref:refs/heads/main";
-    audiences=@("api://AzureADTokenExchange")
+    name      = "$ProjectName";
+    issuer    = "https://token.actions.githubusercontent.com";
+    subject   = "repo:${GitHubOrganisationName}/${GitHubRepositoryName}:ref:refs/heads/main";
+    audiences = @("api://AzureADTokenExchange")
   } | ConvertTo-Json
   
   $credential | az ad app federated-credential create --id $applicationRegistrationDetails.id --parameters "@-" | Out-Null
