@@ -12,6 +12,7 @@ class Footer extends Component {
             emailSubject: "Hablemos sobre el club",
             messageBody: "Hola! ¿Podemos hablar sobre el club?"
         };
+
         return (
             <footer className="section-separation footer">
                 <div className="footer-container">
@@ -43,6 +44,7 @@ class Footer extends Component {
                             <a href="/privacy">Política de privacidad</a>
                             <Link to="/cookies-policy">Política de cookies</Link>
                             <a href="/accessibility-statement">Declaración de accesibilidad</a>
+                            <a href="/faqs">FAQs</a>
                         </div>
                         <p className="copyright">© {new Date().getFullYear()} Zaragoza Barbell, S.L Todos los derechos reservados</p>
                     </div>

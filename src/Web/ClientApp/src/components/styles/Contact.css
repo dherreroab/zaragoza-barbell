@@ -9,5 +9,9 @@
 
     .form-section {
         margin-bottom: 3vh;
+
+        .form-control {
+            width: 40vh;
+        }
     }
 }

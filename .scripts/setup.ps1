@@ -5,7 +5,7 @@ Param(
   [String]$AzureSubscriptionId,
   [String]$AzureTenantId,
   [ValidateLength(4, 17)]
-  [String]$ProjectName,
+  [String]$ProjectName
 )
 
 $scriptRoot = Split-Path -Parent $MyInvocation.MyCommand.Path
@@ -74,7 +74,7 @@ $ParametersTableData = @{
 }
 
 Write-Host
-Write-Host "This script automates the setup of environments, resources, and credentials for a project hosted on GitHub and deployed to Azure. It creates workload identities in Azure AD, sets up resource groups, and configures environment-specific variables and secrets in the GitHub repository. The script leverages the Azure CLI, GitHub CLI, and GitHub APIs to perform these tasks. It aims to streamline the process of setting up and configuring development, staging, and production environments for the project."
+Write-Host "This script automates the setup of environments, resources, and credentials for a project hosted on GitHub and deployed to Azure. It creates workload identities in Azure AD, sets up resource groups, and configures environment-specific variables and secrets in the GitHub repository. The script leverages the Azure CLI, GitHub CLI, and GitHub APIs to perform these tasks. It aims to streamline the process of setting up and configuring development, and production environments for the project."
 Write-Host
 Write-Host "Parameters:" -ForegroundColor Green
 $ParametersTableData | Format-Table -AutoSize

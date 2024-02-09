@@ -1,38 +1,40 @@
-import React, { useState } from 'react';
+import React, { Component } from 'react';
 import { Form, Button } from 'react-bootstrap';
-import axios from 'axios';
+import { ContactMailClient } from '../web-api-client.ts';
 
-function ContactForm() {
-    const [name, setName] = useState('');
-    const [email, setEmail] = useState('');
-    const [message, setMessage] = useState('');
+export default class ContactForm extends Component {
+    constructor(props) {
+        super(props);
+        this.state = { name: '', email: '', message: '' };
+    }
 
-    const handleSubmit = (event) => {
-        event.preventDefault();
-        axios.post('http://localhost:5000/send-email', name, email, message)
-            .then(response => console.log(response.data))
-            .catch(error => console.error('Error:', error));
-        // Aquí puedes manejar el envío del formulario, por ejemplo, enviando los datos a una API
-        console.log(name, email, message);
-    };
+    async sendContactMail() {
+        let client = new ContactMailClient();
+        console.log(this.state.name, this.state.email, this.state.message);
+        // await client.sendContactMail(this.state.name, this.state.email, this.state.message);
+    }
 
-    return (
-        <Form onSubmit={handleSubmit} className="form">
-            <Form.Group controlId="formName">
-                <Form.Label>Nombre</Form.Label>
-                <Form.Control type="text" value={name} onChange={e => setName(e.target.value)} />
-            </Form.Group>
-            <Form.Group controlId="formEmail">
-                <Form.Label>Correo electrónico</Form.Label>
-                <Form.Control type="email" value={email} onChange={e => setEmail(e.target.value)} />
-            </Form.Group>
-            <Form.Group controlId="formMessage">
-                <Form.Label>Mensaje</Form.Label>
-                <Form.Control as="textarea" rows={3} value={message} onChange={e => setMessage(e.target.value)} />
-            </Form.Group>
-            <Button variant="primary" type="submit" style={{ marginTop: '1vh' }}>Enviar</Button>
-        </Form>
-    );
+    render() {
+        const handleSubmit = (event) => {
+            event.preventDefault();
+            this.sendContactMail();
+        };
+        return (
+            <Form onSubmit={handleSubmit} className="form">
+                <Form.Group controlId="formName">
+                    <Form.Label>Nombre</Form.Label>
+                    <Form.Control type="text" value={this.state.name} onChange={e => this.setState({ name: e.target.value })} />
+                </Form.Group>
+                <Form.Group controlId="formEmail">
+                    <Form.Label>Correo electrónico</Form.Label>
+                    <Form.Control type="email" value={this.state.email} onChange={e => this.setState({ email: e.target.value })} />
+                </Form.Group>
+                <Form.Group controlId="formMessage">
+                    <Form.Label>Mensaje</Form.Label>
+                    <Form.Control as="textarea" rows={3} value={this.state.message} onChange={e => this.setState({ message: e.target.value })} />
+                </Form.Group>
+                <Button variant="primary" type="submit" style={{ marginTop: '1vh' }}>Enviar</Button>
+            </Form>
+        );
+    }
 }
-
-export default ContactForm;

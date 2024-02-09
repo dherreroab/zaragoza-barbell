@@ -107,9 +107,6 @@ class NavMenu extends Component {
                   <NavLink className="text-dark" onClick={() => { handleClick('services'); this.checkNavbarCollapsed(); }}>{t('menu.services')}</NavLink>
                 </NavItem>}
                 {location.pathname === '/' && <NavItem>
-                  <NavLink className="text-dark" onClick={() => { handleClick('faqs'); this.checkNavbarCollapsed(); }}>{t('menu.faqs')}</NavLink>
-                </NavItem>}
-                {location.pathname === '/' && <NavItem>
                   <NavLink className="text-dark" onClick={() => { handleClick('contact'); this.checkNavbarCollapsed(); }}>{t('menu.contact')}</NavLink>
                 </NavItem>
                 }
