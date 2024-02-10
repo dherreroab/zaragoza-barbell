@@ -40,7 +40,7 @@ public class SendContactMailCommandHandler(IApplicationDbContext context, IOptio
         SendEmail(entity);
 
         entity.AddDomainEvent(new ContactMailCreatedEvent(entity));
-        _context.ContactMail.Add(entity);
+        _context.Mail.Add(entity);
 
         await _context.SaveChangesAsync(cancellationToken);
 
