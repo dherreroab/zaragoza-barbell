@@ -11,7 +11,7 @@ export default class ContactForm extends Component {
     async sendContactMail() {
         let client = new ContactMailClient();
         console.log(this.state.name, this.state.email, this.state.message);
-        // await client.sendContactMail(this.state.name, this.state.email, this.state.message);
+        await client.sendContactMail(this.state.name, this.state.email, this.state.message);
     }
 
     render() {

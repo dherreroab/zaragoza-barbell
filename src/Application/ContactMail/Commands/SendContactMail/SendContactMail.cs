@@ -3,6 +3,13 @@ using zaragoza_barbell.Domain.Entities;
 using zaragoza_barbell.Domain.Events;
 using System.Net.Mail;
 using System.Net;
+using Google.Apis.Auth.OAuth2;
+using Google.Apis.Util.Store;
+using System.IO;
+using System.Threading;
+using zaragoza_barbell.Application.ContactMail.Settings;
+using Microsoft.Extensions.Options;
+
 
 namespace zaragoza_barbell.Application.ContactMail.Commands.SendContactMail;
 
@@ -13,9 +20,11 @@ public record SendContactMailCommand : IRequest<int>
     public string? Message { get; init; }
 }
 
-public class SendContactMailCommandHandler(IApplicationDbContext context) : IRequestHandler<SendContactMailCommand, int>
+
+public class SendContactMailCommandHandler(IApplicationDbContext context, IOptions<EmailSettings> emailSettings) : IRequestHandler<SendContactMailCommand, int>
 {
     private readonly IApplicationDbContext _context = context;
+    private readonly IOptions<EmailSettings> _emailSettings = emailSettings;
 
     public async Task<int> Handle(SendContactMailCommand request, CancellationToken cancellationToken)
     {
@@ -45,16 +54,15 @@ public class SendContactMailCommandHandler(IApplicationDbContext context) : IReq
 
         var fromAddress = new MailAddress(mailInfo.Email ?? string.Empty);
         var toAddress = new MailAddress("info@zaragozabarbell.com");
-        const string fromPassword = "tuContraseña";
 
         var smtp = new SmtpClient
         {
-            Host = "smtp.example.com",
+            Host = "smtp.gmail.com",
             Port = 587,
             EnableSsl = true,
             DeliveryMethod = SmtpDeliveryMethod.Network,
             UseDefaultCredentials = false,
-            Credentials = new NetworkCredential(fromAddress.Address, fromPassword)
+            Credentials = new NetworkCredential(_emailSettings.Value.Email, _emailSettings.Value.Password)
         };
 
         using (var message = new MailMessage(fromAddress, toAddress)

@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Carousel from 'react-bootstrap/Carousel';
 import { withTranslation } from 'react-i18next';
 import CookiePolicyBanner from './CookiePolicyBanner';
+import PricingCard from './PricingCard';
 import Team from './Team';
 import Gym from './Gym';
 import Contact from './Contact';
@@ -65,6 +66,7 @@ class Home extends Component {
         </div>
         <Team />
         <Gym />
+        <PricingCard />
         <Contact />
       </>
     );

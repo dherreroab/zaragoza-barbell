@@ -7,11 +7,10 @@ public class ContactMail : EndpointGroupBase
     public override void Map(WebApplication app)
     {
         app.MapGroup(this)
-            .RequireAuthorization()
             .MapPost(SendContactMail);
     }
 
-    public async Task<int> SendContactMail(ISender sender, SendContactMailCommand command)
+    public async Task<int> SendContactMail(ISender sender, [AsParameters] SendContactMailCommand command)
     {
         return await sender.Send(command);
     }
