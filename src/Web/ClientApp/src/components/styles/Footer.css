@@ -3,10 +3,10 @@
     padding: 20px 0;
     text-align: center;
 
-    
-  i{
-    margin-right: 0.3em; 
-  }
+
+    i {
+        margin-right: 0.3em;
+    }
 }
 
 .footer-container {
@@ -19,23 +19,25 @@
     flex-direction: column;
 
     .email {
-        margin-right: 1vh;
+        a+a {
+            margin-left: 1.5vh;
+        }
 
         svg {
             margin-right: 0.5vh;
         }
     }
 
-    .email ,
+    .email,
     .address {
-        a{
+        a {
             color: hsl(var(--clr-zgz-barbell-black));
             cursor: pointer;
             text-decoration: underline;
         }
     }
 
-    .email+.address{
+    .email+.address {
         margin-bottom: 1.3vh;
     }
 }
@@ -52,6 +54,17 @@
     color: #6c757d;
 }
 
-.logo {
-    width: 35vh;
+.logo-footer {
+    display: flex;
+    justify-content: space-between;
+
+    .logo {
+        width: 35vh;
+    }
+
+    .social {
+        font-size: 2.4vh;
+        border-left: 2px solid black;
+        padding-left: 3vh;
+    }
 }

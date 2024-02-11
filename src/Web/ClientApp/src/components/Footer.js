@@ -24,11 +24,15 @@ class Footer extends Component {
                                 body={email.messageBody}
                                 className="mailto"
                             >
-                                <i className="bi bi-envelope-arrow-up"></i>
+                                <i className="bi bi-envelope-fill"></i>
                                 {email.emailDestination}
                             </Mailto>
+                            <a href="tel:1234567890">
+                                <i className="bi bi-telephone-fill"></i>
+                                +34 123 456 789
+                            </a>
                         </div>
-                        <div className="address" onClick={() => window.open('https://maps.app.goo.gl/4eCsKRbXwHhSRqKr7', '_blank')}>
+                        <div className="address">
 
                             <a
                                 href={`https://maps.app.goo.gl/4eCsKRbXwHhSRqKr7`}
@@ -48,8 +52,28 @@ class Footer extends Component {
                         </div>
                         <p className="copyright">© {new Date().getFullYear()} Zaragoza Barbell, S.L Todos los derechos reservados</p>
                     </div>
-                    <div className="logo">
-                        <img src={logo} alt="Logo" />
+                    <div className="logo-footer">
+                        <div className="logo">
+                            <img src={logo} alt="Logo" />
+                        </div>
+                        <div className="social">
+                            <div>
+                                <a href="whatsapp://send?phone=+346123456789" target="_blank" rel="noopener noreferrer">
+                                    <i className="bi bi-whatsapp"></i>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="https://www.instagram.com/zgzpowerbarbell/" target="_blank" rel="noopener noreferrer">
+                                    <i className="bi bi-instagram"></i>
+                                </a>
+
+                            </div>
+                            <div>
+                                <a href="https://www.youtube.com/channel/UC9bU1g8Qp6x1C4Y7lXZsV8w" target="_blank" rel="noopener noreferrer">
+                                    <i className="bi bi-youtube"></i>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </footer>

@@ -1,9 +1,22 @@
 .contact-section {
-    .contact-text {
+    .contact-header {
         margin-bottom: 2vh;
 
         p {
             margin: 0 1vh
+        }
+
+        .social-network-contact {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 3vh;
+            font-size: 3vh;
+
+            a {
+                margin: 0 1vh;
+            }
+
         }
     }
 
