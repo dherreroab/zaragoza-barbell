@@ -31,12 +31,18 @@ function ContactForm() {
             notifications.push({ "message": "Message is required!", "variant": "error" });
 
         if (notifications.length === 0) {
-            const result = await sendContactMail(captchaValue);
+            try {
+                const result = await sendContactMail(captchaValue);
 
-            if (result && result > 0) {
-                notifications.push({ "message": "Success", "variant": "success" });
-            } else {
-                notifications.push({ "message": "Failed", "variant": "error" });
+                if (result && result > 0) {
+                    notifications.push({ "message": "Success", "variant": "success" });
+                } else {
+                    notifications.push({ "message": "Failed", "variant": "error" });
+                }
+            } catch (error) {
+
+                notifications.push({ "message": error, "variant": "error" });
+                console.error(error);
             }
 
             recaptcha.current.reset();
