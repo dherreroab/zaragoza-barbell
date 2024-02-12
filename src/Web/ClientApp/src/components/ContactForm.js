@@ -18,21 +18,17 @@ function ContactForm() {
         const notifications = [];
         const captchaValue = recaptcha.current.getValue();
 
-        if (!captchaValue) {
-            notifications.push({ "message": "Please verify the CAPTCHA!", "variant": "error" });
-        }
+        if (!captchaValue)
+            notifications.push({ "message": "Please verify the CAPTCHA!", "variant": "error" })
 
-        if (!name) {
+        if (!name)
             notifications.push({ "message": "Name is required!", "variant": "error" });
-        }
 
-        if (!email) {
+        if (!email)
             notifications.push({ "message": "Email is required!", "variant": "error" });
-        }
 
-        if (!message) {
+        if (!message)
             notifications.push({ "message": "Message is required!", "variant": "error" });
-        }
 
         if (notifications.length === 0) {
             const result = await sendContactMail(captchaValue);
