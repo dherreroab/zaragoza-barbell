@@ -31,7 +31,6 @@ jobs:
         uses: azure/arm-deploy@v1
         name: Run preflight validation
         with:
-          scope: ${{ inputs.environmentName }}
           deploymentName: ${{ github.run_number }}
           resourceGroupName: ${{ vars.AZURE_RESOURCE_GROUP_NAME }}
           template: ./.azure/bicep/main.bicep
@@ -39,12 +38,12 @@ jobs:
             environmentName=${{ inputs.environmentName }}
             projectName=${{ vars.PROJECT_NAME }}
           deploymentMode: Validate
+          failOnStdErr: false
 
       - if: inputs.environmentName != 'Development'
         uses: azure/arm-deploy@v1
         name: Run what-if
         with:
-          scope: ${{ inputs.environmentName }}
           failOnStdErr: false
           resourceGroupName: ${{ vars.AZURE_RESOURCE_GROUP_NAME }}
           template: ./.azure/bicep/main.bicep
@@ -79,7 +78,6 @@ jobs:
         id: deploy
         name: Deploy infrastructure
         with:
-          scope: ${{ inputs.environmentName }}
           failOnStdErr: false
           deploymentName: ${{ github.run_number }}
           resourceGroupName: ${{ vars.AZURE_RESOURCE_GROUP_NAME }}
