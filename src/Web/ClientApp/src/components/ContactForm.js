@@ -5,8 +5,8 @@ import ReCAPTCHA from "react-google-recaptcha";
 import { useSnackbar } from 'notistack';
 
 function ContactForm() {
-    const { enqueueSnackbar } = useSnackbar();
     const recaptcha = useRef();
+    const { enqueueSnackbar } = useSnackbar();
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
     const [message, setMessage] = useState("");
