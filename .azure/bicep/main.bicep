@@ -21,8 +21,7 @@ var environmentConfigurationMap = {
     environmentAbbreviation: 'prd'
     appServicePlan: {
       sku: {
-        name: 'S1'
-        capacity: 1
+        name: 'D1'
       }
     }
   }
@@ -30,7 +29,7 @@ var environmentConfigurationMap = {
     environmentAbbreviation: 'dev'
     appServicePlan: {
       sku: {
-        name: 'B1'
+        name: 'F1'
       }
     }
   }
