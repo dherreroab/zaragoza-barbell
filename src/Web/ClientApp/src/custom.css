@@ -38,6 +38,12 @@ code {
   background-color: hsl(var(--clr-zgz-barbell-red-active)) !important;
 }
 
+.btn-primary:disabled,
+.btn:disabled,
+.btn.disabled {
+  background-color: hsl(var(--clr-zgz-barbell-red-disabled)) !important;
+}
+
 body,
 html {
   max-width: 100%;

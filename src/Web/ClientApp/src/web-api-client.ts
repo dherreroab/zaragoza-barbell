@@ -20,7 +20,7 @@ export class ContactMailClient {
         this.baseUrl = baseUrl !== undefined && baseUrl !== null ? baseUrl : "";
     }
 
-    sendContactMail(name: string | null | undefined, email: string | null | undefined, message: string | null | undefined): Promise<number> {
+    sendContactMail(name: string | null | undefined, email: string | null | undefined, message: string | null | undefined, captchaResponse: string | null | undefined): Promise<number> {
         let url_ = this.baseUrl + "/api/ContactMail?";
         if (name !== undefined && name !== null)
             url_ += "Name=" + encodeURIComponent("" + name) + "&";
@@ -28,6 +28,8 @@ export class ContactMailClient {
             url_ += "Email=" + encodeURIComponent("" + email) + "&";
         if (message !== undefined && message !== null)
             url_ += "Message=" + encodeURIComponent("" + message) + "&";
+        if (captchaResponse !== undefined && captchaResponse !== null)
+            url_ += "CaptchaResponse=" + encodeURIComponent("" + captchaResponse) + "&";
         url_ = url_.replace(/[?&]$/, "");
 
         let options_: RequestInit = {

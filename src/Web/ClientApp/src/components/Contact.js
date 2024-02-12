@@ -4,6 +4,7 @@ import 'bootstrap-icons/font/bootstrap-icons.css';
 import ContactForm from './ContactForm';
 import { LocationMap } from './LocationMap';
 import "./styles/Contact.css";
+import { SnackbarProvider } from 'notistack';
 
 const Contact = () => (
     <div id='contact' className='contact-section'>
@@ -13,7 +14,9 @@ const Contact = () => (
         </div>
         <Row xs={1} md={2}>
             <Col className="d-flex justify-content-center form-section">
-                <ContactForm />
+                <SnackbarProvider maxSnack={5} autoHideDuration={3000}>
+                    <ContactForm />
+                </SnackbarProvider>
             </Col>
             <Col className="d-flex justify-content-center">
                 <LocationMap />

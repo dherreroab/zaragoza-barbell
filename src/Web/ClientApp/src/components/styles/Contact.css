@@ -23,8 +23,20 @@
     .form-section {
         margin-bottom: 3vh;
 
+        .form {
+            .form-group {
+                margin-top: 1vh;
+            }
+        }
+
         .form-control {
             width: 40vh;
         }
     }
+}
+
+.spinner-border {
+    margin: 1vh;
+    position: absolute;
+    color: hsl(var(--clr-zgz-barbell-red));
 }

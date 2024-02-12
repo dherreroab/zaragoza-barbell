@@ -11,6 +11,7 @@ builder.Services.AddInfrastructureServices(builder.Configuration);
 builder.Services.AddWebServices();
 
 builder.Services.Configure<EmailSettings>(builder.Configuration.GetSection("EmailSettings"));
+builder.Services.Configure<GoogleCaptchaSettings>(builder.Configuration.GetSection("GoogleCaptchaSettings"));
 
 var app = builder.Build();
 

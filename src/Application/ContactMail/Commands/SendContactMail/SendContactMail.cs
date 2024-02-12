@@ -3,12 +3,11 @@ using zaragoza_barbell.Domain.Entities;
 using zaragoza_barbell.Domain.Events;
 using System.Net.Mail;
 using System.Net;
-using Google.Apis.Auth.OAuth2;
-using Google.Apis.Util.Store;
-using System.IO;
-using System.Threading;
 using zaragoza_barbell.Application.ContactMail.Settings;
 using Microsoft.Extensions.Options;
+using Newtonsoft.Json;
+using Google.Apis.Http;
+using zaragoza_barbell.Application.ContactMail.ResponseDTO;
 
 
 namespace zaragoza_barbell.Application.ContactMail.Commands.SendContactMail;
@@ -18,23 +17,25 @@ public record SendContactMailCommand : IRequest<int>
     public string? Name { get; init; }
     public string? Email { get; init; }
     public string? Message { get; init; }
+    public string? CaptchaResponse { get; init; }
 }
 
 
-public class SendContactMailCommandHandler(IApplicationDbContext context, IOptions<EmailSettings> emailSettings) : IRequestHandler<SendContactMailCommand, int>
+public class SendContactMailCommandHandler(IApplicationDbContext context, IOptions<EmailSettings> emailSettings, IOptions<GoogleCaptchaSettings> googleCaptchaSettings) : IRequestHandler<SendContactMailCommand, int>
 {
     private readonly IApplicationDbContext _context = context;
     private readonly IOptions<EmailSettings> _emailSettings = emailSettings;
+    private readonly IOptions<GoogleCaptchaSettings> _googleCaptchaSettings = googleCaptchaSettings;
 
     public async Task<int> Handle(SendContactMailCommand request, CancellationToken cancellationToken)
     {
+        if (!await IsCaptchaValidAsync(request.CaptchaResponse ?? "")) return -1;
         var entity = new Mail
         {
             Name = request.Name,
             Email = request.Email,
             Message = request.Message
         };
-
 
         entity.AddDomainEvent(new ContactMailSendedEvent(entity));
         SendEmail(entity);
@@ -73,5 +74,13 @@ public class SendContactMailCommandHandler(IApplicationDbContext context, IOptio
         {
             smtp.Send(message);
         }
+    }
+
+    private async Task<bool> IsCaptchaValidAsync(string captchaResponse)
+    {
+        var httpClient = new HttpClient();
+        var response = await httpClient.GetStringAsync($"{_googleCaptchaSettings.Value.ApiUrl}?secret={_googleCaptchaSettings.Value.Secret}&response={captchaResponse}");
+        var captchaValidation = JsonConvert.DeserializeObject<CaptchaValidation>(response);
+        return captchaValidation != null && captchaValidation.Success;
     }
 }

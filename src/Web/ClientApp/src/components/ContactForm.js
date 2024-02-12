@@ -1,40 +1,93 @@
-import React, { Component } from 'react';
-import { Form, Button } from 'react-bootstrap';
+import React, { useRef, useState } from 'react';
+import { Form, Button, Spinner } from 'react-bootstrap';
 import { ContactMailClient } from '../web-api-client.ts';
+import ReCAPTCHA from "react-google-recaptcha";
+import { useSnackbar } from 'notistack';
 
-export default class ContactForm extends Component {
-    constructor(props) {
-        super(props);
-        this.state = { name: '', email: '', message: '' };
+function ContactForm() {
+    const { enqueueSnackbar } = useSnackbar();
+    const recaptcha = useRef();
+    const [name, setName] = useState("");
+    const [email, setEmail] = useState("");
+    const [message, setMessage] = useState("");
+    const [loading, setLoading] = useState(false);
+
+    async function submitForm(event) {
+        setLoading(true);
+        event.preventDefault();
+        const notifications = [];
+        const captchaValue = recaptcha.current.getValue();
+
+        if (!captchaValue) {
+            notifications.push({ "message": "Please verify the CAPTCHA!", "variant": "error" });
+        }
+
+        if (!name) {
+            notifications.push({ "message": "Name is required!", "variant": "error" });
+        }
+
+        if (!email) {
+            notifications.push({ "message": "Email is required!", "variant": "error" });
+        }
+
+        if (!message) {
+            notifications.push({ "message": "Message is required!", "variant": "error" });
+        }
+
+        if (notifications.length === 0) {
+            const result = await sendContactMail(captchaValue);
+
+            if (result && result > 0) {
+                notifications.push({ "message": "Success", "variant": "success" });
+            } else {
+                notifications.push({ "message": "Failed", "variant": "error" });
+            }
+
+            recaptcha.current.reset();
+            setName('');
+            setEmail('');
+            setMessage('');
+        }
+
+        setLoading(false);
+        notifications.map((notification, index) => enqueueSnackbar(notification.message, { autoHideDuration: 3000, variant: notification.variant }));
     }
 
-    async sendContactMail() {
+    async function sendContactMail(captchaValue) {
         let client = new ContactMailClient();
-        console.log(this.state.name, this.state.email, this.state.message);
-        await client.sendContactMail(this.state.name, this.state.email, this.state.message);
+        console.log(name, email, message, captchaValue);
+        return await client.sendContactMail(name, email, message, captchaValue);
     }
 
-    render() {
-        const handleSubmit = (event) => {
-            event.preventDefault();
-            this.sendContactMail();
-        };
-        return (
-            <Form onSubmit={handleSubmit} className="form">
-                <Form.Group controlId="formName">
+    return (
+        <>
+
+            <Form onSubmit={submitForm} className="form" style={{ opacity: loading ? 0.5 : 1 }}>
+                <Form.Group className='form-group' controlId="formName">
                     <Form.Label>Nombre</Form.Label>
-                    <Form.Control type="text" value={this.state.name} onChange={e => this.setState({ name: e.target.value })} />
+                    <Form.Control type="text" value={name} onChange={(event) => setName(event.target.value)} disabled={loading} />
                 </Form.Group>
-                <Form.Group controlId="formEmail">
+                <Form.Group className='form-group' controlId="formEmail">
                     <Form.Label>Correo electrónico</Form.Label>
-                    <Form.Control type="email" value={this.state.email} onChange={e => this.setState({ email: e.target.value })} />
+                    <Form.Control type="email" value={email} onChange={(event) => setEmail(event.target.value)} disabled={loading} />
                 </Form.Group>
-                <Form.Group controlId="formMessage">
+                <Form.Group className='form-group' controlId="formMessage">
                     <Form.Label>Mensaje</Form.Label>
-                    <Form.Control as="textarea" rows={3} value={this.state.message} onChange={e => this.setState({ message: e.target.value })} />
+                    <Form.Control as="textarea" rows={3} value={message} onChange={(event) => setMessage(event.target.value)} disabled={loading} />
                 </Form.Group>
-                <Button variant="primary" type="submit" style={{ marginTop: '1vh' }}>Enviar</Button>
+                <Form.Group>
+                    <ReCAPTCHA className='form-group' ref={recaptcha} sitekey={process.env.REACT_APP_SITE_KEY} />
+                </Form.Group>
+                <div>
+                    <Button variant="primary" type="submit" style={{ marginTop: '1vh' }} disabled={loading}>Enviar</Button>
+                    {loading && (
+                        <Spinner animation="border" />
+                    )}
+
+                </div>
             </Form>
-        );
-    }
+        </>
+    );
 }
+
+export default ContactForm;
