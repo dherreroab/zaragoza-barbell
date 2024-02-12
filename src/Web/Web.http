@@ -125,3 +125,17 @@ DELETE {{Web_HostAddress}}/api/TodoItems/1
 Cookie: {{AuthCookieName}}={{AuthCookieValue}}
 
 ###
+
+# POST ContactMail
+POST {{Web_HostAddress}}/api/ContactMail
+Cookie: {{AuthCookieName}}={{AuthCookieValue}}
+Content-Type: application/json
+
+// SendContactMailCommand
+{
+  "Name": "David",
+  "Mail": "info@zaragozabarbell.com",
+  "Message": "njbhvtfcryg7h8uji9onbhgvcfdrxetfyguhinjhbgvf"
+}
+
+###

@@ -1,4 +1,5 @@
 using zaragoza_barbell.Infrastructure.Data;
+using zaragoza_barbell.Application.ContactMail.Settings;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -8,6 +9,9 @@ builder.Services.AddKeyVaultIfConfigured(builder.Configuration);
 builder.Services.AddApplicationServices();
 builder.Services.AddInfrastructureServices(builder.Configuration);
 builder.Services.AddWebServices();
+
+builder.Services.Configure<EmailSettings>(builder.Configuration.GetSection("EmailSettings"));
+builder.Services.Configure<GoogleCaptchaSettings>(builder.Configuration.GetSection("GoogleCaptchaSettings"));
 
 var app = builder.Build();
 

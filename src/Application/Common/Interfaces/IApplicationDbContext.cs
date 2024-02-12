@@ -4,6 +4,7 @@ namespace zaragoza_barbell.Application.Common.Interfaces;
 
 public interface IApplicationDbContext
 {
+    DbSet<Mail> Mail { get; }
     DbSet<TodoList> TodoLists { get; }
 
     DbSet<TodoItem> TodoItems { get; }
