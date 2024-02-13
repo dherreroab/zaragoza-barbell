@@ -31,17 +31,17 @@ function ContactForm() {
             notifications.push({ "message": "Message is required!", "variant": "error" });
 
         if (notifications.length === 0) {
-            try {
-                const result = sendContactMail(captchaValue);
-
-                if (result && result > 0) {
-                    notifications.push({ "message": "Success", "variant": "success" });
-                } else {
+            sendContactMail(captchaValue)
+                .then(response => {
+                    if (response && response > 0) {
+                        notifications.push({ "message": "Success", "variant": "success" });
+                    } else {
+                        notifications.push({ "message": "Failed", "variant": "error" });
+                    }
+                })
+                .catch(error => {
                     notifications.push({ "message": "Failed", "variant": "error" });
-                }
-            } catch (error) {
-                notifications.push({ "message": "Success", "variant": "success" });
-            }
+                });
 
             recaptcha.current.reset();
             setName('');
