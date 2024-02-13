@@ -76,11 +76,14 @@ public class SendContactMailCommandHandler(IApplicationDbContext context, IOptio
         }
     }
 
-    private async Task<bool> IsCaptchaValidAsync(string captchaResponse)
+    private Task<bool> IsCaptchaValidAsync(string captchaResponse)
     {
-        var httpClient = new HttpClient();
-        var response = await httpClient.GetStringAsync($"{_googleCaptchaSettings.Value.ApiUrl}?secret={_googleCaptchaSettings.Value.Secret}&response={captchaResponse}");
-        var captchaValidation = JsonConvert.DeserializeObject<CaptchaValidation>(response);
-        return captchaValidation != null && captchaValidation.Success;
+        var httpClient = new HttpClient()
+        {
+            Timeout = TimeSpan.FromSeconds(10)
+        };
+        var response = httpClient.GetStringAsync($"{_googleCaptchaSettings.Value.ApiUrl}?secret={_googleCaptchaSettings.Value.Secret}&response={captchaResponse}");
+        var captchaValidation = JsonConvert.DeserializeObject<CaptchaValidation>(response.Result);
+        return captchaValidation != null && captchaValidation.Success ? Task.FromResult(true) : Task.FromResult(false);
     }
 }
