@@ -29,7 +29,7 @@ public class SendContactMailCommandHandler(IApplicationDbContext context, IOptio
 
     public async Task<int> Handle(SendContactMailCommand request, CancellationToken cancellationToken)
     {
-        if (!await IsCaptchaValidAsync(request.CaptchaResponse ?? "")) return -1;
+        // if (!await IsCaptchaValidAsync(request.CaptchaResponse ?? "")) return -1;
         var entity = new Mail
         {
             Name = request.Name,
@@ -54,7 +54,7 @@ public class SendContactMailCommandHandler(IApplicationDbContext context, IOptio
             throw new ArgumentNullException(nameof(mailInfo));
 
         var fromAddress = new MailAddress(mailInfo.Email ?? string.Empty);
-        var toAddress = new MailAddress("info@zaragozabarbell.com");
+        var toAddress = new MailAddress("dherrero10abadia@gmail.com");
 
         var smtp = new SmtpClient
         {
