@@ -57,7 +57,7 @@ function ContactForm() {
 
     async function sendContactMail(captchaValue) {
         let client = new ContactMailClient();
-        return await client.sendContactMail(name, email, message, captchaValue);
+        return await client.sendContactMail(name, email, message);
     }
 
     return (

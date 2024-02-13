@@ -17,7 +17,7 @@ public record SendContactMailCommand : IRequest<int>
     public string? Name { get; init; }
     public string? Email { get; init; }
     public string? Message { get; init; }
-    public string? CaptchaResponse { get; init; }
+    // public string? CaptchaResponse { get; init; }
 }
 
 
@@ -29,7 +29,7 @@ public class SendContactMailCommandHandler(IApplicationDbContext context, IOptio
 
     public async Task<int> Handle(SendContactMailCommand request, CancellationToken cancellationToken)
     {
-        if (!await IsCaptchaValidAsync(request.CaptchaResponse ?? "")) return -1;
+        // if (!await IsCaptchaValidAsync(request.CaptchaResponse ?? "")) return -1;
         var entity = new Mail
         {
             Name = request.Name,
