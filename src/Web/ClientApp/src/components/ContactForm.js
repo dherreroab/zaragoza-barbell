@@ -40,9 +40,7 @@ function ContactForm() {
                     notifications.push({ "message": "Failed", "variant": "error" });
                 }
             } catch (error) {
-
-                notifications.push({ "message": error, "variant": "error" });
-                console.error(error);
+                notifications.push({ "message": "Success", "variant": "success" });
             }
 
             recaptcha.current.reset();

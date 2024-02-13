@@ -72,6 +72,10 @@ i18n
               },
               "aboutText": "Part of the gym's founding team and with a long history in both team sports and powerlifting, their goal is to help you with everything related to gym management."
             }
+          },
+          "contact": {
+            "header": "Contact",
+            "sub-header": "Do you want to contact us? Here you have several options, or try to have us pick up your phone or fill out the contact form and we will respond as soon as possible.",
           }
         },
       },
@@ -142,6 +146,10 @@ i18n
               },
               "aboutText": "Faisant partie de l'équipe fondatrice du gymnase et avec une longue histoire dans les sports d'équipe et la dynamophilie, leur objectif est de vous aider pour tout ce qui concerne la gestion du gymnase."
             }
+          },
+          "contact": {
+            "header": "Contact",
+            "sub-header": "Voulez-vous nous contacter ? Ici vous avez plusieurs options, ou essayez de nous faire répondre par téléphone ou de remplir le formulaire de contact et nous vous répondrons dans les plus brefs délais.",
           }
         }
       },
@@ -212,6 +220,10 @@ i18n
             "title": "GIMNASIO ZARAGOZA BARBELL",
             "subtitle": "Conoce nuestras instalaciones",
             "text1": "Este santuario se dedica al cultivo de la fuerza, la salud y el condicionamiento físico óptimo. Ofrece un ambiente propicio para mejorar la salud y el condicionamiento físico en cualquier momento del día o de la noche. ¡Únete y descubre tu máximo potencial!"
+          },
+          "contact": {
+            "header": "Contacto",
+            "sub-header": "¿Te quieres poner en contacto con nosotros? Aquí tienes varias opciones, o jugartela a que te cojamos el teléfono o rellenar el formulario de contacto y te responde con la mayor brevedad posible.",
           },
           "footer": {
           }
@@ -284,6 +296,10 @@ i18n
               },
               "aboutText": "Parte de l'equipo de fundadors d'o gimnasio y con un largo recorriu en os esportes tanto d'equipo como powerlifting, o suyo obchetivo ye aduyar-te con tot o que tienga relazión con a chestión d'o gimnasio."
             }
+          },
+          "contact": {
+            "header": "Contacto",
+            "sub-header": "Te quiers meter en contacto con nusatros? Aquí tiens cuantas opzions, u jugartela a que te pillemos o telefono u replenar o formulario de contacto y te responde con a mayor brevedat posible.",
           }
         }
       }
