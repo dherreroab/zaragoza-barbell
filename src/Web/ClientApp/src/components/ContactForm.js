@@ -13,6 +13,10 @@ function ContactForm() {
     const [loading, setLoading] = useState(false);
 
     async function submitForm(event) {
+        function setNotification() {
+            notifications.map((notification, index) => enqueueSnackbar(notification.message, { autoHideDuration: 3000, variant: notification.variant }));
+        };
+
         setLoading(true);
         event.preventDefault();
         const notifications = [];
@@ -41,16 +45,19 @@ function ContactForm() {
                 })
                 .catch(error => {
                     notifications.push({ "message": "Failed", "variant": "error" });
-                });
+                })
+                .finally(() => {
+                    recaptcha.current.reset();
+                    setName('');
+                    setEmail('');
+                    setMessage('');
 
-            recaptcha.current.reset();
-            setName('');
-            setEmail('');
-            setMessage('');
+                    setLoading(false);
+                    setNotification();
+                });
         }
 
-        setLoading(false);
-        notifications.map((notification, index) => enqueueSnackbar(notification.message, { autoHideDuration: 3000, variant: notification.variant }));
+        setNotification();
     }
 
     async function sendContactMail(captchaValue) {

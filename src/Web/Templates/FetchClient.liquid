@@ -80,7 +80,6 @@
     }
 
     protected process{{ operation.ActualOperationNameUpper }}(response: Response): Promise<{{ operation.ResultType }}> {
-        followIfLoginRedirect(response);
         const status = response.status;
         {% template Client.ProcessResponse %}
     }
