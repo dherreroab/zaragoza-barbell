@@ -32,7 +32,7 @@ function ContactForm() {
 
         if (notifications.length === 0) {
             try {
-                const result = await sendContactMail(captchaValue);
+                const result = sendContactMail(captchaValue);
 
                 if (result && result > 0) {
                     notifications.push({ "message": "Success", "variant": "success" });
@@ -57,7 +57,7 @@ function ContactForm() {
 
     async function sendContactMail(captchaValue) {
         let client = new ContactMailClient();
-        return await client.sendContactMail(name, email, message);
+        return client.sendContactMail(name, email, message, captchaValue);
     }
 
     return (
