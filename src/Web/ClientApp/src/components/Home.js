@@ -3,7 +3,6 @@ import Carousel from 'react-bootstrap/Carousel';
 import { withTranslation } from 'react-i18next';
 import CookiePolicyBanner from './CookiePolicyBanner';
 import Team from './Team';
-import Gym from './Gym';
 import GymClub from './GymClub';
 import Rates from './Rates';
 import Contact from './Contact';
