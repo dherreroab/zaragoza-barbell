@@ -1,8 +1,6 @@
 import React from 'react';
-import { Row, Col } from 'react-bootstrap';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import ContactForm from './ContactForm';
-import { LocationMap } from './LocationMap';
 import "./styles/Contact.css";
 import { SnackbarProvider } from 'notistack';
 import { useTranslation } from 'react-i18next';
