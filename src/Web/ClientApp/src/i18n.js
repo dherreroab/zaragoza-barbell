@@ -408,13 +408,13 @@ i18n
               "tenSessions": {
                 "type": "10 sesiones",
                 "price": "9€/día",
-                "wayToPay": "Pago en el acto de 90€ (Caducidad de un tres meses)"
+                "wayToPay": "Pago en el acto de 90€ (Caducidad de tres meses)"
               }
             }
           },
           "contact": {
             "header": "CONTACTO",
-            "sub-header": "¿Te quieres poner en contacto con nosotros? Aquí tienes varias opciones, o jugartela a que te cojamos el teléfono o rellenar el formulario de contacto y te responde con la mayor brevedad posible.",
+            "sub-header": "¿Te quieres poner en contacto con nosotros? Aquí tienes varias opciones: jugártela a que te cojamos el teléfono o rellenar el formulario de contacto. ¡En ambas te responderemos con la mayor brevedad posible!",
             "form": {
               "name": "Nombre",
               "email": "Correo electrónico",
@@ -432,7 +432,7 @@ i18n
           },
           "footer": {
             "copy": "Todos los derechos reservados.",
-            "location": "C. Brazal Almontilla 3, 50410, Cuarte De Huerva, Zaragoza. España",
+            "location": "C. Brazal Almontilla 3, 50410, Cuarte de Huerva, Zaragoza. España",
             "links": {
               "legal": "Aviso legal",
               "privacy": "Política de privacidad",

@@ -1,16 +1,15 @@
 import React from 'react';
-import './styles/CookiesPolicy.css';
 import { Link } from 'react-router-dom';
 
 class CookiePolicy extends React.Component {
     render() {
 
         return (
-            <div className='cookies-policy'>
+            <div className='policy'>
                 <div>
                     <Link to="/">Volver a la Home</Link>
                 </div>
-                <div className='cookies-policy-text'>
+                <div className='policy-text'>
                     <h1>Política de Cookies</h1>
                     <p>ZARAGOZA BARBELL SL, a través del presente documento, recoge su Política de recogida y tratamiento de cookies, en cumplimiento de lo dispuesto en el artículo 22.2 de la Ley 34/2002, de 11 de julio, de Servicios de la Sociedad de la Información y de Comercio Electrónico (LSSICE).</p>
                     <p>Las cookies se almacenan en el equipo terminal del usuario (ordenador o dispositivo móvil) y recopilan información al visitar la página web REiCOP.org, con la finalidad de mejorar la usabilidad de las mismas, conocer los hábitos o necesidades de navegación de los usuarios para poder adaptarse a los mismos, así como obtener información con fines estadísticos. En el caso de aquellos usuarios que ya sean clientes de la entidad, la información recabada con las cookies servirá también para su identificación al acceder a las distintas herramientas que la entidad pone a su disposición para la gestión de los servicios.</p>

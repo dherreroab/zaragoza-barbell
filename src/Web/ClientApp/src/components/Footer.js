@@ -46,10 +46,9 @@ class Footer extends Component {
                             </a>
                         </div>
                         <div className="links">
-                            <a href="/legal-notice">{t('footer.links.legal')}</a>
-                            <a href="/privacy">{t('footer.links.privacy')}</a>
+                            <Link to="/legal-notice" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>{t('footer.links.legal')}</Link>
+                            <Link to="/privacy-policy" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>{t('footer.links.privacy')}</Link>
                             <Link to="/cookies-policy" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>{t('footer.links.cookie')}</Link>
-                            <a href="/accessibility-statement">{t('footer.links.accessibility')}</a>
                             <a href="/faqs">{t('footer.links.faq')}</a>
                         </div>
                         <p className="copyright">© {new Date().getFullYear()} Zaragoza Barbell, S.L {t('footer.copy')}</p>

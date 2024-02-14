@@ -22,6 +22,43 @@
   font-size: 20px;
 }
 
+.policy {
+  padding-top: 12vh;
+  position: absolute;
+  left: 5vh;
+
+  .policy-text {
+    width: 95%;
+
+    .faqs-section {
+      li {
+        margin-bottom: 3vh;
+      }
+
+      li:first-of-type {
+        margin-top: 3vh;
+      }
+
+      li:last-of-type {
+        margin-bottom: 0;
+      }
+    }
+
+    .question-red {
+      font-size: 24px;
+      color: hsl(var(--clr-zgz-barbell-red));
+    }
+  }
+
+  div:first-of-type {
+    margin-bottom: 1vh;
+  }
+
+  li:first-child {
+    margin-left: 0.7em;
+  }
+}
+
 @media (min-width: 576px) and (max-width: 1439px) {
 
   .container-sm,
