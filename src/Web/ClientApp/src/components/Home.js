@@ -4,8 +4,10 @@ import { withTranslation } from 'react-i18next';
 import CookiePolicyBanner from './CookiePolicyBanner';
 import Team from './Team';
 import Gym from './Gym';
+import GymClub from './GymClub';
 import Rates from './Rates';
 import Contact from './Contact';
+import img1 from '../assets/img/zgzb1.jpg';
 import img2 from '../assets/img/zgzb2.jpg';
 import img3 from '../assets/img/zgzb3.jpg';
 import './styles/Home.css';
@@ -13,31 +15,26 @@ import './styles/Home.css';
 
 class Home extends Component {
   static displayName = Home.name;
-  constructor(props) {
-    super(props);
-    this.state = {
-      showScroll: false
-    };
-  }
-
-  componentDidMount() {
-    window.addEventListener('scroll', this.checkScrollTop);
-  }
-
-  componentWillUnmount() {
-    window.removeEventListener('scroll', this.checkScrollTop);
-  }
-
-  checkScrollTop = () => {
-    if (!this.state.showScroll && window.pageYOffset > 500) {
-      this.setState({ showScroll: true });
-    } else if (this.state.showScroll && window.pageYOffset <= 500) {
-      this.setState({ showScroll: false });
-    }
-  };
 
   render() {
     const { t } = this.props;
+
+    const gym = {
+      id: 'gym',
+      title: t('gym.title'),
+      img: img1,
+      subtitle: t('gym.subtitle'),
+      text: t('gym.text')
+    };
+
+    const club = {
+      id: 'club',
+      title: t('club.title'),
+      img: img3,
+      subtitle: t('club.subtitle'),
+      text: t('club.text')
+    };
+
     return (
       <>
         <CookiePolicyBanner />
@@ -58,14 +55,10 @@ class Home extends Component {
               </Carousel.Caption>
             </Carousel.Item>
           </Carousel>
-          {this.state.showScroll &&
-            <button className="btn btn-arrow-up scroll-to-top" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
-              <i className="bi bi-arrow-up"></i>
-            </button>
-          }
         </div>
         <Team />
-        <Gym />
+        <GymClub data={gym} />
+        <GymClub data={club} />
         <Rates />
         <Contact />
       </>

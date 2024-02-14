@@ -37,7 +37,12 @@ i18n
           "gym": {
             "title": "ZARAGOZA BARBELL GYM",
             "subtitle": "Get to know our facilities",
-            "text1": "Ce sanctuaire est dédié à la culture de la force, de la santé et de la condition physique optimale. Il offre un environnement propice pour améliorer la santé et la condition physique à tout moment du jour ou de la nuit. Rejoignez-nous et découvrez votre plein potentiel!"
+            "text": "Ce sanctuaire est dédié à la culture de la force, de la santé et de la condition physique optimale. Il offre un environnement propice pour améliorer la santé et la condition physique à tout moment du jour ou de la nuit. Rejoignez-nous et découvrez votre plein potentiel!"
+          },
+          "club": {
+            "title": "CLUB AEP ZARAGOZA BARBELL",
+            "subtitle": "Get to know our facilities",
+            "text": "This sanctuary is dedicated to cultivating strength, health, and optimal physical conditioning. It provides an environment conducive to improving health and physical fitness at any time of day or night. Join us and discover your full potential!"
           },
           "team": {
             "title": "ZARAGOZA BARBELL TEAM",
@@ -132,6 +137,17 @@ i18n
                 "error": "Error sending message"
               }
             }
+          },
+          "footer": {
+            "copy": "All rights reserved.",
+            "location": "3 Brazal Almontilla street, 50410, Cuarte De Huerva, Zaragoza. Spain",
+            "links": {
+              "legal": "Legal notice",
+              "privacy": "Privacy policy",
+              "cookie": "Cookie policy",
+              "accessibility": "Accessibility statement",
+              "faq": "FAQs"
+            }
           }
         },
       },
@@ -167,7 +183,12 @@ i18n
           "gym": {
             "title": "SARAGOSSE BARBELL GYM",
             "subtitle": "Découvrez nos installations",
-            "text1": "This sanctuary is dedicated to cultivating strength, health, and optimal physical conditioning. It provides an environment conducive to improving health and physical fitness at any time of day or night. Join us and discover your full potential!"
+            "text": "Ce sanctuaire est dédié à la culture de la force, de la santé et de la condition physique optimale. Il offre un environnement propice pour améliorer la santé et la condition physique à tout moment du jour ou de la nuit. Rejoignez-nous et découvrez votre plein potentiel!"
+          },
+          "club": {
+            "title": "CLUB AEP SARAGOSSE BARBELL",
+            "subtitle": "Découvrez nos installations",
+            "text": "Ce sanctuaire est dédié à la culture de la force, de la santé et de la condition physique optimale. Il offre un environnement propice pour améliorer la santé et la condition physique à tout moment du jour ou de la nuit. Rejoignez-nous et découvrez votre plein potentiel!"
           },
           "team": {
             "title": "ÉQUIPE ZARAGOZA BARBELL",
@@ -262,6 +283,17 @@ i18n
                 "error": "Erreur lors de l'envoi du message"
               }
             }
+          },
+          "footer": {
+            "copy": "Tous droits réservés.",
+            "location": "C. Brazal Almontilla 3, 50410, Cuarte De Huerva, Saragosse. Espagne",
+            "links": {
+              "legal": "Mentions légales",
+              "privacy": "Politique de confidentialité",
+              "cookie": "Politique en matière de cookies",
+              "accessibility": "Déclaration d'accessibilité",
+              "faq": "FAQ"
+            }
           }
         }
       },
@@ -331,7 +363,12 @@ i18n
           "gym": {
             "title": "GIMNASIO ZARAGOZA BARBELL",
             "subtitle": "Conoce nuestras instalaciones",
-            "text1": "Este santuario se dedica al cultivo de la fuerza, la salud y el condicionamiento físico óptimo. Ofrece un ambiente propicio para mejorar la salud y el condicionamiento físico en cualquier momento del día o de la noche. ¡Únete y descubre tu máximo potencial!"
+            "text": "Este santuario se dedica al cultivo de la fuerza, la salud y el condicionamiento físico óptimo. Ofrece un ambiente propicio para mejorar la salud y el condicionamiento físico en cualquier momento del día o de la noche. ¡Únete y descubre tu máximo potencial!"
+          },
+          "club": {
+            "title": "CLUB AEP",
+            "subtitle": "Zaragoza Barbell Club ",
+            "text": "Tenemos una historia que se origina en el 2021, cuando tres personas apasionadas por el powerlifting decidieron unirse y crear lo que conocemos como Zaragoza Barbell. A partir del 2022, formalizamos la afiliación con la Asociación Española de Powerlifting (AEP), lo que nos permitió participar en competiciones con éxito. Más allá de los trofeos y medallas, lo que realmente nos distingue, es el espíritu de compañerismo y calor humano. El apoyo mutuo y la amistad han sido fundamentales para un crecimiento constante. Hoy en día, seguimos fortaleciendo el compromiso con este apasionante deporte."
           },
           "rates": {
             "title": "TARIFAS",
@@ -394,6 +431,15 @@ i18n
             }
           },
           "footer": {
+            "copy": "Todos los derechos reservados.",
+            "location": "C. Brazal Almontilla 3, 50410, Cuarte De Huerva, Zaragoza. España",
+            "links": {
+              "legal": "Aviso legal",
+              "privacy": "Política de privacidad",
+              "cookie": "Política de cookies",
+              "accessibility": "Declaración de accesibilidad",
+              "faq": "FAQs"
+            }
           }
         }
       },
@@ -429,7 +475,12 @@ i18n
           "gym": {
             "title": "GIMNASIO ZARAGOZA BARBELL",
             "subtitle": "Conoxe as nuestras instalazions",
-            "text1": "Iste santuario se dedica a cultivar a fuerza, a salut y o condicionamiento físico óptimo. Ofreixe un ambiente propicio ta millorar a salut y o condicionamiento físico en qualsiquier momento d’o día u d’a nueit. ¡Unite y descubre o tuyo máximo potencial!"
+            "text": "Iste santuario se dedica a cultivar a fuerza, a salut y o condicionamiento físico óptimo. Ofreixe un ambiente propicio ta millorar a salut y o condicionamiento físico en qualsiquier momento d’o día u d’a nueit. ¡Unite y descubre o tuyo máximo potencial!"
+          },
+          "club": {
+            "title": "CLUB AEP ZARAGOZA BARBELL",
+            "subtitle": "Conoxe as nuestras instalazions",
+            "text": "Iste santuario se dedica a cultivar a fuerza, a salut y o condicionamiento físico óptimo. Ofreixe un ambiente propicio ta millorar a salut y o condicionamiento físico en qualsiquier momento d’o día u d’a nueit. ¡Unite y descubre o tuyo máximo potencial!"
           },
           "team": {
             "title": "EQUIPO ZARAGOZA BARBELL",
@@ -523,6 +574,17 @@ i18n
                 "success": "Mandau inviau correctamén",
                 "error": "Error en inviar o mandau"
               }
+            }
+          },
+          "footer": {
+            "copy": "Toz os dreitos reservaus.",
+            "location": "C. Brazal Almontilla 3, 50410, Cuarte De Huerva, Zaragoza. Spain",
+            "links": {
+              "legal": "Aviso legal",
+              "privacy": "Politica de privazidat",
+              "cookie": "Politica de cookies",
+              "accessibility": "Declarazión d'azesibilidat",
+              "faq": "FAQs"
             }
           }
         }

@@ -12,6 +12,16 @@
   padding: 0;
 }
 
+.scroll-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 20px;
+  border-radius: 10%;
+  padding: 10px;
+  z-index: 9999;
+  font-size: 20px;
+}
+
 @media (min-width: 576px) and (max-width: 1439px) {
 
   .container-sm,

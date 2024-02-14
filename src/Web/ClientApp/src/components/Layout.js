@@ -8,6 +8,29 @@ import './styles/Layout.css';
 class Layout extends Component {
   static displayName = Layout.name;
 
+  constructor(props) {
+    super(props);
+    this.state = {
+      showScroll: false
+    };
+  }
+
+  componentDidMount() {
+    window.addEventListener('scroll', this.checkScrollTop);
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('scroll', this.checkScrollTop);
+  }
+
+  checkScrollTop = () => {
+    if (!this.state.showScroll && window.pageYOffset > 500) {
+      this.setState({ showScroll: true });
+    } else if (this.state.showScroll && window.pageYOffset <= 500) {
+      this.setState({ showScroll: false });
+    }
+  };
+
   render() {
     const { location } = this.props;
     return (
@@ -17,6 +40,11 @@ class Layout extends Component {
           {this.props.children}
         </Container>
         {location.pathname === '/' && <Footer />}
+        {this.state.showScroll &&
+          <button className="btn btn-arrow-up scroll-to-top" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
+            <i className="bi bi-arrow-up"></i>
+          </button>
+        }
       </>
     );
   }

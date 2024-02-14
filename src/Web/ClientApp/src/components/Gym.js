@@ -17,7 +17,7 @@ class Gym extends Component {
                     </div>
                     <div className="description-overlay">
                         <h3>{t('gym.subtitle')}</h3>
-                        <p>{t('gym.text1')}</p>
+                        <p>{t('gym.text')}</p>
                     </div>
                 </div>
             </div>

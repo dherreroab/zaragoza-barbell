@@ -3,9 +3,11 @@ import { Link } from 'react-router-dom';
 import Mailto from "./Mailto";
 import "./styles/Footer.css";
 import logo from './../assets/img/logo-black-red.png';
+import { withTranslation } from 'react-i18next';
 
 class Footer extends Component {
     render() {
+        const { t } = this.props;
 
         const email = {
             emailDestination: "zaragozabarbell@gmail.com",
@@ -40,17 +42,17 @@ class Footer extends Component {
                                 rel="noopener noreferrer"
                             >
                                 <i className="bi bi-geo-alt"></i>
-                                Calle Brazal Almontilla 3 50410, Cuarte De Huerva (Zaragoza). España
+                                {t('footer.location')}
                             </a>
                         </div>
                         <div className="links">
-                            <a href="/legal-notice">Aviso legal</a>
-                            <a href="/privacy">Política de privacidad</a>
-                            <Link to="/cookies-policy">Política de cookies</Link>
-                            <a href="/accessibility-statement">Declaración de accesibilidad</a>
-                            <a href="/faqs">FAQs</a>
+                            <a href="/legal-notice">{t('footer.links.legal')}</a>
+                            <a href="/privacy">{t('footer.links.privacy')}</a>
+                            <Link to="/cookies-policy" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>{t('footer.links.cookie')}</Link>
+                            <a href="/accessibility-statement">{t('footer.links.accessibility')}</a>
+                            <a href="/faqs">{t('footer.links.faq')}</a>
                         </div>
-                        <p className="copyright">© {new Date().getFullYear()} Zaragoza Barbell, S.L Todos los derechos reservados</p>
+                        <p className="copyright">© {new Date().getFullYear()} Zaragoza Barbell, S.L {t('footer.copy')}</p>
                     </div>
                     <div className="logo-footer">
                         <div className="logo">
@@ -81,4 +83,4 @@ class Footer extends Component {
     }
 }
 
-export default Footer;
+export default withTranslation()(Footer);

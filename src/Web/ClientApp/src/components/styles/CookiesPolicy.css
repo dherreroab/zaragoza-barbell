@@ -1,7 +1,11 @@
 .cookies-policy {
-    padding-top: 10vh;
+    padding-top: 12vh;
     position: absolute;
     left: 5vh;
+
+    div:first-of-type {
+        margin-bottom: 1vh;
+    }
 
     li:first-child {
         margin-left: 0.7em;
