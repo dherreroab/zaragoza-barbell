@@ -53,9 +53,6 @@ public class SendContactMailCommandHandler(IApplicationDbContext context, IOptio
         if (mailInfo == null)
             throw new ArgumentNullException(nameof(mailInfo));
 
-        var fromAddress = new MailAddress(mailInfo.Email ?? string.Empty);
-        var toAddress = new MailAddress("dherrero10abadia@gmail.com");
-
         var smtp = new SmtpClient
         {
             Host = "smtp.gmail.com",
@@ -66,14 +63,18 @@ public class SendContactMailCommandHandler(IApplicationDbContext context, IOptio
             Credentials = new NetworkCredential(_emailSettings.Value.Email, _emailSettings.Value.Password)
         };
 
-        using (var message = new MailMessage(fromAddress, toAddress)
+        using var message = new MailMessage(new MailAddress(_emailSettings.Value.Email!), new MailAddress(_emailSettings.Value.Email!))
         {
-            Subject = "Contacto desde la web de " + mailInfo.Name,
+            Subject = $"Contacto WEB {mailInfo.Name} | {mailInfo.Email}",
             Body = mailInfo.Message
-        })
+        };
+        using var messageCopy = new MailMessage(new MailAddress(_emailSettings.Value.Email!), new MailAddress(mailInfo.Email ?? string.Empty))
         {
-            smtp.Send(message);
-        }
+            Subject = $"Copia de contacto WEB. {mailInfo.Name} | {mailInfo.Email}",
+            Body = mailInfo.Message
+        };
+        smtp.Send(message);
+        smtp.Send(messageCopy);
     }
 
     private Task<bool> IsCaptchaValidAsync(string captchaResponse)
