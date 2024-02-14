@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 
 class LegalNotice extends React.Component {
     render() {
-
         return (
             <div className='policy'>
                 <div>

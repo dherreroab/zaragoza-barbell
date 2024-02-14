@@ -142,10 +142,10 @@ i18n
             "copy": "All rights reserved.",
             "location": "3 Brazal Almontilla street, 50410, Cuarte De Huerva, Zaragoza. Spain",
             "links": {
-              "legal": "Legal notice",
-              "privacy": "Privacy policy",
-              "cookie": "Cookie policy",
-              "accessibility": "Accessibility statement",
+              "legal": "Legal Notice",
+              "privacy": "Privacy Policy",
+              "cookie": "Cookie Policy",
+              "accessibility": "Accessibility Statement",
               "faq": "FAQs"
             }
           }
@@ -288,10 +288,10 @@ i18n
             "copy": "Tous droits réservés.",
             "location": "C. Brazal Almontilla 3, 50410, Cuarte De Huerva, Saragosse. Espagne",
             "links": {
-              "legal": "Mentions légales",
-              "privacy": "Politique de confidentialité",
-              "cookie": "Politique en matière de cookies",
-              "accessibility": "Déclaration d'accessibilité",
+              "legal": "Mentions Légales",
+              "privacy": "Politique de Confidentialité",
+              "cookie": "Politique en Matière de Cookies",
+              "accessibility": "Déclaration d'Accessibilité",
               "faq": "FAQ"
             }
           }
@@ -434,10 +434,10 @@ i18n
             "copy": "Todos los derechos reservados.",
             "location": "C. Brazal Almontilla 3, 50410, Cuarte de Huerva, Zaragoza. España",
             "links": {
-              "legal": "Aviso legal",
-              "privacy": "Política de privacidad",
+              "legal": "Aviso Legal",
+              "privacy": "Política de Privacidad",
               "cookie": "Política de cookies",
-              "accessibility": "Declaración de accesibilidad",
+              "accessibility": "Declaración de Accesibilidad",
               "faq": "FAQs"
             }
           }
@@ -580,10 +580,10 @@ i18n
             "copy": "Toz os dreitos reservaus.",
             "location": "C. Brazal Almontilla 3, 50410, Cuarte De Huerva, Zaragoza. Spain",
             "links": {
-              "legal": "Aviso legal",
-              "privacy": "Politica de privazidat",
-              "cookie": "Politica de cookies",
-              "accessibility": "Declarazión d'azesibilidat",
+              "legal": "Aviso Legal",
+              "privacy": "Politica de Privazidat",
+              "cookie": "Politica de Cookies",
+              "accessibility": "Declarazión d'Azesibilidat",
               "faq": "FAQs"
             }
           }
