@@ -23,16 +23,22 @@ class Rates extends Component {
 
         return (
             <div className="section-separation rates" id="rates" >
-                <h2>{t('rates.title')}</h2>
-                <Row xs={1} sm={1} md={2} lg={3} xl={4} xxl={5} className="g-4 justify-content-md-center">
-                    {rates.map((rate, index) => (
-                        <Col key={index}>
-                            <RateInfo rate={rate} />
-                        </Col>
-                    ))}
-                </Row>
-                <p>{t('rates.subtitle')}</p>
-                <p>*{t('rates.attached')}</p>
+                <div>
+                    <h2>{t('rates.title')}</h2>
+                </div>
+                <div>
+                    <Row xs={1} sm={1} md={2} lg={3} xl={4} xxl={5} className="g-4 justify-content-md-center">
+                        {rates.map((rate, index) => (
+                            <Col key={index} className="rate-section">
+                                <RateInfo rate={rate} />
+                            </Col>
+                        ))}
+                    </Row>
+                </div>
+                <div className="rate-footer">
+                    <p>{t('rates.subtitle')}</p>
+                    <p>*{t('rates.attached')}</p>
+                </div>
             </div>
         );
     }
