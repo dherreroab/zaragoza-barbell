@@ -12,7 +12,9 @@ class Gym extends Component {
                     <h2>{t('gym.title')}</h2>
                 </div>
                 <div className="gym-description">
-                    <img src={img1} alt="Gym" />
+                    <div className="img">
+                        <img src={img1} alt="Gym" />
+                    </div>
                     <div className="description-overlay">
                         <h3>{t('gym.subtitle')}</h3>
                         <p>{t('gym.text1')}</p>
