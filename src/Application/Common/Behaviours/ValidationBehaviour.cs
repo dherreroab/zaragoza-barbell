@@ -1,6 +1,6 @@
-﻿using ValidationException = zaragoza_barbell.Application.Common.Exceptions.ValidationException;
+﻿using ValidationException = ZaragozaBarbell.Application.Common.Exceptions.ValidationException;
 
-namespace zaragoza_barbell.Application.Common.Behaviours;
+namespace ZaragozaBarbell.Application.Common.Behaviours;
 
 public class ValidationBehaviour<TRequest, TResponse> : IPipelineBehavior<TRequest, TResponse>
      where TRequest : notnull

@@ -10,7 +10,7 @@
 // ------------------------------------------------------------------------------
 #region Designer generated code
 #pragma warning disable
-namespace zaragoza_barbell.Web.AcceptanceTests.Features
+namespace ZaragozaBarbell.Web.AcceptanceTests.Features
 {
     using TechTalk.SpecFlow;
     using System;

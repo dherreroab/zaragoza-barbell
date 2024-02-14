@@ -1,4 +1,4 @@
-﻿namespace zaragoza_barbell.Domain.Constants;
+﻿namespace ZaragozaBarbell.Domain.Constants;
 
 public abstract class Policies
 {

@@ -1,8 +1,8 @@
-﻿using zaragoza_barbell.Application.Common.Interfaces;
+﻿using ZaragozaBarbell.Application.Common.Interfaces;
 using MediatR.Pipeline;
 using Microsoft.Extensions.Logging;
 
-namespace zaragoza_barbell.Application.Common.Behaviours;
+namespace ZaragozaBarbell.Application.Common.Behaviours;
 
 public class LoggingBehaviour<TRequest> : IRequestPreProcessor<TRequest> where TRequest : notnull
 {
@@ -28,7 +28,7 @@ public class LoggingBehaviour<TRequest> : IRequestPreProcessor<TRequest> where T
             userName = await _identityService.GetUserNameAsync(userId);
         }
 
-        _logger.LogInformation("zaragoza_barbell Request: {Name} {@UserId} {@UserName} {@Request}",
+        _logger.LogInformation("ZaragozaBarbell Request: {Name} {@UserId} {@UserName} {@Request}",
             requestName, userId, userName, request);
     }
 }

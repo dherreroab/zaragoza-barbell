@@ -1,6 +1,6 @@
-﻿using zaragoza_barbell.Application.Common.Models;
+﻿using ZaragozaBarbell.Application.Common.Models;
 
-namespace zaragoza_barbell.Application.Common.Mappings;
+namespace ZaragozaBarbell.Application.Common.Mappings;
 
 public static class MappingExtensions
 {

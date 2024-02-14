@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
 
-namespace zaragoza_barbell.Domain.Common;
+namespace ZaragozaBarbell.Domain.Common;
 
 public abstract class BaseEntity
 {

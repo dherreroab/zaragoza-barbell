@@ -1,5 +1,5 @@
-using zaragoza_barbell.Infrastructure.Data;
-using zaragoza_barbell.Application.ContactMail.Settings;
+using ZaragozaBarbell.Infrastructure.Data;
+using ZaragozaBarbell.Application.ContactMail.Settings;
 
 var builder = WebApplication.CreateBuilder(args);
 

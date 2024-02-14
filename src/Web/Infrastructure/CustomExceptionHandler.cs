@@ -1,8 +1,8 @@
-﻿using zaragoza_barbell.Application.Common.Exceptions;
+﻿using ZaragozaBarbell.Application.Common.Exceptions;
 using Microsoft.AspNetCore.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 
-namespace zaragoza_barbell.Web.Infrastructure;
+namespace ZaragozaBarbell.Web.Infrastructure;
 
 public class CustomExceptionHandler : IExceptionHandler
 {

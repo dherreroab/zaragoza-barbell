@@ -4,8 +4,8 @@
     <SpaRoot>ClientApp\</SpaRoot>
     <SpaProxyServerUrl>https://localhost:44447</SpaProxyServerUrl>
     <SpaProxyLaunchCommand>npm start</SpaProxyLaunchCommand>
-    <RootNamespace>zaragoza_barbell.Web</RootNamespace>
-    <AssemblyName>zaragoza_barbell.Web</AssemblyName>
+    <RootNamespace>ZaragozaBarbell.Web</RootNamespace>
+    <AssemblyName>ZaragozaBarbell.Web</AssemblyName>
   </PropertyGroup>
 
   <ItemGroup>

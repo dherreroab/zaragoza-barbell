@@ -1,4 +1,4 @@
-﻿namespace zaragoza_barbell.Domain.Enums;
+﻿namespace ZaragozaBarbell.Domain.Enums;
 
 public enum PriorityLevel
 {

@@ -1,8 +1,8 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <RootNamespace>zaragoza_barbell.Infrastructure</RootNamespace>
-    <AssemblyName>zaragoza_barbell.Infrastructure</AssemblyName>
+    <RootNamespace>ZaragozaBarbell.Infrastructure</RootNamespace>
+    <AssemblyName>ZaragozaBarbell.Infrastructure</AssemblyName>
   </PropertyGroup>
 
   <ItemGroup>

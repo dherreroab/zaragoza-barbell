@@ -1,4 +1,4 @@
-namespace zaragoza_barbell.Web.AcceptanceTests.StepDefinitions;
+namespace ZaragozaBarbell.Web.AcceptanceTests.StepDefinitions;
 
 [Binding]
 public sealed class LoginStepDefinitions

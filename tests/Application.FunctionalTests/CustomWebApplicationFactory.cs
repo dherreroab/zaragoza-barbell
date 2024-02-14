@@ -1,6 +1,6 @@
 ﻿using System.Data.Common;
-using zaragoza_barbell.Application.Common.Interfaces;
-using zaragoza_barbell.Infrastructure.Data;
+using ZaragozaBarbell.Application.Common.Interfaces;
+using ZaragozaBarbell.Infrastructure.Data;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc.Testing;
 using Microsoft.AspNetCore.TestHost;
@@ -9,7 +9,7 @@ using Microsoft.EntityFrameworkCore.Diagnostics;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.DependencyInjection.Extensions;
 
-namespace zaragoza_barbell.Application.FunctionalTests;
+namespace ZaragozaBarbell.Application.FunctionalTests;
 
 using static Testing;
 

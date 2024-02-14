@@ -1,4 +1,4 @@
-namespace zaragoza_barbell.Application.ContactMail.Settings;
+namespace ZaragozaBarbell.Application.ContactMail.Settings;
 
 public class GoogleCaptchaSettings
 {

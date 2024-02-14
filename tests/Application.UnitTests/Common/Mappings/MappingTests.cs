@@ -1,12 +1,12 @@
 ﻿using System.Reflection;
 using System.Runtime.Serialization;
 using AutoMapper;
-using zaragoza_barbell.Application.Common.Interfaces;
-using zaragoza_barbell.Application.Common.Models;
-using zaragoza_barbell.Domain.Entities;
+using ZaragozaBarbell.Application.Common.Interfaces;
+using ZaragozaBarbell.Application.Common.Models;
+using ZaragozaBarbell.Domain.Entities;
 using NUnit.Framework;
 
-namespace zaragoza_barbell.Application.UnitTests.Common.Mappings;
+namespace ZaragozaBarbell.Application.UnitTests.Common.Mappings;
 
 public class MappingTests
 {

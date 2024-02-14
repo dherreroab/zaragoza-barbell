@@ -1,8 +1,8 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
-        <RootNamespace>zaragoza_barbell.Application.FunctionalTests</RootNamespace>
-        <AssemblyName>zaragoza_barbell.Application.FunctionalTests</AssemblyName>
+        <RootNamespace>ZaragozaBarbell.Application.FunctionalTests</RootNamespace>
+        <AssemblyName>ZaragozaBarbell.Application.FunctionalTests</AssemblyName>
     </PropertyGroup>
 
     <ItemGroup>

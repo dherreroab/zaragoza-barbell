@@ -1,10 +1,10 @@
-﻿using zaragoza_barbell.Application.Common.Interfaces;
-using zaragoza_barbell.Application.Common.Models;
+﻿using ZaragozaBarbell.Application.Common.Interfaces;
+using ZaragozaBarbell.Application.Common.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
-namespace zaragoza_barbell.Infrastructure.Identity;
+namespace ZaragozaBarbell.Infrastructure.Identity;
 
 public class IdentityService : IIdentityService
 {

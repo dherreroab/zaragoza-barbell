@@ -1,9 +1,9 @@
-﻿using zaragoza_barbell.Domain.Common;
+﻿using ZaragozaBarbell.Domain.Common;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Diagnostics;
 
-namespace zaragoza_barbell.Infrastructure.Data.Interceptors;
+namespace ZaragozaBarbell.Infrastructure.Data.Interceptors;
 
 public class DispatchDomainEventsInterceptor : SaveChangesInterceptor
 {

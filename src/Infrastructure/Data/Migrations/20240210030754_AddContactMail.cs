@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
-namespace zaragoza_barbell.Infrastructure.Data.Migrations
+namespace ZaragozaBarbell.Infrastructure.Data.Migrations
 {
     /// <inheritdoc />
     public partial class AddContactMail : Migration

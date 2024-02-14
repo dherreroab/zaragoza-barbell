@@ -1,7 +1,7 @@
 ﻿using Azure.Identity;
-using zaragoza_barbell.Application.Common.Interfaces;
-using zaragoza_barbell.Infrastructure.Data;
-using zaragoza_barbell.Web.Services;
+using ZaragozaBarbell.Application.Common.Interfaces;
+using ZaragozaBarbell.Infrastructure.Data;
+using ZaragozaBarbell.Web.Services;
 using Microsoft.AspNetCore.Mvc;
 
 using ZymLabs.NSwag.FluentValidation;
@@ -41,11 +41,11 @@ public static class DependencyInjection
 
         services.AddOpenApiDocument((configure, sp) =>
         {
-            configure.Title = "zaragoza_barbell API";
+            configure.Title = "ZaragozaBarbell API";
 
 
             // Add the fluent validations schema processor
-            var fluentValidationSchemaProcessor = 
+            var fluentValidationSchemaProcessor =
                 sp.CreateScope().ServiceProvider.GetRequiredService<FluentValidationSchemaProcessor>();
 
             configure.SchemaSettings.SchemaProcessors.Add(fluentValidationSchemaProcessor);

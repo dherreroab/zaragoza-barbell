@@ -1,4 +1,4 @@
-﻿namespace zaragoza_barbell.Application.Common.Models;
+﻿namespace ZaragozaBarbell.Application.Common.Models;
 
 public class Result
 {

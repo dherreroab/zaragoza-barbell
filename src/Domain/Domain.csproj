@@ -1,8 +1,8 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <RootNamespace>zaragoza_barbell.Domain</RootNamespace>
-    <AssemblyName>zaragoza_barbell.Domain</AssemblyName>
+    <RootNamespace>ZaragozaBarbell.Domain</RootNamespace>
+    <AssemblyName>ZaragozaBarbell.Domain</AssemblyName>
   </PropertyGroup>
 
   <ItemGroup>

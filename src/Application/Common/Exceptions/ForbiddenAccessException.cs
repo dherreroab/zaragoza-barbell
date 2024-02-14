@@ -1,4 +1,4 @@
-﻿namespace zaragoza_barbell.Application.Common.Exceptions;
+﻿namespace ZaragozaBarbell.Application.Common.Exceptions;
 
 public class ForbiddenAccessException : Exception
 {

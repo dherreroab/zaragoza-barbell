@@ -1,6 +1,6 @@
 ﻿using System.Reflection;
 
-namespace zaragoza_barbell.Web.Infrastructure;
+namespace ZaragozaBarbell.Web.Infrastructure;
 
 public static class MethodInfoExtensions
 {

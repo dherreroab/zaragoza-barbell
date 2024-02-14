@@ -1,12 +1,12 @@
 ﻿using System.Reflection;
-using zaragoza_barbell.Application.Common.Interfaces;
-using zaragoza_barbell.Domain.Entities;
-using zaragoza_barbell.Infrastructure.Identity;
+using ZaragozaBarbell.Application.Common.Interfaces;
+using ZaragozaBarbell.Domain.Entities;
+using ZaragozaBarbell.Infrastructure.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Design;
 
-namespace zaragoza_barbell.Infrastructure.Data;
+namespace ZaragozaBarbell.Infrastructure.Data;
 
 public class ApplicationDbContext : IdentityDbContext<ApplicationUser>, IApplicationDbContext
 {

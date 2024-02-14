@@ -1,12 +1,12 @@
-﻿using zaragoza_barbell.Domain.Constants;
-using zaragoza_barbell.Infrastructure.Data;
-using zaragoza_barbell.Infrastructure.Identity;
+﻿using ZaragozaBarbell.Domain.Constants;
+using ZaragozaBarbell.Infrastructure.Data;
+using ZaragozaBarbell.Infrastructure.Identity;
 using MediatR;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace zaragoza_barbell.Application.FunctionalTests;
+namespace ZaragozaBarbell.Application.FunctionalTests;
 
 [SetUpFixture]
 public partial class Testing
@@ -99,7 +99,7 @@ public partial class Testing
         {
             await _database.ResetAsync();
         }
-        catch (Exception) 
+        catch (Exception)
         {
         }
 

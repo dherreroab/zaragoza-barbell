@@ -1,6 +1,6 @@
-﻿using zaragoza_barbell.Domain.Entities;
+﻿using ZaragozaBarbell.Domain.Entities;
 
-namespace zaragoza_barbell.Application.Common.Interfaces;
+namespace ZaragozaBarbell.Application.Common.Interfaces;
 
 public interface IApplicationDbContext
 {

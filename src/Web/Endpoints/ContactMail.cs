@@ -1,6 +1,6 @@
-﻿using zaragoza_barbell.Application.ContactMail.Commands.SendContactMail;
+﻿using ZaragozaBarbell.Application.ContactMail.Commands.SendContactMail;
 
-namespace zaragoza_barbell.Web.Endpoints;
+namespace ZaragozaBarbell.Web.Endpoints;
 
 public class ContactMail : EndpointGroupBase
 {

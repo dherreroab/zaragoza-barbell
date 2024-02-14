@@ -1,4 +1,4 @@
-﻿namespace zaragoza_barbell.Web.Infrastructure;
+﻿namespace ZaragozaBarbell.Web.Infrastructure;
 
 public abstract class EndpointGroupBase
 {

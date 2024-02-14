@@ -1,4 +1,4 @@
-﻿namespace zaragoza_barbell.Application.Common.Interfaces;
+﻿namespace ZaragozaBarbell.Application.Common.Interfaces;
 
 public interface IUser
 {

@@ -1,10 +1,10 @@
-﻿using zaragoza_barbell.Application.Common.Interfaces;
-using zaragoza_barbell.Domain.Common;
+﻿using ZaragozaBarbell.Application.Common.Interfaces;
+using ZaragozaBarbell.Domain.Common;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.ChangeTracking;
 using Microsoft.EntityFrameworkCore.Diagnostics;
 
-namespace zaragoza_barbell.Infrastructure.Data.Interceptors;
+namespace ZaragozaBarbell.Infrastructure.Data.Interceptors;
 
 public class AuditableEntityInterceptor : SaveChangesInterceptor
 {

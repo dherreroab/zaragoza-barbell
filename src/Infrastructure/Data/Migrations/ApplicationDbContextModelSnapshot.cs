@@ -3,11 +3,11 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using zaragoza_barbell.Infrastructure.Data;
+using ZaragozaBarbell.Infrastructure.Data;
 
 #nullable disable
 
-namespace zaragoza_barbell.Infrastructure.Data.Migrations
+namespace ZaragozaBarbell.Infrastructure.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
     partial class ApplicationDbContextModelSnapshot : ModelSnapshot
@@ -145,7 +145,7 @@ namespace zaragoza_barbell.Infrastructure.Data.Migrations
                     b.ToTable("AspNetUserTokens", (string)null);
                 });
 
-            modelBuilder.Entity("zaragoza_barbell.Domain.Entities.Mail", b =>
+            modelBuilder.Entity("ZaragozaBarbell.Domain.Entities.Mail", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -177,7 +177,7 @@ namespace zaragoza_barbell.Infrastructure.Data.Migrations
                     b.ToTable("Mail");
                 });
 
-            modelBuilder.Entity("zaragoza_barbell.Domain.Entities.TodoItem", b =>
+            modelBuilder.Entity("ZaragozaBarbell.Domain.Entities.TodoItem", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -222,7 +222,7 @@ namespace zaragoza_barbell.Infrastructure.Data.Migrations
                     b.ToTable("TodoItems");
                 });
 
-            modelBuilder.Entity("zaragoza_barbell.Domain.Entities.TodoList", b =>
+            modelBuilder.Entity("ZaragozaBarbell.Domain.Entities.TodoList", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -250,7 +250,7 @@ namespace zaragoza_barbell.Infrastructure.Data.Migrations
                     b.ToTable("TodoLists");
                 });
 
-            modelBuilder.Entity("zaragoza_barbell.Infrastructure.Identity.ApplicationUser", b =>
+            modelBuilder.Entity("ZaragozaBarbell.Infrastructure.Identity.ApplicationUser", b =>
                 {
                     b.Property<string>("Id")
                         .HasColumnType("TEXT");
@@ -325,7 +325,7 @@ namespace zaragoza_barbell.Infrastructure.Data.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserClaim<string>", b =>
                 {
-                    b.HasOne("zaragoza_barbell.Infrastructure.Identity.ApplicationUser", null)
+                    b.HasOne("ZaragozaBarbell.Infrastructure.Identity.ApplicationUser", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -334,7 +334,7 @@ namespace zaragoza_barbell.Infrastructure.Data.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserLogin<string>", b =>
                 {
-                    b.HasOne("zaragoza_barbell.Infrastructure.Identity.ApplicationUser", null)
+                    b.HasOne("ZaragozaBarbell.Infrastructure.Identity.ApplicationUser", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -349,7 +349,7 @@ namespace zaragoza_barbell.Infrastructure.Data.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("zaragoza_barbell.Infrastructure.Identity.ApplicationUser", null)
+                    b.HasOne("ZaragozaBarbell.Infrastructure.Identity.ApplicationUser", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -358,16 +358,16 @@ namespace zaragoza_barbell.Infrastructure.Data.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserToken<string>", b =>
                 {
-                    b.HasOne("zaragoza_barbell.Infrastructure.Identity.ApplicationUser", null)
+                    b.HasOne("ZaragozaBarbell.Infrastructure.Identity.ApplicationUser", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });
 
-            modelBuilder.Entity("zaragoza_barbell.Domain.Entities.TodoItem", b =>
+            modelBuilder.Entity("ZaragozaBarbell.Domain.Entities.TodoItem", b =>
                 {
-                    b.HasOne("zaragoza_barbell.Domain.Entities.TodoList", "List")
+                    b.HasOne("ZaragozaBarbell.Domain.Entities.TodoList", "List")
                         .WithMany("Items")
                         .HasForeignKey("ListId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -376,9 +376,9 @@ namespace zaragoza_barbell.Infrastructure.Data.Migrations
                     b.Navigation("List");
                 });
 
-            modelBuilder.Entity("zaragoza_barbell.Domain.Entities.TodoList", b =>
+            modelBuilder.Entity("ZaragozaBarbell.Domain.Entities.TodoList", b =>
                 {
-                    b.OwnsOne("zaragoza_barbell.Domain.ValueObjects.Colour", "Colour", b1 =>
+                    b.OwnsOne("ZaragozaBarbell.Domain.ValueObjects.Colour", "Colour", b1 =>
                         {
                             b1.Property<int>("TodoListId")
                                 .HasColumnType("INTEGER");
@@ -399,7 +399,7 @@ namespace zaragoza_barbell.Infrastructure.Data.Migrations
                         .IsRequired();
                 });
 
-            modelBuilder.Entity("zaragoza_barbell.Domain.Entities.TodoList", b =>
+            modelBuilder.Entity("ZaragozaBarbell.Domain.Entities.TodoList", b =>
                 {
                     b.Navigation("Items");
                 });

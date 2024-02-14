@@ -1,8 +1,8 @@
 ﻿using System.Diagnostics;
-using zaragoza_barbell.Application.Common.Interfaces;
+using ZaragozaBarbell.Application.Common.Interfaces;
 using Microsoft.Extensions.Logging;
 
-namespace zaragoza_barbell.Application.Common.Behaviours;
+namespace ZaragozaBarbell.Application.Common.Behaviours;
 
 public class PerformanceBehaviour<TRequest, TResponse> : IPipelineBehavior<TRequest, TResponse> where TRequest : notnull
 {
@@ -44,7 +44,7 @@ public class PerformanceBehaviour<TRequest, TResponse> : IPipelineBehavior<TRequ
                 userName = await _identityService.GetUserNameAsync(userId);
             }
 
-            _logger.LogWarning("zaragoza_barbell Long Running Request: {Name} ({ElapsedMilliseconds} milliseconds) {@UserId} {@UserName} {@Request}",
+            _logger.LogWarning("ZaragozaBarbell Long Running Request: {Name} ({ElapsedMilliseconds} milliseconds) {@UserId} {@UserName} {@Request}",
                 requestName, elapsedMilliseconds, userId, userName, request);
         }
 

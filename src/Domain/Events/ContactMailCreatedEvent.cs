@@ -1,4 +1,4 @@
-﻿namespace zaragoza_barbell.Domain.Events;
+﻿namespace ZaragozaBarbell.Domain.Events;
 
 public class ContactMailCompletedEvent : BaseEvent
 {

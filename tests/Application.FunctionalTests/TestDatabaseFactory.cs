@@ -1,4 +1,4 @@
-﻿namespace zaragoza_barbell.Application.FunctionalTests;
+﻿namespace ZaragozaBarbell.Application.FunctionalTests;
 
 public static class TestDatabaseFactory
 {

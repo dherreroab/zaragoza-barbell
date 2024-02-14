@@ -1,6 +1,6 @@
 ﻿using MediatR;
 
-namespace zaragoza_barbell.Domain.Common;
+namespace ZaragozaBarbell.Domain.Common;
 
 public abstract class BaseEvent : INotification
 {

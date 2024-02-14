@@ -1,4 +1,4 @@
-﻿namespace zaragoza_barbell.Application.Common.Security;
+﻿namespace ZaragozaBarbell.Application.Common.Security;
 
 /// <summary>
 /// Specifies the class this attribute is applied to requires authorization.

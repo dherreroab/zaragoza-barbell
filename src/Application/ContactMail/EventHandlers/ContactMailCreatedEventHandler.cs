@@ -1,7 +1,7 @@
-﻿using zaragoza_barbell.Domain.Events;
+﻿using ZaragozaBarbell.Domain.Events;
 using Microsoft.Extensions.Logging;
 
-namespace zaragoza_barbell.Application.ContactMails.EventHandlers;
+namespace ZaragozaBarbell.Application.ContactMails.EventHandlers;
 
 public class ContactMailCreatedEventHandler : INotificationHandler<ContactMailCreatedEvent>
 {
@@ -14,7 +14,7 @@ public class ContactMailCreatedEventHandler : INotificationHandler<ContactMailCr
 
     public Task Handle(ContactMailCreatedEvent notification, CancellationToken cancellationToken)
     {
-        _logger.LogInformation("zaragoza_barbell Domain Event: {DomainEvent}", notification.GetType().Name);
+        _logger.LogInformation("ZaragozaBarbell Domain Event: {DomainEvent}", notification.GetType().Name);
 
         return Task.CompletedTask;
     }

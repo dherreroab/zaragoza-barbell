@@ -1,9 +1,9 @@
-﻿using zaragoza_barbell.Application.Common.Exceptions;
+﻿using ZaragozaBarbell.Application.Common.Exceptions;
 using FluentAssertions;
 using FluentValidation.Results;
 using NUnit.Framework;
 
-namespace zaragoza_barbell.Application.UnitTests.Common.Exceptions;
+namespace ZaragozaBarbell.Application.UnitTests.Common.Exceptions;
 
 public class ValidationExceptionTests
 {

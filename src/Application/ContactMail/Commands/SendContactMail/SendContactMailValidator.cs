@@ -1,6 +1,6 @@
-﻿using zaragoza_barbell.Application.ContactMail.Commands.SendContactMail;
+﻿using ZaragozaBarbell.Application.ContactMail.Commands.SendContactMail;
 
-namespace zaragoza_barbell.Application.ContactMail.Commands.SendContactMail;
+namespace ZaragozaBarbell.Application.ContactMail.Commands.SendContactMail;
 
 public class SendContactMailValidator : AbstractValidator<SendContactMailCommand>
 {

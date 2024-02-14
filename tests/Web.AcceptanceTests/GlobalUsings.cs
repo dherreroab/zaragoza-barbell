@@ -1,4 +1,4 @@
-﻿global using zaragoza_barbell.Web.AcceptanceTests.Pages;
+﻿global using ZaragozaBarbell.Web.AcceptanceTests.Pages;
 global using BoDi;
 global using FluentAssertions;
 global using Microsoft.Playwright;

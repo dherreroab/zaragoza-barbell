@@ -1,4 +1,4 @@
-﻿namespace zaragoza_barbell.Domain.Entities;
+﻿namespace ZaragozaBarbell.Domain.Entities;
 
 public class Mail : BaseAuditableEntity
 {

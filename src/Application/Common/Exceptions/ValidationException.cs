@@ -1,6 +1,6 @@
 ﻿using FluentValidation.Results;
 
-namespace zaragoza_barbell.Application.Common.Exceptions;
+namespace ZaragozaBarbell.Application.Common.Exceptions;
 
 public class ValidationException : Exception
 {

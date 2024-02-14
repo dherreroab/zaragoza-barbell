@@ -1,6 +1,6 @@
-﻿using zaragoza_barbell.Application.Common.Models;
+﻿using ZaragozaBarbell.Application.Common.Models;
 
-namespace zaragoza_barbell.Application.Common.Interfaces;
+namespace ZaragozaBarbell.Application.Common.Interfaces;
 
 public interface IIdentityService
 {

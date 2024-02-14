@@ -1,5 +1,5 @@
 ﻿using System.Reflection;
-using zaragoza_barbell.Application.Common.Behaviours;
+using ZaragozaBarbell.Application.Common.Behaviours;
 
 namespace Microsoft.Extensions.DependencyInjection;
 

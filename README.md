@@ -1,1 +1,1 @@
-﻿# zaragoza_barbell
+﻿# ZaragozaBarbell

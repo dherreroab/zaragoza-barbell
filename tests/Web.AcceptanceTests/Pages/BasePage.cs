@@ -1,4 +1,4 @@
-﻿namespace zaragoza_barbell.Web.AcceptanceTests.Pages;
+﻿namespace ZaragozaBarbell.Web.AcceptanceTests.Pages;
 
 public abstract class BasePage
 {

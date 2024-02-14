@@ -1,8 +1,8 @@
-﻿using zaragoza_barbell.Application.Common.Interfaces;
-using zaragoza_barbell.Domain.Constants;
-using zaragoza_barbell.Infrastructure.Data;
-using zaragoza_barbell.Infrastructure.Data.Interceptors;
-using zaragoza_barbell.Infrastructure.Identity;
+﻿using ZaragozaBarbell.Application.Common.Interfaces;
+using ZaragozaBarbell.Domain.Constants;
+using ZaragozaBarbell.Infrastructure.Data;
+using ZaragozaBarbell.Infrastructure.Data.Interceptors;
+using ZaragozaBarbell.Infrastructure.Identity;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Diagnostics;

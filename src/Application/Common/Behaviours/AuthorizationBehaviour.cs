@@ -1,9 +1,9 @@
 ﻿using System.Reflection;
-using zaragoza_barbell.Application.Common.Exceptions;
-using zaragoza_barbell.Application.Common.Interfaces;
-using zaragoza_barbell.Application.Common.Security;
+using ZaragozaBarbell.Application.Common.Exceptions;
+using ZaragozaBarbell.Application.Common.Interfaces;
+using ZaragozaBarbell.Application.Common.Security;
 
-namespace zaragoza_barbell.Application.Common.Behaviours;
+namespace ZaragozaBarbell.Application.Common.Behaviours;
 
 public class AuthorizationBehaviour<TRequest, TResponse> : IPipelineBehavior<TRequest, TResponse> where TRequest : notnull
 {

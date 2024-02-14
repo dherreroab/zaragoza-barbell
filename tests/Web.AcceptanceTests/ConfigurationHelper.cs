@@ -1,6 +1,6 @@
 ﻿using Microsoft.Extensions.Configuration;
 
-namespace zaragoza_barbell.Web.AcceptanceTests;
+namespace ZaragozaBarbell.Web.AcceptanceTests;
 
 public static class ConfigurationHelper
 {

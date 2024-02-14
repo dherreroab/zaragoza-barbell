@@ -1,8 +1,8 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
-        <RootNamespace>zaragoza_barbell.Web.AcceptanceTests</RootNamespace>
-        <AssemblyName>zaragoza_barbell.Web.AcceptanceTests</AssemblyName>
+        <RootNamespace>ZaragozaBarbell.Web.AcceptanceTests</RootNamespace>
+        <AssemblyName>ZaragozaBarbell.Web.AcceptanceTests</AssemblyName>
     </PropertyGroup>
 
     <ItemGroup>

@@ -1,7 +1,7 @@
-﻿using zaragoza_barbell.Application.Common.Models;
+﻿using ZaragozaBarbell.Application.Common.Models;
 using Microsoft.AspNetCore.Identity;
 
-namespace zaragoza_barbell.Infrastructure.Identity;
+namespace ZaragozaBarbell.Infrastructure.Identity;
 
 public static class IdentityResultExtensions
 {

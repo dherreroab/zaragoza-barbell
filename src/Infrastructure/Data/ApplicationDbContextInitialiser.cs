@@ -1,14 +1,14 @@
 ﻿using System.Runtime.InteropServices;
-using zaragoza_barbell.Domain.Constants;
-using zaragoza_barbell.Domain.Entities;
-using zaragoza_barbell.Infrastructure.Identity;
+using ZaragozaBarbell.Domain.Constants;
+using ZaragozaBarbell.Domain.Entities;
+using ZaragozaBarbell.Infrastructure.Identity;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 
-namespace zaragoza_barbell.Infrastructure.Data;
+namespace ZaragozaBarbell.Infrastructure.Data;
 
 public static class InitialiserExtensions
 {

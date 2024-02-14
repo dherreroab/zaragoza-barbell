@@ -1,8 +1,8 @@
 ﻿using System.Security.Claims;
 
-using zaragoza_barbell.Application.Common.Interfaces;
+using ZaragozaBarbell.Application.Common.Interfaces;
 
-namespace zaragoza_barbell.Web.Services;
+namespace ZaragozaBarbell.Web.Services;
 
 public class CurrentUser : IUser
 {

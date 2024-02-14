@@ -1,10 +1,10 @@
 ﻿using System.Data;
 using System.Data.Common;
-using zaragoza_barbell.Infrastructure.Data;
+using ZaragozaBarbell.Infrastructure.Data;
 using Microsoft.Data.Sqlite;
 using Microsoft.EntityFrameworkCore;
 
-namespace zaragoza_barbell.Application.FunctionalTests;
+namespace ZaragozaBarbell.Application.FunctionalTests;
 
 public class SqliteTestDatabase : ITestDatabase
 {

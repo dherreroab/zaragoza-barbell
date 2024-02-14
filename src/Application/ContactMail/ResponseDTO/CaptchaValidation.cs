@@ -1,7 +1,7 @@
 
 using Newtonsoft.Json;
 
-namespace zaragoza_barbell.Application.ContactMail.ResponseDTO;
+namespace ZaragozaBarbell.Application.ContactMail.ResponseDTO;
 public class CaptchaValidation
 {
     [JsonProperty("success")]

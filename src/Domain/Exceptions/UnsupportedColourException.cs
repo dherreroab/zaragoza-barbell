@@ -1,4 +1,4 @@
-﻿namespace zaragoza_barbell.Domain.Exceptions;
+﻿namespace ZaragozaBarbell.Domain.Exceptions;
 
 public class UnsupportedColourException : Exception
 {

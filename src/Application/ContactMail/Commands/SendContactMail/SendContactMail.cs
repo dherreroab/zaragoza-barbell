@@ -1,16 +1,16 @@
-﻿using zaragoza_barbell.Application.Common.Interfaces;
-using zaragoza_barbell.Domain.Entities;
-using zaragoza_barbell.Domain.Events;
+﻿using ZaragozaBarbell.Application.Common.Interfaces;
+using ZaragozaBarbell.Domain.Entities;
+using ZaragozaBarbell.Domain.Events;
 using System.Net.Mail;
 using System.Net;
-using zaragoza_barbell.Application.ContactMail.Settings;
+using ZaragozaBarbell.Application.ContactMail.Settings;
 using Microsoft.Extensions.Options;
 using Newtonsoft.Json;
 using Google.Apis.Http;
-using zaragoza_barbell.Application.ContactMail.ResponseDTO;
+using ZaragozaBarbell.Application.ContactMail.ResponseDTO;
 
 
-namespace zaragoza_barbell.Application.ContactMail.Commands.SendContactMail;
+namespace ZaragozaBarbell.Application.ContactMail.Commands.SendContactMail;
 
 public record SendContactMailCommand : IRequest<int>
 {
@@ -29,7 +29,7 @@ public class SendContactMailCommandHandler(IApplicationDbContext context, IOptio
 
     public async Task<int> Handle(SendContactMailCommand request, CancellationToken cancellationToken)
     {
-        // if (!await IsCaptchaValidAsync(request.CaptchaResponse ?? "")) return -1;
+        if (!await IsCaptchaValidAsync(request.CaptchaResponse ?? "")) return -1;
         var entity = new Mail
         {
             Name = request.Name,
