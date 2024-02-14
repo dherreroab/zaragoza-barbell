@@ -29,6 +29,18 @@
     }
 }
 
+#carousel::before,
+#team::before,
+#gym::before,
+#rates::before,
+#contact::before {
+    content: "";
+    display: block;
+    height: 14vh;
+    margin-top: -14vh;
+    visibility: hidden;
+}
+
 .carousel {
     img {
         width: 100%;
@@ -78,17 +90,6 @@
     }
 }
 
-#carousel::before,
-#team::before,
-#gym::before,
-#contact::before {
-    content: "";
-    display: block;
-    height: 14vh;
-    margin-top: -14vh;
-    visibility: hidden;
-}
-
 .scroll-to-top {
     position: fixed;
     bottom: 30px;
@@ -116,5 +117,5 @@
 
 
 .section-separation {
-    margin: 2rem 0 3rem 0;
+    margin: 3rem auto;
 }

@@ -68,3 +68,7 @@
         padding-left: 3vh;
     }
 }
+
+.section-separation.footer {
+    margin: 3rem auto auto auto;
+}

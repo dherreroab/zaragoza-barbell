@@ -81,7 +81,7 @@ class NavMenu extends Component {
         <div ref={this.navbarRef}>
           <Navbar className="navbar-expand-sm navbar-toggleable-sm ng-white border-bottom box-shadow" container light>
             <NavbarBrand onClick={() => handleClick('carousel')}>
-              <img src={img} alt="Zaragoza Barbell" style={{ maxHeight: '75px', marginRight: '10px' }} />
+              <img src={img} alt="Zaragoza Barbell" style={{ maxHeight: '10vh', marginRight: '1vh' }} />
             </NavbarBrand>
             <NavbarToggler onClick={this.toggleNavbar}>
               {!this.state.collapsed ?
@@ -104,7 +104,7 @@ class NavMenu extends Component {
                   <NavLink className="text-dark" onClick={() => { handleClick('club'); this.checkNavbarCollapsed(); }}>{t('menu.aep-club')}</NavLink>
                 </NavItem>}
                 {location.pathname === '/' && <NavItem>
-                  <NavLink className="text-dark" onClick={() => { handleClick('services'); this.checkNavbarCollapsed(); }}>{t('menu.services')}</NavLink>
+                  <NavLink className="text-dark" onClick={() => { handleClick('rates'); this.checkNavbarCollapsed(); }}>{t('menu.rates')}</NavLink>
                 </NavItem>}
                 {location.pathname === '/' && <NavItem>
                   <NavLink className="text-dark" onClick={() => { handleClick('contact'); this.checkNavbarCollapsed(); }}>{t('menu.contact')}</NavLink>

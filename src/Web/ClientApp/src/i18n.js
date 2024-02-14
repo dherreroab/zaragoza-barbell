@@ -73,8 +73,50 @@ i18n
               "aboutText": "Part of the gym's founding team and with a long history in both team sports and powerlifting, their goal is to help you with everything related to gym management."
             }
           },
+          "rates": {
+            "title": "RATES",
+            "subtitle": "To consult with the team: Personal training, programming or personalized advice.",
+            "attached": "All prices shown include VAT.",
+            "ratesInfo": {
+              "monthly": {
+                "type": "Unlimited Member",
+                "price": "€65/month",
+                "wayToPay": "Monthly payment"
+              },
+              "quarterly": {
+                "type": "Quarterly Member",
+                "price": "€60/month",
+                "wayToPay": "Quarterly payment of €180"
+              },
+              "annual": {
+                "type": "Annual Member",
+                "price": "€55/month",
+                "wayToPay": "Annual payment of €660"
+              },
+              "day": {
+                "type": "day Entry",
+                "price": "15€",
+                "wayToPay": "Pay on the spot"
+              },
+              "weekend": {
+                "type": "Weekend",
+                "price": "€13.33/day",
+                "wayToPay": "On-the-spot payment of €40 (Friday to Sunday)"
+              },
+              "fiveSessions": {
+                "type": "5 sessions",
+                "price": "€11/day",
+                "wayToPay": "On-the-spot payment of €55 (Expiration of one month)"
+              },
+              "tenSessions": {
+                "type": "10 sessions",
+                "price": "€9/day",
+                "wayToPay": "On-the-spot payment of €90 (Expiration of three months)"
+              }
+            }
+          },
           "contact": {
-            "header": "Contact",
+            "header": "CONTACT",
             "sub-header": "Do you want to contact us? Here you have several options, or try to have us pick up your phone or fill out the contact form and we will respond as soon as possible.",
             "form": {
               "name": "Name",
@@ -161,8 +203,50 @@ i18n
               "aboutText": "Faisant partie de l'équipe fondatrice du gymnase et avec une longue histoire dans les sports d'équipe et la dynamophilie, leur objectif est de vous aider pour tout ce qui concerne la gestion du gymnase."
             }
           },
+          "rates": {
+            "title": "TARIFS",
+            "subtitle": "A consulter avec l'équipe : Entraînement personnalisé, programmation ou conseils personnalisés.",
+            "attached": "Tous les prix indiqués incluent la TVA.",
+            "ratesInfo": {
+              "monthly": {
+                "type": "Membre illimité",
+                "price": "65€/mois",
+                "wayToPay": "Paiement mensuel"
+              },
+              "quarterly": {
+                "type": "Membre trimestriel",
+                "price": "60€/mois",
+                "wayToPay": "Paiement trimestriel de 180€"
+              },
+              "annual": {
+                "type": "Membre annuel",
+                "price": "55€/mois",
+                "wayToPay": "Paiement annuel de 660 €"
+              },
+              "day": {
+                "type": "Entrée quotidienne",
+                "price": "15€",
+                "wayToPay": "Payez sur place"
+              },
+              "weekend": {
+                "type": "Week-end",
+                "price": "13,33€/jour",
+                "wayToPay": "Paiement sur place de 40€ (vendredi au dimanche)"
+              },
+              "fiveSessions": {
+                "type": "5 séances",
+                "price": "11€/jour",
+                "wayToPay": "Paiement sur place de 55€ (Expiration d'un mois)"
+              },
+              "tenSessions": {
+                "type": "10 séances",
+                "price": "9€/jour",
+                "wayToPay": "Paiement sur place de 90€ (Expiration de trois mois)"
+              }
+            }
+          },
           "contact": {
-            "header": "Contact",
+            "header": "CONTACT",
             "sub-header": "Voulez-vous nous contacter ? Ici vous avez plusieurs options, ou essayez de nous faire répondre par téléphone ou de remplir le formulaire de contact et nous vous répondrons dans les plus brefs délais.",
             "form": {
               "name": "Nom",
@@ -188,7 +272,7 @@ i18n
             "gym": "Gimnasio 24H",
             "aep-club": "Club AEP",
             "team": "Equipo",
-            "services": "Servicios",
+            "rates": "Tarifas",
             "faqs": "FAQs",
             "contact": "Contacto",
             "language": "Idioma"
@@ -249,8 +333,50 @@ i18n
             "subtitle": "Conoce nuestras instalaciones",
             "text1": "Este santuario se dedica al cultivo de la fuerza, la salud y el condicionamiento físico óptimo. Ofrece un ambiente propicio para mejorar la salud y el condicionamiento físico en cualquier momento del día o de la noche. ¡Únete y descubre tu máximo potencial!"
           },
+          "rates": {
+            "title": "TARIFAS",
+            "subtitle": "A consultar con el equipo: Entrenamiento personal, programaciones o asesoramiento personalizado.",
+            "attached": "Todos los precios mostrados llevan el IVA incluido.",
+            "ratesInfo": {
+              "monthly": {
+                "type": "Socio ilimitado",
+                "price": "65€/mes",
+                "wayToPay": "Pago mensual"
+              },
+              "quarterly": {
+                "type": "Socio Trimestral",
+                "price": "60€/mes",
+                "wayToPay": "Pago trimestral de 180€"
+              },
+              "annual": {
+                "type": "Socio Anual",
+                "price": "55€/mes",
+                "wayToPay": "Pago anual de 660€"
+              },
+              "day": {
+                "type": "Entrada diaria",
+                "price": "15€",
+                "wayToPay": "Pago en el acto"
+              },
+              "weekend": {
+                "type": "Fin de semana",
+                "price": "13,33€/día",
+                "wayToPay": "Pago en el acto de 40€ (Viernes a Domingo)"
+              },
+              "fiveSessions": {
+                "type": "5 sesiones",
+                "price": "11€/día",
+                "wayToPay": "Pago en el acto de 55€ (Caducidad de un mes)"
+              },
+              "tenSessions": {
+                "type": "10 sesiones",
+                "price": "9€/día",
+                "wayToPay": "Pago en el acto de 90€ (Caducidad de un tres meses)"
+              }
+            }
+          },
           "contact": {
-            "header": "Contacto",
+            "header": "CONTACTO",
             "sub-header": "¿Te quieres poner en contacto con nosotros? Aquí tienes varias opciones, o jugartela a que te cojamos el teléfono o rellenar el formulario de contacto y te responde con la mayor brevedad posible.",
             "form": {
               "name": "Nombre",
@@ -339,8 +465,50 @@ i18n
               "aboutText": "Parte de l'equipo de fundadors d'o gimnasio y con un largo recorriu en os esportes tanto d'equipo como powerlifting, o suyo obchetivo ye aduyar-te con tot o que tienga relazión con a chestión d'o gimnasio."
             }
           },
+          "rates": {
+            "title": "TARIFAS",
+            "subtitle": "A consultar con l'equipo: Entrenamiento personal, programazions u asesoramiento personalizau.",
+            "attached": "Toz os pres amostraus levan l'IVA incluyiu.",
+            "ratesInfo": {
+              "monthly": {
+                "type": "Sozio ilimitau",
+                "price": "65€/mes",
+                "wayToPay": "Pago mensual"
+              },
+              "quarterly": {
+                "type": "Sozio Trimestral",
+                "price": "60€/mes",
+                "wayToPay": "Pago trimestral de 180€"
+              },
+              "annual": {
+                "type": "Sozio Añal",
+                "price": "55€/mes",
+                "wayToPay": "Pago añal de 660€"
+              },
+              "daily": {
+                "type": "Dentrada diaria",
+                "price": "15€",
+                "wayToPay": "Pago en l'auto"
+              },
+              "weekend": {
+                "type": "Cabo de semana",
+                "price": "13,33€/día",
+                "wayToPay": "Pago en l'auto de 40€ (Viernes a Domingo)"
+              },
+              "fiveSessions": {
+                "type": "5 sesions",
+                "price": "11€/día",
+                "wayToPay": "Pago en l'auto de 55€ (Caduzidat d'un mes)"
+              },
+              "tenSessions": {
+                "type": "10 sesions",
+                "price": "9€/día",
+                "wayToPay": "Pago en l'auto de 90€ (Caduzidat d'un tres meses)"
+              }
+            }
+          },
           "contact": {
-            "header": "Contacto",
+            "header": "CONTACTO",
             "sub-header": "Te quiers meter en contacto con nusatros? Aquí tiens cuantas opzions, u jugartela a que te pillemos o telefono u replenar o formulario de contacto y te responde con a mayor brevedat posible.",
             "form": {
               "name": "Nombre",
