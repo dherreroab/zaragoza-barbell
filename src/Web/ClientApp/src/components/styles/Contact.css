@@ -3,7 +3,7 @@
         margin-bottom: 2vh;
 
         p {
-            margin: 0 1vh
+            margin: 0 1vh;
         }
 
         .social-network-contact {
@@ -21,16 +21,22 @@
     }
 
     .form-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
         margin-bottom: 3vh;
 
         .form {
+            width: 302px;
+
             .form-group {
                 margin-top: 1vh;
-            }
-        }
 
-        .form-control {
-            width: 40vh;
+                textarea.form-control {
+                    min-height: calc(10rem + calc(var(--bs-border-width) * 2));
+                }
+            }
         }
     }
 }

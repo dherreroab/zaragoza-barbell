@@ -15,9 +15,11 @@ export const LocationMap = (props => (
             googleMapsApiKey='AIzaSyDXz7j3N_z6iIDwrdGXJPQo9cCisW2epsI'>
             <GoogleMap
                 mapContainerStyle={mapStyles}
-                zoom={13}
-                center={defaultCenter}>
-                <Marker position={defaultCenter}
+                zoom={15}
+                center={defaultCenter}
+                streetView={true}
+            >
+                <Marker position={defaultCenter} clickable={true}
                 />
             </GoogleMap>
         </LoadScript>

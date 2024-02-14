@@ -15,7 +15,10 @@ class CardSection extends Component {
 
     updateCardHeight = () => {
         const cards = Array.from(document.querySelectorAll('.card-section-text'));
-        const maxHeight = Math.max(...cards.map(card => card.offsetHeight));
+        const maxHeight = Math.max(...cards.map(card => {
+            card.style.height = 'auto';
+            return card.offsetHeight;
+        }));
         cards.forEach(card => {
             card.style.height = `${maxHeight}px`;
         });

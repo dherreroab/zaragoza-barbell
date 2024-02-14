@@ -76,6 +76,20 @@ i18n
           "contact": {
             "header": "Contact",
             "sub-header": "Do you want to contact us? Here you have several options, or try to have us pick up your phone or fill out the contact form and we will respond as soon as possible.",
+            "form": {
+              "name": "Name",
+              "email": "Email",
+              "message": "Message",
+              "submit": "Send",
+              "validation": {
+                "name": "Enter your name, it is required",
+                "email": "Enter your email, it is required",
+                "message": "Enter your message, it is required",
+                "captcha": "Solve the captcha, it is required",
+                "success": "Message sent successfully",
+                "error": "Error sending message"
+              }
+            }
           }
         },
       },
@@ -150,6 +164,20 @@ i18n
           "contact": {
             "header": "Contact",
             "sub-header": "Voulez-vous nous contacter ? Ici vous avez plusieurs options, ou essayez de nous faire répondre par téléphone ou de remplir le formulaire de contact et nous vous répondrons dans les plus brefs délais.",
+            "form": {
+              "name": "Nom",
+              "email": "E-mail",
+              "message": "Message",
+              "submit": "Envoyer",
+              "validation": {
+                "name": "Entrez votre nom, il est obligatoire",
+                "email": "Entrez votre email, il est obligatoire",
+                "message": "Entrez votre message, il est obligatoire",
+                "captcha": "Résoudre le captcha, c'est obligatoire",
+                "success": "Message envoyé avec succès",
+                "error": "Erreur lors de l'envoi du message"
+              }
+            }
           }
         }
       },
@@ -224,6 +252,20 @@ i18n
           "contact": {
             "header": "Contacto",
             "sub-header": "¿Te quieres poner en contacto con nosotros? Aquí tienes varias opciones, o jugartela a que te cojamos el teléfono o rellenar el formulario de contacto y te responde con la mayor brevedad posible.",
+            "form": {
+              "name": "Nombre",
+              "email": "Correo electrónico",
+              "message": "Mensaje",
+              "submit": "Enviar",
+              "validation": {
+                "name": "Introduce tu nombre, es requerido",
+                "email": "Introduce tu correo electrónico, es requerido",
+                "message": "Introduce tu mensaje, es requerido",
+                "captcha": "Resuelve el captcha, es requerido",
+                "success": "Mensaje enviado correctamente",
+                "error": "Error al enviar el mensaje"
+              }
+            }
           },
           "footer": {
           }
@@ -300,6 +342,20 @@ i18n
           "contact": {
             "header": "Contacto",
             "sub-header": "Te quiers meter en contacto con nusatros? Aquí tiens cuantas opzions, u jugartela a que te pillemos o telefono u replenar o formulario de contacto y te responde con a mayor brevedat posible.",
+            "form": {
+              "name": "Nombre",
+              "email": "Correu electronico",
+              "message": "Mandau",
+              "submit": "Inviar",
+              "validation": {
+                "name": "Fica o tuyo nombre, ye requeriu",
+                "email": "Fica o tuyo correu electronico, ye requeriu",
+                "message": "Fica o tuyo mandau, ye requeriu",
+                "captcha": "Resuelte o captcha, ye requeriu",
+                "success": "Mandau inviau correctamén",
+                "error": "Error en inviar o mandau"
+              }
+            }
           }
         }
       }

@@ -5,24 +5,23 @@ import ContactForm from './ContactForm';
 import { LocationMap } from './LocationMap';
 import "./styles/Contact.css";
 import { SnackbarProvider } from 'notistack';
+import { useTranslation } from 'react-i18next';
 
-const Contact = () => (
-    <div id='contact' className='contact-section'>
-        <div className='contact-header'>
-            <h2>Contacto</h2>
-            <p className="text-center">¿Te quieres poner en contacto con nosotros? Aquí tienes varias opciones, o jugartela a que te cojamos el teléfono o rellenar el formulario de contacto y te responde con la mayor brevedad posible.</p>
-        </div>
-        <Row xs={1} md={2}>
-            <Col className="d-flex justify-content-center form-section">
+function Contact() {
+    const { t } = useTranslation();
+    return (
+        <div id='contact' className='contact-section'>
+            <div className='contact-header'>
+                <h2>{t('contact.header')}</h2>
+                <p className="text-center">{t('contact.sub-header')}</p>
+            </div>
+            <div className='justify-content-center form-section'>
                 <SnackbarProvider maxSnack={5} autoHideDuration={3000}>
                     <ContactForm />
                 </SnackbarProvider>
-            </Col>
-            <Col className="d-flex justify-content-center">
-                <LocationMap />
-            </Col>
-        </Row>
-    </div>
-);
+            </div>
+        </div>
+    );
+};
 
 export default Contact;
