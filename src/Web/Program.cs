@@ -1,6 +1,8 @@
 using ZaragozaBarbell.Infrastructure.Data;
 using ZaragozaBarbell.Application.ContactMail.Settings;
+using System.Net;
 
+ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls | SecurityProtocolType.Tls11 | SecurityProtocolType.Tls12 | SecurityProtocolType.Tls13;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
