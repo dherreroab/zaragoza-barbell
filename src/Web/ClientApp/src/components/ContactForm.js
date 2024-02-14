@@ -19,7 +19,6 @@ function ContactForm() {
             notifications.map((notification, index) => enqueueSnackbar(notification.message, { autoHideDuration: 3000, variant: notification.variant }));
         };
 
-        setLoading(true);
         event.preventDefault();
         const notifications = [];
         const captchaValue = recaptcha.current.getValue();
@@ -38,6 +37,8 @@ function ContactForm() {
             notifications.push({ "message": t('contact.form.validation.captcha'), "variant": "error" })
 
         if (notifications.length === 0) {
+            setLoading(true);
+
             sendContactMail(captchaValue)
                 .then(response => {
                     if (response && response > 0) {
