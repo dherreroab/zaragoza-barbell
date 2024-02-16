@@ -1,29 +1,6 @@
 import React, { Component } from 'react';
 
 class CardSection extends Component {
-    componentDidMount() {
-        window.addEventListener('resize', this.updateCardHeight);
-    }
-
-    componentDidUpdate() {
-        this.updateCardHeight();
-    }
-
-    componentWillUnmount() {
-        window.removeEventListener('resize', this.updateCardHeight);
-    }
-
-    updateCardHeight = () => {
-        const cards = Array.from(document.querySelectorAll('.card-section-text'));
-        const maxHeight = Math.max(...cards.map(card => {
-            card.style.height = 'auto';
-            return card.offsetHeight;
-        }));
-        cards.forEach(card => {
-            card.style.height = `${maxHeight}px`;
-        });
-    }
-
     render() {
         return (
             <>

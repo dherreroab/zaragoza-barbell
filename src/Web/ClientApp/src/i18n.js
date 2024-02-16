@@ -339,7 +339,22 @@ i18n
               "header": {
                 "teamRole": "Coach/Fundador Gimnasio Zaragoza Barbell"
               },
-              "aboutText": "Parte del equipo de fundadores del gimnasio y un apasionado del powerlifting con una sólida formación en acondicionamiento físico y rendimiento humano. Su objetivo es ayudarte a alcanzar tus metas de fuerza y mejorar tu desempeño."
+              "aboutText": "Parte del equipo de fundadores del gimnasio y un apasionado del powerlifting con una sólida formación en acondicionamiento físico y rendimiento humano. Su objetivo es ayudarte a alcanzar tus metas de fuerza y mejorar tu desempeño.",
+              "details": {
+                "studies": {
+                  "row1": "Técnico Superior en Acondicionamiento Físico",
+                  "row2": "Certificación ACSAS y S&C - Elite Sports Academy",
+                  "row3": "Human Performance Specialist - Movement Matters",
+                  "row4": "D.N.S Exercise Trainer (Nivel 1) - Escuela de Rehabilitación de Praga",
+                  "row5": "Tengo una sólida base en entrenamiento y acondicionamiento me permite diseñar programas específicos para cada individuo, estoy capacitado para optimizar el rendimiento deportivo a través de técnicas avanzadas de fuerza y acondicionamiento. Mi enfoque se centra en la mejora funcional y el movimiento eficiente para maximizar el potencial atlético, también poseo conocimiento en el sistema de estabilización neuromuscular me permite abordar lesiones y mejorar la calidad del movimiento."
+                },
+                "honors": {
+                  "row1": {
+                    "title": "Campeonatos",
+                    "value": "3"
+                  }
+                }
+              }
             },
             "christian": {
               "header": {

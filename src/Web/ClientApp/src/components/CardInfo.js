@@ -3,11 +3,12 @@ import 'bootstrap-icons/font/bootstrap-icons.css';
 
 class CardInfo extends Component {
     render() {
+        const { member } = this.props;
         return (
             <>
-                {this.props.header.image}
+                {member.header.image}
                 <a
-                    href={`https://instagram.com/${this.props.header.instaUser}`}
+                    href={`https://instagram.com/${member.header.instaUser}`}
                     target="_"
                     rel="noopener noreferrer"
                     className="btn btn-instagram insta-header"
@@ -15,8 +16,8 @@ class CardInfo extends Component {
                     <i className="bi bi-instagram"></i>
                 </a>
                 <section className="section-info">
-                    <h2 className="name">{this.props.header.name}</h2>
-                    <h3 className="stack">{this.props.header.teamRole}</h3>
+                    <h2 className="name">{member.header.name}</h2>
+                    <h3 className="stack">{member.header.teamRole}</h3>
                 </section>
             </>
         );

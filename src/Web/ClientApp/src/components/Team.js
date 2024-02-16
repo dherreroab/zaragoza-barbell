@@ -16,6 +16,7 @@ class Team extends Component {
         const team = [
             {
                 header: {
+                    id: 1,
                     name: "Rosana",
                     image: <img src={Rosi} alt="Rosana" className="card-img" lazy="true" />,
                     teamRole: t('team.rosi.header.teamRole'),
@@ -25,15 +26,36 @@ class Team extends Component {
             },
             {
                 header: {
+                    id: 2,
                     name: "David",
                     image: <img src={David} alt="David" className="card-img" lazy="true" />,
                     teamRole: t('team.david.header.teamRole'),
                     instaUser: "davidgale_"
                 },
-                aboutText: t('team.david.aboutText')
+                aboutText: t('team.david.aboutText'),
+                details: {
+                    studies: [
+                        {
+                            value: t('team.david.details.studies.row1')
+                        },
+                        {
+                            value: t('team.david.details.studies.row2')
+                        },
+                        {
+                            value: t('team.david.details.studies.row3')
+                        },
+                        {
+                            value: t('team.david.details.studies.row4')
+                        },
+                        {
+                            value: t('team.david.details.studies.row5')
+                        }
+                    ]
+                }
             },
             {
                 header: {
+                    id: 3,
                     name: "Christian",
                     image: <img src={Christian} alt="Christian" className="card-img" lazy="true" />,
                     teamRole: t('team.christian.header.teamRole'),
@@ -43,6 +65,7 @@ class Team extends Component {
             },
             {
                 header: {
+                    id: 4,
                     name: "Pablo",
                     image: <img src={Pablo} alt="Pablo" className="card-img" lazy="true" />,
                     teamRole: t('team.pablo.header.teamRole'),
@@ -52,6 +75,7 @@ class Team extends Component {
             },
             {
                 header: {
+                    id: 5,
                     name: "Ruben",
                     image: <img src={Ruben} alt="Ruben" className="card-img" lazy="true" />,
                     teamRole: t('team.ruben.header.teamRole'),
