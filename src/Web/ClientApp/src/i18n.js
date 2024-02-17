@@ -346,7 +346,7 @@ i18n
                   "row2": "Certificación ACSAS y S&C - Elite Sports Academy",
                   "row3": "Human Performance Specialist - Movement Matters",
                   "row4": "D.N.S Exercise Trainer (Nivel 1) - Escuela de Rehabilitación de Praga",
-                  "row5": "Tengo una sólida base en entrenamiento y acondicionamiento me permite diseñar programas específicos para cada individuo, estoy capacitado para optimizar el rendimiento deportivo a través de técnicas avanzadas de fuerza y acondicionamiento. Mi enfoque se centra en la mejora funcional y el movimiento eficiente para maximizar el potencial atlético, también poseo conocimiento en el sistema de estabilización neuromuscular me permite abordar lesiones y mejorar la calidad del movimiento."
+                  "row5": "Tengo una sólida base en entrenamiento y acondicionamiento que me permite diseñar programas específicos para cada individuo, estoy capacitado para optimizar el rendimiento deportivo a través de técnicas avanzadas de fuerza y acondicionamiento. Mi enfoque se centra en la mejora funcional y el movimiento eficiente para maximizar el potencial atlético, también poseo conocimiento en el sistema de estabilización neuromuscular que me permite abordar lesiones y mejorar la calidad del movimiento."
                 },
                 "honors": {
                   "row1": {
