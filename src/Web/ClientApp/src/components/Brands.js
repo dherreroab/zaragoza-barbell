@@ -1,6 +1,5 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { withTranslation } from 'react-i18next';
-import img3 from '../assets/img/zgzb3.jpg';
 import './styles/Gym.css';
 
 const Brands = ({ brands }) => {
@@ -13,7 +12,7 @@ const Brands = ({ brands }) => {
             <div className={`section-description brand-description ${brands.id}`}>
                 {brands.data.map(brand => (
                     <div>
-                        <a href={brand.link} target='_blank'>{brand.title}</a><span> - {brand.text}</span>
+                        <a href={brand.link} target='_blank' rel="noreferrer">{brand.title}</a><span> - {brand.text}</span>
                     </div>
                 ))}
             </div>
