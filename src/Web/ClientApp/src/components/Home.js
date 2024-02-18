@@ -26,15 +26,15 @@ class Home extends Component {
             <Carousel.Item>
               <img className="d-block w-100" src={img2} alt="Second slide" />
               <Carousel.Caption>
-                <h3>{t('carousel.slide2.title')}</h3>
-                <h4>{t('carousel.slide2.subtitle')}</h4>
-                <p>{t('carousel.slide2.text')}</p>
+                <h1>{t('carousel.slide1.title')}</h1>
+                <h3>{t('carousel.slide1.subtitle')}</h3>
+                <p>{t('carousel.slide1.text')}</p>
               </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
               <img className="d-block w-100" src={img3} alt="Third slide" />
               <Carousel.Caption>
-                <h3>{t('carousel.slide3.title')}</h3>
+                <h1>{t('carousel.slide2.title')}</h1>
               </Carousel.Caption>
             </Carousel.Item>
           </Carousel>

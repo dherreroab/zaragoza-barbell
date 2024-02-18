@@ -20,14 +20,14 @@ class Club extends Component {
         return (
             <div className="section-separation" id={club.id}>
                 <div className={`${club.id}-title`}>
-                    <h2>{club.title}</h2>
+                    <h1>{club.title}</h1>
                 </div>
                 <div className={`section-description ${club.id} img-rigth`}>
                     <div className="img">
                         <img src={club.img} alt={club.id} />
                     </div>
                     <div className="description-overlay">
-                        <h2 className='club-title-description'>{club.subtitle}</h2>
+                        <h1 className='club-title-description'>{club.subtitle}</h1>
                         <p dangerouslySetInnerHTML={{ __html: club.text }}></p>
                     </div>
                 </div>

@@ -89,7 +89,7 @@ class Team extends Component {
 
         return (
             <div className="section-separation team" id="team" >
-                <h2>{t('team.title')}</h2>
+                <h1>{t('team.title')}</h1>
                 <h3>{t('team.subtitle')}</h3>
                 <Row xs={1} sm={1} md={2} lg={3} xl={4} xxl={5} className="g-4 justify-content-md-center">
                     {team.map((member, index) => (

@@ -80,7 +80,7 @@ class Gym extends Component {
         return (
             <div className="section-separation" id={gym.id}>
                 <div className={`${gym.id}-title`}>
-                    <h2>{gym.title}</h2>
+                    <h1>{gym.title}</h1>
                 </div>
                 <Carousel>
                     {gym.slides.map((slide, index) => (

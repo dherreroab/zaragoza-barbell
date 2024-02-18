@@ -24,7 +24,7 @@ class Rates extends Component {
         return (
             <div className="section-separation rates" id="rates" >
                 <div>
-                    <h2>{t('rates.title')}</h2>
+                    <h1>{t('rates.title')}</h1>
                 </div>
                 <div>
                     <Row xs={1} sm={1} md={2} lg={3} xl={4} xxl={5} className="g-4 justify-content-md-center">

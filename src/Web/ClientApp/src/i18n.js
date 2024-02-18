@@ -19,16 +19,11 @@ i18n
           },
           "carousel": {
             "slide1": {
-              "title": "Zaragoza Barbell Movera",
-              "subtitle": "",
-              "text": "The cold weathers real people.",
-            },
-            "slide2": {
-              "title": "Zaragoza Barbell Movera",
+              "title": "Powerlifting Gym in Zaragoza",
               "subtitle": "Any ordinary day at the club",
               "text": "No one separately is essential, together we are.",
             },
-            "slide3": {
+            "slide2": {
               "title": "II Catalan Cup",
               "subtitle": "",
               "text": "",
@@ -216,16 +211,11 @@ i18n
           },
           "carousel": {
             "slide1": {
-              "title": "Saragosse Barbell Movera",
-              "subtitle": "",
-              "text": "Le froid, les vraies personnes.",
-            },
-            "slide2": {
-              "title": "Saragosse Barbell Movera",
+              "title": "Salle de Powerlifting à Saragosse",
               "subtitle": "N'importe quelle journée ordinaire au club",
               "text": "Personne séparément n'est essentiel, ensemble nous le sommes.",
             },
-            "slide3": {
+            "slide2": {
               "title": "IIe Coupe de Catalogne",
               "subtitle": "",
               "text": "",
@@ -413,16 +403,11 @@ i18n
           },
           "carousel": {
             "slide1": {
-              "title": "Zaragoza Barbell Movera",
-              "subtitle": "",
-              "text": "El frio curte a las verdaderas personas.",
-            },
-            "slide2": {
-              "title": "Zaragoza Barbell Movera",
+              "title": "Gimnasio de Powerlifting en Zaragoza",
               "subtitle": "Un día cualquiera en el club",
               "text": "Nadie por separado es imprescindible, junto si lo somos.",
             },
-            "slide3": {
+            "slide2": {
               "title": "II Copa Catalana",
               "subtitle": "",
               "text": "",
@@ -625,16 +610,11 @@ i18n
           },
           "carousel": {
             "slide1": {
-              "title": "Zaragoza Barbell Movera",
-              "subtitle": "",
-              "text": "O frio tana a las verdaderas personas.",
-            },
-            "slide2": {
-              "title": "Zaragoza Barbell Movera",
+              "title": "Gimnasio de Powerlifting en Zaragoza",
               "subtitle": "Un día cualsequiera en o club",
               "text": "Dengún por separau ye impreszindible, chunto si lo somos.",
             },
-            "slide3": {
+            "slide2": {
               "title": "II Copa Catalana",
               "subtitle": "",
               "text": "",

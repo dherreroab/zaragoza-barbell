@@ -10,7 +10,7 @@ function Contact() {
     return (
         <div id='contact' className='contact-section'>
             <div className='contact-header'>
-                <h2>{t('contact.header')}</h2>
+                <h1>{t('contact.header')}</h1>
                 <p className="text-center">{t('contact.sub-header')}</p>
             </div>
             <div className='justify-content-center form-section'>

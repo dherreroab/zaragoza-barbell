@@ -16,7 +16,7 @@ class CardInfo extends Component {
                     <i className="bi bi-instagram"></i>
                 </a>
                 <section className="section-info">
-                    <h2 className="name">{member.header.name}</h2>
+                    <h1 className="name">{member.header.name}</h1>
                     <h3 className="stack">{member.header.teamRole}</h3>
                 </section>
             </>

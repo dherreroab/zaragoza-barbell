@@ -2,9 +2,9 @@
     margin-right: 2vh;
 }
 
-.cookiePolicyContent{
-    h2{
-        a{
+.cookiePolicyContent {
+    h1 {
+        a {
             text-decoration: underline;
         }
     }

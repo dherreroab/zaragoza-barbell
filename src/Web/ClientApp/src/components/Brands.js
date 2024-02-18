@@ -8,7 +8,7 @@ const Brands = ({ brands }) => {
     return (
         <div className="section-separation" id={brands.id}>
             <div className={`${brands.id}-title`}>
-                <h2>{brands.title}</h2>
+                <h1>{brands.title}</h1>
             </div>
             <div className={`section-description brand-description ${brands.id}`}>
                 {brands.data.map(brand => (

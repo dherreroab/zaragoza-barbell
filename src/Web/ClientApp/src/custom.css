@@ -67,7 +67,7 @@ li {
   list-style: none;
 }
 
-h2 {
+h1 {
   text-align: center;
   margin: 0rem 0 1rem 0;
   color: hsl(var(--clr-zgz-barbell-red));

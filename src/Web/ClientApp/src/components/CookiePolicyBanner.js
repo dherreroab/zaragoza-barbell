@@ -45,7 +45,7 @@ function CookiePolicyBanner() {
             }}
         >
             <div className="cookiePolicyContent">
-                <h2>Política de Cookies</h2>
+                <h1>Política de Cookies</h1>
                 <p>
                     Este sitio web utiliza cookies para mejorar la experiencia del usuario. Al utilizar nuestro sitio web, aceptas todas las cookies de acuerdo con nuestra política de cookies.
                 </p>
