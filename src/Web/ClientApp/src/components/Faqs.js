@@ -48,7 +48,7 @@ const Faqs = () => {
                     <li>
                         <h1 className='question-red'>¿Se organizan eventos o competiciones en el gimnasio?</h1>
                         <p>
-                            Sí, organizamos eventos y competiciones de powerlifting en nuestro gimnasio o en su defecto en localizaciones cercanas al gimnasio, para participar en una competición oficial de la AEP (Asociacion Española de Powerlifting), hay que estar afiliado al club. En caso de no ser evento o competición oficial, en las bases de la competición se especificará si es necesario estar afiliado al club.
+                            Sí, organizamos eventos y competiciones de powerlifting en nuestro gimnasio o en su defecto en localizaciones cercanas al gimnasio, para participar en una competición oficial de la Asociación Española de Powerlifting (AEP), hay que estar afiliado al club. En caso de no ser evento o competición oficial, en las bases de la competición se especificará si es necesario estar afiliado al club.
                         </p>
                     </li>
                     <li>
@@ -78,13 +78,13 @@ const Faqs = () => {
                     <li>
                         <h1 className='question-red'>¿Cómo puedo competir en powerlifting?</h1>
                         <p>
-                            Para competir en powerlifting, primero debes familiarizarte con las reglas y los estándares de la competencia. Luego, puedes afiliarte a un club que esté asociado con la AEP (Asociacion Española de Powerlifting).
+                            Para competir en powerlifting, primero debes familiarizarte con las reglas y los estándares de la competencia. Luego, puedes afiliarte a un club que esté asociado con la Asociación Española de Powerlifting (AEP).
                         </p>
                     </li>
                     <li>
-                        <h1 className='question-red'>¿Cómo puedo unirme al club afiliado a la AEP (Asociacion Española de Powerlifting)?</h1>
+                        <h1 className='question-red'>¿Cómo puedo unirme al club afiliado a la Asociación Española de Powerlifting (AEP)?</h1>
                         <p>
-                            Si estás interesado en unirte a nuestro club afiliado a la AEP (Asociacion Española de Powerlifting), puedes ponerte en contacto con nosotros a través de nuestro sitio web o visitando nuestras instalaciones. Estaremos encantados de proporcionarte más información.
+                            Si estás interesado en unirte a nuestro club afiliado a la Asociación Española de Powerlifting (AEP), puedes ponerte en contacto con nosotros a través de nuestro sitio web o visitando nuestras instalaciones. Estaremos encantados de proporcionarte más información.
                         </p>
                     </li>
 

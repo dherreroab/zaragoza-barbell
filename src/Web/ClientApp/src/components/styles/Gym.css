@@ -7,6 +7,19 @@
   width: 0 auto;
 }
 
+.section-description.brand-description {
+  display: block;
+
+  div {
+    width: 80%;
+    position: relative;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
+
 @media (orientation: portrait) {
   .section-description {
     position: relative;
@@ -33,7 +46,7 @@
 
 @media (orientation: landscape) {
   .section-description {
-    padding: 0 6vh;
+    padding: 0 10vh;
 
     .img,
     .description-overlay {
@@ -42,7 +55,7 @@
     }
   }
 
-  .section-description.club {
+  .section-description.img-right {
     display: flex;
 
     .img {
@@ -53,6 +66,10 @@
       order: 1;
     }
   }
+}
+
+.club-title-description {
+  color: hsl(var(--clr-zgz-barbell-white));
 }
 
 .gym-title,

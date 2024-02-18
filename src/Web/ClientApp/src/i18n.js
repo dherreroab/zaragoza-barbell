@@ -36,13 +36,64 @@ i18n
           },
           "gym": {
             "title": "ZARAGOZA BARBELL GYM",
-            "subtitle": "Get to know our facilities",
-            "text": "Ce sanctuaire est dédié à la culture de la force, de la santé et de la condition physique optimale. Il offre un environnement propice pour améliorer la santé et la condition physique à tout moment du jour ou de la nuit. Rejoignez-nous et découvrez votre plein potentiel!"
+            "slide1": {
+              "subtitle": "Get to know our facilities",
+              "text": "This sanctuary is dedicated to the cultivation of strength, health and optimal physical conditioning. It offers an environment conducive to improving health and fitness at any time of the day or night. Join us and discover your Maximum potential!"
+            },
+            "slide2": {
+              "subtitle": "Strength Area (Powerlifting):",
+              "text": "In this area, powerlifting enthusiasts can find everything they need for their strength training. Lifting platforms, racks and competition racks are located here. The equipment is designed to withstand heavy loads. Users can Focus on improving your strength and technique in a suitable environment with the best brands!"
+            },
+            "slide3": {
+              "subtitle": "Muscle area",
+              "text": "This area is equipped with a variety of weight machines and dumbbells. Users can work any of the muscle groups. The weight machines offer a guided way to exercise the muscles, while the dumbbells allow for greater freedom of movement.",
+            },
+            "slide4": {
+              "subtitle": "Warming Area",
+              "text": "Located in the center of the room, this area is essential for preparing the body before the most intense workouts. Users can perform stretching, joint mobility and cardiovascular warm-up routines."
+            },
+            "brands": {
+              "title": "Brands",
+              "data": {
+                "maniac": {
+                  "title": "Maniak",
+                  "link": "https://maniakfitness.com/",
+                  "text": "Calibrated discs and bars IPF Approved."
+                },
+                "strengthshop": {
+                  "title": "Strength Shop",
+                  "link": "https://strengthshop.eu/",
+                  "text": "Various specialized bars, adjustable benches and deadlift jacks."
+                },
+                "fitland": {
+                  "title": "Fitland",
+                  "link": "https://fitland.es/",
+                  "text": "High quality bodybuilding equipment."
+                },
+                "barbellWizard": {
+                  "title": "Barbell Wizard",
+                  "link": "https://barbellwizard.fitland.es/",
+                  "text": "Bars, combo racks and calibrated discs."
+                },
+                "allFreeWeight": {
+                  "title": "All Free Weight",
+                  "link": "https://allfreeweight.com/es/",
+                  "text": "Cast discs and Olympic bars."
+                },
+                "powerGear": {
+                  "title": "PowerGear IT",
+                  "link": "https://www.power-gear.it/",
+                  "text": "IPF Approved competition rack combo."
+                }
+              }
+            }
           },
           "club": {
             "title": "CLUB AEP ZARAGOZA BARBELL",
-            "subtitle": "Get to know our facilities",
-            "text": "This sanctuary is dedicated to cultivating strength, health, and optimal physical conditioning. It provides an environment conducive to improving health and physical fitness at any time of day or night. Join us and discover your full potential!"
+            "link": "https://powerhispania.net/",
+            "aep": "Spanish Powerlifting Association (AEP)",
+            "subtitle": "Zaragoza Barbell Club",
+            "text": "Our story originates in 2021, when three people passionate about powerlifting decided to come together and create what we know as Zaragoza Barbell. Starting in 2022, we formalized affiliation with the Spanish Powerlifting Association (AEP), which allowed us to successfully participate in competitions. Beyond the trophies and medals, what really distinguishes us is the spirit of camaraderie and human warmth. Mutual support and friendship have been essential for constant growth. Today, we continue to strengthen our commitment to this exciting sport."
           },
           "team": {
             "title": "ZARAGOZA BARBELL TEAM",
@@ -182,13 +233,64 @@ i18n
           },
           "gym": {
             "title": "SARAGOSSE BARBELL GYM",
-            "subtitle": "Découvrez nos installations",
-            "text": "Ce sanctuaire est dédié à la culture de la force, de la santé et de la condition physique optimale. Il offre un environnement propice pour améliorer la santé et la condition physique à tout moment du jour ou de la nuit. Rejoignez-nous et découvrez votre plein potentiel!"
+            "slide1": {
+              "subtitle": "Découvrez nos installations",
+              "text": "Ce sanctuaire est dédié à la culture de la force, de la santé et de la condition physique optimale. Il offre un environnement propice à l'amélioration de la santé et de la forme physique à toute heure du jour et de la nuit. Rejoignez-nous et découvrez votre potentiel maximum !"
+            },
+            "slide2": {
+              "subtitle": "Zone de force (Powerlifting) :",
+              "text": "Dans cette zone, les amateurs de Powerlifting peuvent trouver tout ce dont ils ont besoin pour leur entraînement de force. Des plates-formes élévatrices, des racks et des racks de compétition se trouvent ici. L'équipement est conçu pour supporter de lourdes charges. Les utilisateurs peuvent Se concentrer sur l'amélioration de leur force et technique dans un environnement adapté avec les meilleures marques !"
+            },
+            "slide3": {
+              "subtitle": "Zone musculaire",
+              "text": "Cette zone est équipée d'une variété d'appareils de musculation et d'haltères. Les utilisateurs peuvent travailler n'importe quel groupe musculaire. Les appareils de musculation offrent une manière guidée d'exercer les muscles, tandis que les haltères permettent une plus grande liberté de mouvement.",
+            },
+            "slide4": {
+              "subtitle": "Zone de réchauffement",
+              "text": "Située au centre de la pièce, cette zone est essentielle pour préparer le corps avant les entraînements les plus intenses. Les utilisateurs peuvent réaliser des exercices d'étirements, de mobilité articulaire et d'échauffement cardiovasculaire."
+            },
+            "brands": {
+              "title": "Marques",
+              "data": {
+                "maniak": {
+                  "title": "Maniak",
+                  "lien": "https://maniakfitness.com/",
+                  "text": "Disques et barres calibrés approuvés IPF."
+                },
+                "strengthshop": {
+                  "title": "Magasin de musculation",
+                  "lien": "https://strengthshop.eu/",
+                  "text": "Diverses barres spécialisées, bancs réglables et crics de soulevé de terre."
+                },
+                "fitland": {
+                  "title": "Fitland",
+                  "lien": "https://fitland.es/",
+                  "text": "Équipement de musculation de haute qualité."
+                },
+                "barbellWizard": {
+                  "title": "Magicien d'haltères",
+                  "link": "https://barbellwizard.fitland.es/",
+                  "text": "Barres, racks combo et disques calibrés."
+                },
+                "allFreeWeight": {
+                  "title": "Tout le poids libre",
+                  "lien": "https://allfreeweight.com/es/",
+                  "text": "Disques moulés et barres olympiques."
+                },
+                "powerGear": {
+                  "title": "PowerGear IT",
+                  "lien": "https://www.power-gear.it/",
+                  "text": "Combo de rack de compétition approuvé IPF."
+                }
+              }
+            }
           },
           "club": {
-            "title": "CLUB AEP SARAGOSSE BARBELL",
-            "subtitle": "Découvrez nos installations",
-            "text": "Ce sanctuaire est dédié à la culture de la force, de la santé et de la condition physique optimale. Il offre un environnement propice pour améliorer la santé et la condition physique à tout moment du jour ou de la nuit. Rejoignez-nous et découvrez votre plein potentiel!"
+            "title": "CLUB AEP",
+            "subtitle": "Zaragoza Barbell Club",
+            "link": "https://powerhispania.net/",
+            "aep": "Spanish Powerlifting Association (AEP)",
+            "text": "Our story originates in 2021, when three people passionate about powerlifting decided to join together and create what we know as Zaragoza Barbell. Starting in 2022, we formalized the affiliation with the Spanish Powerlifting Association (AEP), which which allowed us to participate in competitions successfully. Beyond the trophies and medals, what really distinguishes us is the spirit of camaraderie and human warmth. Mutual support and friendship have been fundamental for constant growth. Today, We continue to strengthen our commitment to this exciting sport."
           },
           "team": {
             "title": "ÉQUIPE ZARAGOZA BARBELL",
@@ -203,25 +305,25 @@ i18n
               "header": {
                 "teamRole": "Entraîneur/Fondateur du Zaragoza Barbell Gym"
               },
-              "aboutText": "Faisant partie de l'équipe fondatrice du gymnase et passionné de dynamophilie avec une solide expérience en conditionnement physique et en performance humaine. Son objectif est de vous aider à atteindre vos objectifs de force et à améliorer vos performances."
+              "aboutText": "Faisant partie de l'équipe fondatrice du gymnase et passionné de Powerlifting avec une solide expérience en conditionnement physique et en performance humaine. Son objectif est de vous aider à atteindre vos objectifs de force et à améliorer vos performances."
             },
             "christian": {
               "header": {
                 "teamRole": 'Entraîneur/Fondateur du Gimnasio Zaragoza Barbell'
               },
-              "aboutText": "Faire partie de l'équipe des fondateurs du gymnase et plus de 18 ans d'expérience en dynamophilie, leur objectif est de vous aider à atteindre vos objectifs de force et à améliorer vos performances."
+              "aboutText": "Faire partie de l'équipe des fondateurs du gymnase et plus de 18 ans d'expérience en Powerlifting, leur objectif est de vous aider à atteindre vos objectifs de force et à améliorer vos performances."
             },
             "pablo": {
               "header": {
                 "teamRole": 'Fondateur Gimnasio Zaragoza Barbell'
               },
-              "aboutText": "Faisant partie de l'équipe fondatrice du gymnase et avec une longue histoire dans les sports d'équipe et la dynamophilie, leur objectif est de vous aider pour tout ce qui concerne la gestion du gymnase."
+              "aboutText": "Faisant partie de l'équipe fondatrice du gymnase et avec une longue histoire dans les sports d'équipe et la Powerlifting, leur objectif est de vous aider pour tout ce qui concerne la gestion du gymnase."
             },
             "ruben": {
               "header": {
                 "teamRole": 'Fondateur Gimnasio Zaragoza Barbell'
               },
-              "aboutText": "Faisant partie de l'équipe fondatrice du gymnase et avec une longue histoire dans les sports d'équipe et la dynamophilie, leur objectif est de vous aider pour tout ce qui concerne la gestion du gymnase."
+              "aboutText": "Faisant partie de l'équipe fondatrice du gymnase et avec une longue histoire dans les sports d'équipe et la Powerlifting, leur objectif est de vous aider pour tout ce qui concerne la gestion du gymnase."
             }
           },
           "rates": {
@@ -333,7 +435,7 @@ i18n
               "header": {
                 "teamRole": "Responsable Zaragoza Barbell AEP"
               },
-              "aboutText": "Encargada de la gestión del Club AEP, entre sus funciones está todo lo relacionado con la AEP asi como: inscripciones, afiliaciones, campeonatos.\nSiempre dispuesta a ayudar y resolver cualquier duda que tengas sobre el club."
+              "aboutText": "Encargada de la gestión del Club AEP, entre sus funciones está todo lo relacionado con la Asociación Española de Powerlifting (AEP) asi como: inscripciones, afiliaciones, campeonatos.\nSiempre dispuesta a ayudar y resolver cualquier duda que tengas sobre el club."
             },
             "david": {
               "header": {
@@ -377,13 +479,64 @@ i18n
           },
           "gym": {
             "title": "GIMNASIO ZARAGOZA BARBELL",
-            "subtitle": "Conoce nuestras instalaciones",
-            "text": "Este santuario se dedica al cultivo de la fuerza, la salud y el condicionamiento físico óptimo. Ofrece un ambiente propicio para mejorar la salud y el condicionamiento físico en cualquier momento del día o de la noche. ¡Únete y descubre tu máximo potencial!"
+            "slide1": {
+              "subtitle": "Conoce nuestras instalaciones",
+              "text": "Este santuario se dedica al cultivo de la fuerza, la salud y el condicionamiento físico óptimo. Ofrece un ambiente propicio para mejorar la salud y el condicionamiento físico en cualquier momento del día o de la noche. ¡Únete y descubre tu máximo potencial!"
+            },
+            "slide2": {
+              "subtitle": "Área de Fuerza (Powerlifting):",
+              "text": "En esta zona, los entusiastas del powerlifting pueden encontrar todo lo necesario para sus entrenamientos de fuerza. Aquí se encuentran las plataformas de levantamiento, racks y competition racks. Los equipos están diseñados para soportar cargas pesadas. ¡Los usuarios pueden concentrarse en mejorar su fuerza y técnica en un ambiente adecuado junto a las mejores marcas!."
+            },
+            "slide3": {
+              "subtitle": "Area de musculación",
+              "text": "Esta zona está equipada con una variedad de máquinas de musculación y mancuernas. Los usuarios pueden trabajar cualquiera de los grupos musculares. Las máquinas de musculación ofrecen una forma guiada de ejercitar los músculos, mientras que las mancuernas permiten una mayor libertad de movimiento.",
+            },
+            "slide4": {
+              "subtitle": "Area de Calentamiento",
+              "text": "Ubicada en el centro de la sala, esta área es esencial para preparar el cuerpo antes de los entrenamientos más intensos. Los usuarios pueden realizar rutinas de estiramiento, movilidad articular y calentamiento cardiovascular."
+            },
+            "brands": {
+              "title": "Marcas",
+              "data": {
+                "maniak": {
+                  "title": "Maniak",
+                  "link": "https://maniakfitness.com/",
+                  "text": "Barras y discos calibrados IPF Approved."
+                },
+                "strengthshop": {
+                  "title": "Strength Shop",
+                  "link": "https://strengthshop.eu/",
+                  "text": "Barras especializadas variadas, bancos regulables y deadlift jacks."
+                },
+                "fitland": {
+                  "title": "Fitland",
+                  "link": "https://fitland.es/",
+                  "text": "Equipos de musculación de alta calidad."
+                },
+                "barbellWizard": {
+                  "title": "Barbell Wizard",
+                  "link": "https://barbellwizard.fitland.es/",
+                  "text": "Barras, combo racks y discos calibrados."
+                },
+                "allFreeWeight": {
+                  "title": "All Free Weight",
+                  "link": "https://allfreeweight.com/es/",
+                  "text": "Discos de fundición y barras olímpicas."
+                },
+                "powerGear": {
+                  "title": "PowerGear IT",
+                  "link": "https://www.power-gear.it/",
+                  "text": "Combo racks de competición IPF Approved."
+                }
+              }
+            }
           },
           "club": {
             "title": "CLUB AEP",
-            "subtitle": "Zaragoza Barbell Club ",
-            "text": "Tenemos una historia que se origina en el 2021, cuando tres personas apasionadas por el powerlifting decidieron unirse y crear lo que conocemos como Zaragoza Barbell. A partir del 2022, formalizamos la afiliación con la Asociación Española de Powerlifting (AEP), lo que nos permitió participar en competiciones con éxito. Más allá de los trofeos y medallas, lo que realmente nos distingue, es el espíritu de compañerismo y calor humano. El apoyo mutuo y la amistad han sido fundamentales para un crecimiento constante. Hoy en día, seguimos fortaleciendo el compromiso con este apasionante deporte."
+            "subtitle": "Zaragoza Barbell Club",
+            "link": "https://powerhispania.net/",
+            "aep": "Asociación Española de Powerlifting (AEP)",
+            "text": "Nuestra historia se origina en el 2021, cuando tres personas apasionadas por el powerlifting decidieron unirse y crear lo que conocemos como Zaragoza Barbell. A partir del 2022, formalizamos la afiliación con la Asociación Española de Powerlifting (AEP), lo que nos permitió participar en competiciones con éxito. Más allá de los trofeos y medallas, lo que realmente nos distingue, es el espíritu de compañerismo y calor humano. El apoyo mutuo y la amistad han sido fundamentales para un crecimiento constante. Hoy en día, seguimos fortaleciendo el compromiso con este apasionante deporte."
           },
           "rates": {
             "title": "TARIFAS",
@@ -489,13 +642,64 @@ i18n
           },
           "gym": {
             "title": "GIMNASIO ZARAGOZA BARBELL",
-            "subtitle": "Conoxe as nuestras instalazions",
-            "text": "Iste santuario se dedica a cultivar a fuerza, a salut y o condicionamiento físico óptimo. Ofreixe un ambiente propicio ta millorar a salut y o condicionamiento físico en qualsiquier momento d’o día u d’a nueit. ¡Unite y descubre o tuyo máximo potencial!"
+            "slide1": {
+              "subtitle": "Conoxe as nuestras instalazions",
+              "text": "Iste santuario se dedica a lo cautibo d'a fuerza, a salut y o condizionamiento fisico optimo. Ofrexe un ambién propizio ta millorar a salut y o condizionamiento fisico en cualsequier momento d'o día u d'a nuei. Unir y descubre o tuyo masimo potencial!"
+            },
+            "slide2": {
+              "subtitle": "Aria de Fuerza (Powerlifting):",
+              "text": "En ista zona, os entusiastas d'o powerlifting pueden trobar tot lo nezesario ta los suyos entrenamientos de fuerza. Aquí se troban as plataformas de levantamiento, racks y competition racks. Os equipos son diseñaus ta suportar cargas pesadas. Os usuarios pueden conzentrar-se en millorar a suya fuerza y tecnica en un ambién adecuau chunto a las millors marcas!."
+            },
+            "slide3": {
+              "subtitle": "Area de musculación",
+              "text": "Ista zona ye equipada con una variedat de maquinas de musculación y mancuernas. Os usuarios pueden treballar cualsequiera d'os grupos musculars. As maquinas de musculación ofrexen una forma guiada d'exerzitar os musclos, mientres que as mancuernas permiten una mayor libertat de movimiento.",
+            },
+            "slide4": {
+              "subtitle": "Area de Calentamiento",
+              "text": "Ubicada en o zentro d'a sala, ista aria ye esenzial ta parar o cuerpo antes d'os entrenamientos más intensos. Os usuarios pueden realizar rotinas d'estiramiento, mobilidat articular y calentamiento cardiovascular."
+            },
+            "brands": {
+              "title": "Marcas",
+              "data": {
+                "maniak": {
+                  "title": "Maniak",
+                  "link": "https://maniakfitness.com/",
+                  "text": "Barras y discos calibraus IPF Approved."
+                },
+                "strengthshop": {
+                  "title": "Strength Shop",
+                  "link": "https://strengthshop.eu/",
+                  "text": "Barras espezializadas variadas, cadieras regulables y deadlift jacks."
+                },
+                "fitland": {
+                  "title": "Fitland",
+                  "link": "https://fitland.es/",
+                  "text": "Equipos de musculación d'alta calidat."
+                },
+                "barbellWizard": {
+                  "title": "Barbell Wizard",
+                  "link": "https://barbellwizard.fitland.es/",
+                  "text": "Barras, envano racks y discos calibraus."
+                },
+                "allFreeWeight": {
+                  "title": "All Free Weight",
+                  "link": "https://allfreeweight.com/es/",
+                  "text": "Discos de fundizión y barras olimpicas."
+                },
+                "powerGear": {
+                  "title": "PowerGear IT",
+                  "link": "https://www.power-gear.it/",
+                  "text": "Envano racks de competizión IPF Approved."
+                }
+              }
+            }
           },
           "club": {
-            "title": "CLUB AEP ZARAGOZA BARBELL",
-            "subtitle": "Conoxe as nuestras instalazions",
-            "text": "Iste santuario se dedica a cultivar a fuerza, a salut y o condicionamiento físico óptimo. Ofreixe un ambiente propicio ta millorar a salut y o condicionamiento físico en qualsiquier momento d’o día u d’a nueit. ¡Unite y descubre o tuyo máximo potencial!"
+            "title": "CLUB AEP",
+            "subtitle": "Zaragoza Barbell Club",
+            "link": "https://powerhispania.net/",
+            "aep": "Asoziazión Española de Powerlifting (AEP)",
+            "text": "A nuestra istoria s'orichina en o 2021, cuan tres personas apasionadas por o powerlifting dezidioron unir-se y crear o que conoxemos como Zaragoza Barbell. A partir d'o 2022, formalizamos l'afiliazión con l'Asoziazión Española de Powerlifting (AEP), o que nos permitió partizipar en competizions con esito. Dillá d'os trofeus y medallas, o que realmén nos esferenzía, ye o esprito de compañerismo y calor umana. O refirme mutuo y l'amistat han estau fundamentals ta un creximiento cutiano. Uei en día, siguiemos fortalexendo o compromiso con iste apasionán esporte."
           },
           "team": {
             "title": "EQUIPO ZARAGOZA BARBELL",

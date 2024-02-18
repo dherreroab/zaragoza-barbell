@@ -46,34 +46,35 @@ class Footer extends Component {
                             </a>
                         </div>
                         <div className="links">
-                            <Link to="/legal-notice">{t('footer.links.legal')}</Link>
-                            <Link to="/privacy-policy">{t('footer.links.privacy')}</Link>
-                            <Link to="/cookies-policy">{t('footer.links.cookie')}</Link>
-                            <Link to="/faqs">{t('footer.links.faq')}</Link>
+                            <div>
+                                <Link to="/legal-notice">{t('footer.links.legal')}</Link>
+                            </div>
+                            <div>
+                                <Link to="/privacy-policy">{t('footer.links.privacy')}</Link>
+                            </div>
+                            <div>
+                                <Link to="/cookies-policy">{t('footer.links.cookie')}</Link>
+                            </div>
+                            <div>
+                                <Link to="/faqs">{t('footer.links.faq')}</Link>
+                            </div>
                         </div>
                         <p className="copyright">© {new Date().getFullYear()} Zaragoza Barbell, S.L {t('footer.copy')}</p>
                     </div>
                     <div className="logo-footer">
+                        <div className="social">
+                            <a href="whatsapp://send?phone=+346123456789" target="_blank" rel="noopener noreferrer">
+                                <i className="bi bi-whatsapp"></i>
+                            </a>
+                            <a href="https://www.instagram.com/zgzpowerbarbell/" target="_blank" rel="noopener noreferrer">
+                                <i className="bi bi-instagram"></i>
+                            </a>
+                            <a href="https://www.youtube.com/channel/UC9bU1g8Qp6x1C4Y7lXZsV8w" target="_blank" rel="noopener noreferrer">
+                                <i className="bi bi-youtube"></i>
+                            </a>
+                        </div>
                         <div className="logo">
                             <img src={logo} alt="Logo" />
-                        </div>
-                        <div className="social">
-                            <div>
-                                <a href="whatsapp://send?phone=+346123456789" target="_blank" rel="noopener noreferrer">
-                                    <i className="bi bi-whatsapp"></i>
-                                </a>
-                            </div>
-                            <div>
-                                <a href="https://www.instagram.com/zgzpowerbarbell/" target="_blank" rel="noopener noreferrer">
-                                    <i className="bi bi-instagram"></i>
-                                </a>
-
-                            </div>
-                            <div>
-                                <a href="https://www.youtube.com/channel/UC9bU1g8Qp6x1C4Y7lXZsV8w" target="_blank" rel="noopener noreferrer">
-                                    <i className="bi bi-youtube"></i>
-                                </a>
-                            </div>
                         </div>
                     </div>
                 </div>

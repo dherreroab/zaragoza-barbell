@@ -13,6 +13,8 @@ class Team extends Component {
     render() {
         const { t } = this.props;
 
+        let element = ` <a href="${t('club.link')}" target="_blank">${t('club.aep')}</a> `;
+
         const team = [
             {
                 header: {
@@ -22,7 +24,7 @@ class Team extends Component {
                     teamRole: t('team.rosi.header.teamRole'),
                     instaUser: "sweeetrosie"
                 },
-                aboutText: t('team.rosi.aboutText')
+                aboutText: t('team.rosi.aboutText').replace(t('club.aep'), element)
             },
             {
                 header: {

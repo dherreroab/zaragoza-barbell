@@ -3,10 +3,10 @@ import Carousel from 'react-bootstrap/Carousel';
 import { withTranslation } from 'react-i18next';
 import CookiePolicyBanner from './CookiePolicyBanner';
 import Team from './Team';
-import GymClub from './GymClub';
+import Gym from './Gym';
+import Club from './Club';
 import Rates from './Rates';
 import Contact from './Contact';
-import img1 from '../assets/img/zgzb1.jpg';
 import img2 from '../assets/img/zgzb2.jpg';
 import img3 from '../assets/img/zgzb3.jpg';
 import './styles/Home.css';
@@ -18,26 +18,10 @@ class Home extends Component {
   render() {
     const { t } = this.props;
 
-    const gym = {
-      id: 'gym',
-      title: t('gym.title'),
-      img: img1,
-      subtitle: t('gym.subtitle'),
-      text: t('gym.text')
-    };
-
-    const club = {
-      id: 'club',
-      title: t('club.title'),
-      img: img3,
-      subtitle: t('club.subtitle'),
-      text: t('club.text')
-    };
-
     return (
       <>
         <CookiePolicyBanner />
-        <div className="carousel" id="carousel">
+        <div className="home-carousel" id="carousel">
           <Carousel>
             <Carousel.Item>
               <img className="d-block w-100" src={img2} alt="Second slide" />
@@ -56,8 +40,8 @@ class Home extends Component {
           </Carousel>
         </div>
         <Team />
-        <GymClub data={gym} />
-        <GymClub data={club} />
+        <Gym />
+        <Club />
         <Rates />
         <Contact />
       </>

@@ -27,7 +27,7 @@ const ExpandableTable = ({ member }) => {
                             </td>
                         </tr>
                         <tr className='expandable-row'>
-                            <div>
+                            <td>
                                 {
                                     expandedRows.includes(member.id) && (
                                         member.details.studies.map(study => (
@@ -35,7 +35,7 @@ const ExpandableTable = ({ member }) => {
                                         ))
                                     )
                                 }
-                            </div>
+                            </td>
                         </tr>
                     </React.Fragment>
                 </tbody>

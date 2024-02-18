@@ -5,9 +5,7 @@ class CardSection extends Component {
         return (
             <>
                 <section className={`section_${this.props.sectionName}`}>
-                    <p className={"card-section-text"}>
-                        {this.props.sectionText}
-                    </p>
+                    <p className={"card-section-text"} dangerouslySetInnerHTML={{ __html: this.props.sectionText }}></p>
                 </section>
             </>
         );
