@@ -32,7 +32,7 @@ i18n
           "gym": {
             "title": "ZARAGOZA BARBELL GYM",
             "slide1": {
-              "subtitle": "Get to know our facilities",
+              "subtitle": "Powerlifting Gym in Zaragoza",
               "text": "This sanctuary is dedicated to the cultivation of strength, health and optimal physical conditioning. It offers an environment conducive to improving health and fitness at any time of the day or night. Join us and discover your Maximum potential!"
             },
             "slide2": {
@@ -224,7 +224,7 @@ i18n
           "gym": {
             "title": "SARAGOSSE BARBELL GYM",
             "slide1": {
-              "subtitle": "Découvrez nos installations",
+              "subtitle": "Salle de Powerlifting à Saragosse",
               "text": "Ce sanctuaire est dédié à la culture de la force, de la santé et de la condition physique optimale. Il offre un environnement propice à l'amélioration de la santé et de la forme physique à toute heure du jour et de la nuit. Rejoignez-nous et découvrez votre potentiel maximum !"
             },
             "slide2": {
@@ -465,7 +465,7 @@ i18n
           "gym": {
             "title": "GIMNASIO ZARAGOZA BARBELL",
             "slide1": {
-              "subtitle": "Conoce nuestras instalaciones",
+              "subtitle": "Gimnasio de Powerlifting en Zaragoza",
               "text": "Este santuario se dedica al cultivo de la fuerza, la salud y el condicionamiento físico óptimo. Ofrece un ambiente propicio para mejorar la salud y el condicionamiento físico en cualquier momento del día o de la noche. ¡Únete y descubre tu máximo potencial!"
             },
             "slide2": {
@@ -623,7 +623,7 @@ i18n
           "gym": {
             "title": "GIMNASIO ZARAGOZA BARBELL",
             "slide1": {
-              "subtitle": "Conoxe as nuestras instalazions",
+              "subtitle": "Gimnasio de Powerlifting en Zaragoza",
               "text": "Iste santuario se dedica a lo cautibo d'a fuerza, a salut y o condizionamiento fisico optimo. Ofrexe un ambién propizio ta millorar a salut y o condizionamiento fisico en cualsequier momento d'o día u d'a nuei. Unir y descubre o tuyo masimo potencial!"
             },
             "slide2": {

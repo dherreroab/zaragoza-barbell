@@ -47,6 +47,8 @@
 @media (orientation: landscape) {
   .section-description {
     padding: 0 10vh;
+    width: 90%;
+    margin: 0 auto;
 
     .img,
     .description-overlay {
