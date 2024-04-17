@@ -10,7 +10,7 @@ class Footer extends Component {
         const { t } = this.props;
 
         const email = {
-            emailDestination: "zaragozabarbell@gmail.com",
+            emailDestination: "info@zaragozabarbell.com",
             emailSubject: "Hablemos sobre el club",
             messageBody: "Hola! ¿Podemos hablar sobre el club?"
         };
@@ -29,9 +29,9 @@ class Footer extends Component {
                                 <i className="bi bi-envelope-fill"></i>
                                 {email.emailDestination}
                             </Mailto>
-                            <a href="tel:1234567890">
+                            <a href="tel:648210627">
                                 <i className="bi bi-telephone-fill"></i>
-                                +34 123 456 789
+                                +34 648 21 06 27
                             </a>
                         </div>
                         <div className="address">
@@ -63,7 +63,7 @@ class Footer extends Component {
                     </div>
                     <div className="logo-footer">
                         <div className="social">
-                            <a href="whatsapp://send?phone=+346123456789" target="_blank" rel="noopener noreferrer">
+                            <a href="whatsapp://send?phone=+34648210627" target="_blank" rel="noopener noreferrer">
                                 <i className="bi bi-whatsapp"></i>
                             </a>
                             <a href="https://www.instagram.com/zgzpowerbarbell/" target="_blank" rel="noopener noreferrer">

@@ -132,17 +132,7 @@ i18n
               "monthly": {
                 "type": "Unlimited Member",
                 "price": "€65/month",
-                "wayToPay": "Monthly payment"
-              },
-              "quarterly": {
-                "type": "Quarterly Member",
-                "price": "€60/month",
-                "wayToPay": "Quarterly payment of €180"
-              },
-              "annual": {
-                "type": "Annual Member",
-                "price": "€55/month",
-                "wayToPay": "Annual payment of €660"
+                "wayToPay": "Monthly payment without permanence"
               },
               "day": {
                 "type": "day Entry",
@@ -151,13 +141,13 @@ i18n
               },
               "weekend": {
                 "type": "Weekend",
-                "price": "€13.33/day",
-                "wayToPay": "On-the-spot payment of €40 (Friday to Sunday)"
+                "price": "€11.66/day",
+                "wayToPay": "On-the-spot payment of €35 (Friday to Sunday)"
               },
               "fiveSessions": {
                 "type": "5 sessions",
-                "price": "€11/day",
-                "wayToPay": "On-the-spot payment of €55 (Expiration of one month)"
+                "price": "€10/day",
+                "wayToPay": "On-the-spot payment of €50 (Expiration of one month)"
               },
               "tenSessions": {
                 "type": "10 sessions",
@@ -324,17 +314,7 @@ i18n
               "monthly": {
                 "type": "Membre illimité",
                 "price": "65€/mois",
-                "wayToPay": "Paiement mensuel"
-              },
-              "quarterly": {
-                "type": "Membre trimestriel",
-                "price": "60€/mois",
-                "wayToPay": "Paiement trimestriel de 180€"
-              },
-              "annual": {
-                "type": "Membre annuel",
-                "price": "55€/mois",
-                "wayToPay": "Paiement annuel de 660 €"
+                "wayToPay": "Paiement mensuel sans permanence"
               },
               "day": {
                 "type": "Entrée quotidienne",
@@ -343,13 +323,13 @@ i18n
               },
               "weekend": {
                 "type": "Week-end",
-                "price": "13,33€/jour",
-                "wayToPay": "Paiement sur place de 40€ (vendredi au dimanche)"
+                "price": "11,66€/jour",
+                "wayToPay": "Paiement sur place de 35€ (vendredi au dimanche)"
               },
               "fiveSessions": {
                 "type": "5 séances",
-                "price": "11€/jour",
-                "wayToPay": "Paiement sur place de 55€ (Expiration d'un mois)"
+                "price": "10€/jour",
+                "wayToPay": "Paiement sur place de 50€ (Expiration d'un mois)"
               },
               "tenSessions": {
                 "type": "10 séances",
@@ -531,32 +511,22 @@ i18n
               "monthly": {
                 "type": "Socio ilimitado",
                 "price": "65€/mes",
-                "wayToPay": "Pago mensual"
-              },
-              "quarterly": {
-                "type": "Socio Trimestral",
-                "price": "60€/mes",
-                "wayToPay": "Pago trimestral de 180€"
-              },
-              "annual": {
-                "type": "Socio Anual",
-                "price": "55€/mes",
-                "wayToPay": "Pago anual de 660€"
+                "wayToPay": "Pago mensual sin permanencia"
               },
               "day": {
-                "type": "Entrada diaria",
-                "price": "15€",
+                "type": "Entrada de día",
+                "price": "12€",
                 "wayToPay": "Pago en el acto"
               },
               "weekend": {
                 "type": "Fin de semana",
-                "price": "13,33€/día",
-                "wayToPay": "Pago en el acto de 40€ (Viernes a Domingo)"
+                "price": "11,66€/día",
+                "wayToPay": "Pago en el acto de 35€ (Viernes a Domingo)"
               },
               "fiveSessions": {
                 "type": "5 sesiones",
-                "price": "11€/día",
-                "wayToPay": "Pago en el acto de 55€ (Caducidad de un mes)"
+                "price": "10€/día",
+                "wayToPay": "Pago en el acto de 50€ (Caducidad de un mes)"
               },
               "tenSessions": {
                 "type": "10 sesiones",
@@ -723,32 +693,22 @@ i18n
               "monthly": {
                 "type": "Sozio ilimitau",
                 "price": "65€/mes",
-                "wayToPay": "Pago mensual"
-              },
-              "quarterly": {
-                "type": "Sozio Trimestral",
-                "price": "60€/mes",
-                "wayToPay": "Pago trimestral de 180€"
-              },
-              "annual": {
-                "type": "Sozio Añal",
-                "price": "55€/mes",
-                "wayToPay": "Pago añal de 660€"
+                "wayToPay": "Pago mensual sin permanenzia"
               },
               "daily": {
                 "type": "Dentrada diaria",
-                "price": "15€",
+                "price": "12€",
                 "wayToPay": "Pago en l'auto"
               },
               "weekend": {
                 "type": "Cabo de semana",
-                "price": "13,33€/día",
-                "wayToPay": "Pago en l'auto de 40€ (Viernes a Domingo)"
+                "price": "11,66€/día",
+                "wayToPay": "Pago en l'auto de 35€ (Viernes a Domingo)"
               },
               "fiveSessions": {
                 "type": "5 sesions",
-                "price": "11€/día",
-                "wayToPay": "Pago en l'auto de 55€ (Caduzidat d'un mes)"
+                "price": "10€/día",
+                "wayToPay": "Pago en l'auto de 50€ (Caduzidat d'un mes)"
               },
               "tenSessions": {
                 "type": "10 sesions",
