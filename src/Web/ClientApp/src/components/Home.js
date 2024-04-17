@@ -43,7 +43,7 @@ class Home extends Component {
         <Gym />
         <Club />
         <Rates />
-        <Contact />
+        {/* <Contact /> */}
       </>
     );
   }
