@@ -11,8 +11,6 @@ class Rates extends Component {
 
         const rates = [
             { type: t('rates.ratesInfo.monthly.type'), price: t('rates.ratesInfo.monthly.price'), wayToPay: t('rates.ratesInfo.monthly.wayToPay') },
-            { type: t('rates.ratesInfo.quarterly.type'), price: t('rates.ratesInfo.quarterly.price'), wayToPay: t('rates.ratesInfo.quarterly.wayToPay') },
-            { type: t('rates.ratesInfo.annual.type'), price: t('rates.ratesInfo.annual.price'), wayToPay: t('rates.ratesInfo.annual.wayToPay') },
             { type: t('rates.ratesInfo.day.type'), price: t('rates.ratesInfo.day.price'), wayToPay: t('rates.ratesInfo.day.wayToPay') },
             { type: t('rates.ratesInfo.weekend.type'), price: t('rates.ratesInfo.weekend.price'), wayToPay: t('rates.ratesInfo.weekend.wayToPay') },
             { type: t('rates.ratesInfo.fiveSessions.type'), price: t('rates.ratesInfo.fiveSessions.price'), wayToPay: t('rates.ratesInfo.fiveSessions.wayToPay') },
