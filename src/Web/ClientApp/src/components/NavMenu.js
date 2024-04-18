@@ -106,10 +106,10 @@ class NavMenu extends Component {
                 {location.pathname === '/' && <NavItem>
                   <NavLink className="text-dark" onClick={() => { handleClick('rates'); this.checkNavbarCollapsed(); }}>{t('menu.rates')}</NavLink>
                 </NavItem>}
-                {location.pathname === '/' && <NavItem>
+                {/* {location.pathname === '/' && <NavItem>
                   <NavLink className="text-dark" onClick={() => { handleClick('contact'); this.checkNavbarCollapsed(); }}>{t('menu.contact')}</NavLink>
                 </NavItem>
-                }
+                } */}
                 <NavItem>
                   <LanguageDropdown language={t('menu.language')} />
                 </NavItem>

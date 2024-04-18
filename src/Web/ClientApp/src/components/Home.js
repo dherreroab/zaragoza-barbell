@@ -6,7 +6,7 @@ import Team from './Team';
 import Gym from './Gym';
 import Club from './Club';
 import Rates from './Rates';
-import Contact from './Contact';
+// import Contact from './Contact';
 import img2 from '../assets/img/zgzb2.jpg';
 import img3 from '../assets/img/zgzb3.jpg';
 import './styles/Home.css';

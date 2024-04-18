@@ -17,29 +17,26 @@ const ExpandableTable = ({ member }) => {
 
     return (
         <section className="expandable-container">
-            <table className={`card card-expandable ${expandedRows.includes(member.id) ? 'expanded' : ''}`}>
-                <tbody>
-                    <React.Fragment key={member.id}>
-                        <tr className='header-expandable-table' onClick={() => handleRowClick(member.id)}>
-                            <td>
-                                {expandedRows.includes(member.id) ? <FiChevronUp /> : <FiChevronDown />}
-                                {member.name}
-                            </td>
-                        </tr>
-                        <tr className='expandable-row'>
-                            <td>
-                                {
-                                    expandedRows.includes(member.id) && (
-                                        member.details.studies.map(study => (
-                                            <p>{study.value}</p>
-                                        ))
-                                    )
-                                }
-                            </td>
-                        </tr>
-                    </React.Fragment>
-                </tbody>
-            </table>
+            <div className={`card card-expandable ${expandedRows.includes(member.id) ? 'expanded' : ''}`}>
+                <React.Fragment key={member.id}>
+                    <button
+                        className="btn btn-instagram insta-header button-expandable-div"
+                        onClick={() => handleRowClick(member.id)}
+                    >
+                        <i className="bi bi-file-person"></i>
+                    </button>
+                    <div className='expandable-div'
+                        onClick={() => handleRowClick(member.id)}>
+                        {
+                            expandedRows.includes(member.id) && (
+                                member.details.studies.map(study => (
+                                    <p>{study.value}</p>
+                                ))
+                            )
+                        }
+                    </div>
+                </React.Fragment>
+            </div>
         </section>
     );
 };
