@@ -206,6 +206,11 @@ i18n
               "text": "Personne séparément n'est essentiel, ensemble nous le sommes.",
             },
             "slide2": {
+              "title": "Salle de Powerlifting à Saragosse",
+              "subtitle": "N'importe quelle journée ordinaire au club",
+              "text": "Personne séparément n'est essentiel, ensemble nous le sommes.",
+            },
+            "slide3": {
               "title": "IIe Coupe de Catalogne",
               "subtitle": "",
               "text": "",
@@ -383,11 +388,15 @@ i18n
           },
           "carousel": {
             "slide1": {
-              "title": "Gimnasio de Powerlifting en Zaragoza",
-              "subtitle": "Un día cualquiera en el club",
-              "text": "Nadie por separado es imprescindible, junto si lo somos.",
+              "title": "I Copa Reino de Aragón",
+              "subtitle": "Nadie por separado es imprescindible, juntos si lo somos."
             },
             "slide2": {
+              "title": "Gimnasio de Powerlifting en Zaragoza",
+              "subtitle": "Un día cualquiera en el club",
+              "text": "Nadie por separado es imprescindible, juntos si lo somos.",
+            },
+            "slide3": {
               "title": "II Copa Catalana",
               "subtitle": "",
               "text": "",

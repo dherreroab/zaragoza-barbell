@@ -9,6 +9,7 @@ import Rates from './Rates';
 // import Contact from './Contact';
 import img2 from '../assets/img/zgzb2.jpg';
 import img3 from '../assets/img/zgzb3.jpg';
+import img4 from '../assets/img/zgzb4.jpg';
 import './styles/Home.css';
 
 
@@ -24,17 +25,22 @@ class Home extends Component {
         <div className="home-carousel" id="carousel">
           <Carousel>
             <Carousel.Item>
-              <img className="d-block w-100" src={img2} alt="Second slide" />
+              <img className="d-block w-100" src={img4} alt="First slide" />
               <Carousel.Caption>
                 <h1>{t('carousel.slide1.title')}</h1>
                 <h3>{t('carousel.slide1.subtitle')}</h3>
-                <p>{t('carousel.slide1.text')}</p>
+              </Carousel.Caption>
+            </Carousel.Item><Carousel.Item>
+              <img className="d-block w-100" src={img2} alt="Second slide" />
+              <Carousel.Caption>
+                <h1>{t('carousel.slide2.title')}</h1>
+                <h3>{t('carousel.slide2.subtitle')}</h3>
               </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
               <img className="d-block w-100" src={img3} alt="Third slide" />
               <Carousel.Caption>
-                <h1>{t('carousel.slide2.title')}</h1>
+                <h1>{t('carousel.slide3.title')}</h1>
               </Carousel.Caption>
             </Carousel.Item>
           </Carousel>
