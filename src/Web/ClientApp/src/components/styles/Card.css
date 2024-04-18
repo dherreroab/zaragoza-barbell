@@ -51,8 +51,16 @@
         }
 
         .expandable-div {
+            p {
+                border-bottom: 1px solid hsl(var(--clr-zgz-barbell-red));
+            }
+
             p:first-of-type {
                 padding-top: 1.5vh;
+            }
+
+            p:last-of-type {
+                border-bottom: none;
             }
         }
     }
