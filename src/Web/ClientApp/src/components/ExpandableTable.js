@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { FiChevronDown, FiChevronUp } from 'react-icons/fi';
 
 const ExpandableTable = ({ member }) => {
     const [expandedRows, setExpandedRows] = useState([]);
